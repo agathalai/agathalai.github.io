@@ -1,0 +1,1324 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+/*TextStyles_EN*/
+
+*
+{
+	mc-hyphenate: never;
+	mc-short-line-method: tighten-loosen;
+	mc-short-line: 4;
+}
+
+p,
+td,
+ol,
+ul
+{
+	orphans: 4;
+	widows: 3;
+}
+
+body
+{
+	color: #404040;
+	margin: 8px;
+	font-family: 'Proxima Nova Rg', Arial, sans-serif;
+}
+
+a:link
+{
+	color: #2D8DCC;
+	font-weight: bold;
+}
+
+a:visited
+{
+	color: #2D8DCC;
+}
+
+a.MCXref
+{
+	color: #005DAA;
+	font-weight: normal;
+	font-size: 12pt;
+}
+
+a.MiniTOC1:link
+{
+	color: #005DAA;
+	font-weight: normal;
+	font-size: 12pt;
+}
+
+a.MiniTOC1:visited
+{
+	color: #005DAA;
+	font-weight: normal;
+	font-size: 12pt;
+}
+
+a.MiniTOC2:link
+{
+	color: #005DAA;
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+a.MiniTOC2:visited
+{
+	color: #005DAA;
+	font-weight: normal;
+	font-size: 10pt;
+}
+
+div.MCMiniTocBox_0
+{
+	padding-left: 0px;
+}
+
+Div.GlossaryPageDefinition
+{
+	color: #e1e1e1;
+}
+
+Div.GlossaryPageHeading
+{
+	border-bottom-color: #0848a2;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	color: #0848a2;
+}
+
+Div.GlossaryPageTerm
+{
+	color: #0848a2;
+	font-size: 10pt;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+h1
+{
+	border-bottom: none;
+	color: #0848a2;
+	font-weight: normal;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding: 0;
+	mc-heading-level: 6;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+h2
+{
+	border-bottom: none;
+	font-weight: normal;
+	margin-bottom: 12px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 30px;
+	mc-heading-level: 7;
+	padding: 0;
+	color: #404040;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+h2.DarkBackground
+{
+	color: #a9a9a9;
+}
+
+h3
+{
+	border-bottom: none;
+	font-weight: bold;
+	margin-bottom: 12px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 12px;
+	mc-heading-level: 8;
+	padding: 0;
+	color: #404040;
+	font-family: 'Proxima Nova Rg', Arial, sans-serif;
+}
+
+h4
+{
+	mc-heading-level: 9;
+	font-weight: normal;
+	font-style: italic;
+	font-family: 'Proxima Nova Rg', Arial, sans-serif;
+}
+
+h5
+{
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+h6
+{
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+li
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
+
+MadCap|glossaryProxy
+{
+	border-top: none;
+	color: #e1e1e1;
+}
+
+MadCap|indexProxy
+{
+	border-top: none;
+	color: #e1e1e1;
+}
+
+MadCap|tocProxy
+{
+	border-top: none;
+	margin-right: 0.25in;
+}
+
+MadCap|xref
+{
+	font-weight: normal;
+	text-decoration: none;
+	mc-format: '{para}';
+	color: #2d8dcc;
+}
+
+MadCap|xref.IndexPageNumber
+{
+	color: #0848a2;
+}
+
+p
+{
+	font-family: 'Proxima Nova Rg', Arial, sans-serif;
+}
+
+p.Author
+{
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+	text-align: center;
+}
+
+p.Bibliography
+{
+	color: #e1e1e1;
+	padding-left: 35px;
+	text-indent: -35px;
+}
+
+p.CamModelNumber
+{
+	line-height: normal;
+	margin-top: 11pt;
+	margin-bottom: 11pt;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+p.caution
+{
+	mc-auto-number-format: '{b}CAUTION — {/b}';
+}
+
+p.ChapterNumber
+{
+	color: #3e3e3e;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	line-height: 14pt;
+	margin-bottom: 0;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-format: 'CH:CHAPTER {chapnum}';
+	mc-heading-level: 4;
+}
+
+p.Copyright
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font-size: 0.75em;
+}
+
+p.CopyrightAddress
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+p.CopyrightHeading
+{
+	page-break-before: always;
+}
+
+p.CreatedUsingFlare
+{
+	font-weight: bold;
+	margin-top: 18px;
+}
+
+p.EmptyPageText
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+p.figure
+{
+	mc-auto-number-format: '{b}Figure {Gn+}: {/b}';
+	font-size: 0.75em;
+	page-break-before: avoid;
+}
+
+p.FirstParagraphOfChapter
+{
+	color: #e1e1e1;
+}
+
+p.FirstParagraphOfChapter:first-letter
+{
+	color: #0848a2;
+	float: left;
+	margin-bottom: 0px;
+	font-size: 36pt;
+	margin-left: -2pt;
+	margin-top: 21pt;
+}
+
+p.FirstPageOfChapter
+{
+	color: #e1e1e1;
+}
+
+p.FrameFooterText
+{
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+p.FrameFooterText2
+{
+	color: #404040;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+p.FrontAndBackmatterHeadings
+{
+	border-bottom: none;
+	color: #0848a2;
+	font-size: 22pt;
+	font-weight: normal;
+	margin-bottom: 20px;
+	page-break-before: avoid;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+p.Green
+{
+	color: #008000;
+}
+
+p.important
+{
+	mc-auto-number-format: '{b}Important: {/b}';
+}
+
+p.IndexHeading
+{
+	font-size: 11pt;
+	padding-top: 16px;
+	text-align: left;
+}
+
+p.Subtitle
+{
+	font-weight: bold;
+	margin-top: 1.5em;
+	line-height: normal;
+	margin-bottom: 0.20in;
+}
+
+p.Title
+{
+	color: #0848a2;
+	font-size: 2.5em;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+}
+
+p.TOC1
+{
+	font-weight: normal;
+	margin-top: 18px;
+	margin-bottom: 12px;
+	mc-leader-format: ' ';
+	mc-pagenum-display: none;
+	page-break-after: avoid;
+	margin-left: 2%;
+	color: #005daa;
+}
+
+p.TOC2
+{
+	margin-bottom: 12px;
+	margin-top: 12px;
+	mc-leader-format: ' ';
+	mc-pagenum-display: none;
+	page-break-after: avoid;
+	margin-left: 10%;
+}
+
+p.TOC3
+{
+	margin-left: 20%;
+}
+
+p.TOC4
+{
+	margin-left: 30%;
+	mc-leader-format: ' ';
+	mc-pagenum-display: none;
+	page-break-after: avoid;
+}
+
+p.TOC5
+{
+	color: #ffffff;
+	margin-left: 40%;
+}
+
+p.TOCHeading
+{
+	border-bottom: none;
+	color: #0848a2;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	mc-heading-level: 0;
+	padding: 0;
+}
+
+p.VolumeNumber
+{
+	color: #3e3e3e;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+	font-size: 90pt;
+	font-weight: normal;
+	letter-spacing: -1px;
+	line-height: 92pt;
+	mc-auto-number-position: inside-head;
+	mc-auto-number-format: 'GH:VOLUME {volnum}';
+	mc-heading-level: 1;
+	text-align: center;
+}
+
+p.VolumeTitle
+{
+	border-bottom: none;
+	color: #0848a2;
+	font-family: 'Proxima Nova Lt', Arial, sans-serif;
+	font-size: 22pt;
+	font-weight: normal;
+	line-height: 24pt;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	mc-heading-level: 2;
+	padding: 0;
+	page-break-before: avoid;
+}
+
+p.warning
+{
+	mc-auto-number-format: '{b}WARNING — {/b}';
+}
+
+p.note
+{
+	mc-auto-number-format: '{b}NOTE: {/b}';
+}
+
+p.tip
+{
+	mc-auto-number-format: '{b}Tip: {/b}';
+}
+
+span.ChapNum
+{
+	
+}
+
+span.VolNum
+{
+	
+}
+
+span.filepath	/*For referencing file locations. Specifically a directory that contains a file, and other directories that may precede it in the system hierarchy.*/
+{
+	font-family: monospace;
+}
+
+span.UI
+{
+	
+}
+
+img.HWFitPage
+{
+	width: 500px;
+	height: auto;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	vertical-align: baseline;
+	max-width: 80%;
+}
+
+img.HWFitHeight
+{
+	width: 500px;
+	height: auto;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	vertical-align: baseline;
+	max-width: 80%;
+}
+
+img.symbol
+{
+	width: 40px;
+	height: auto;
+	vertical-align: top;
+	clear: left;
+}
+
+img.icon
+{
+	vertical-align: baseline;
+	max-width: 24px;
+}
+
+table.notice
+{
+	width: 100%;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #edfafa;
+	border: none;
+	border-width: 0px;
+	border-spacing: 0px;
+}
+
+p.MiniTOC1
+{
+	color: #2d8dcc;
+	mc-leader-format: 'none';
+}
+
+p.MiniTOC2
+{
+	color: #2d8dcc;
+}
+
+p.MiniTOC3
+{
+	color: #2d8dcc;
+}
+
+MadCap|glossaryTerm
+{
+	color: #005daa;
+}
+
+MadCap|relationshipsHeading
+{
+	font-size: 12pt;
+}
+
+MadCap|relationshipsHeading.concept
+{
+	font-size: 12pt;
+}
+
+MadCap|relationshipsHeading.reference
+{
+	font-size: 12pt;
+}
+
+MadCap|relationshipsHeading.task
+{
+	font-size: 12pt;
+}
+
+MadCap|relationshipsItem
+{
+	font-size: 12pt;
+}
+
+@media print
+{
+	p.Title
+	{
+		font-size: 34pt;
+		line-height: 36pt;
+		margin-top: 0.5in;
+		font-family: 'Proxima Nova Lt';
+	}
+
+	p
+	{
+		mc-hyphenate: never;
+		font-size: 10pt;
+	}
+
+	body
+	{
+		mc-hyphenate: never;
+		font-size: 10pt;
+	}
+
+	img.HWFitPage
+	{
+		mc-float: center;
+		height: 4in;
+		vertical-align: top;
+		max-width: 80%;
+		width: auto;
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	img.HWFitHeight
+	{
+		width: auto;
+		height: 2.5in;
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		vertical-align: baseline;
+		max-width: 80%;
+	}
+
+	p.Copyright
+	{
+		font-size: 6pt;
+	}
+
+	h1
+	{
+		page-break-before: always;
+		column-break-before: always;
+		frame-break-before: always;
+		frame-break-after: avoid;
+		margin-bottom: 36px;
+		font-size: 22pt;
+		mc-heading-level: 1;
+		font-family: 'Proxima Nova Lt';
+	}
+
+	h2
+	{
+		margin-bottom: 15pt;
+		font-size: 16pt;
+		mc-heading-level: 2;
+		font-family: 'Proxima Nova Lt';
+	}
+
+	p.FrontAndBackmatterHeadings
+	{
+		page-break-after: avoid;
+		column-break-after: avoid;
+		frame-break-after: avoid;
+		margin-bottom: 5px;
+		margin-top: 30px;
+		font-family: 'Proxima Nova Lt';
+	}
+
+	p.DocNumber
+	{
+		font-size: 6pt;
+	}
+
+	p.Subtitle
+	{
+		font-weight: normal;
+		font-style: normal;
+		line-height: 22px;
+		font-size: 16pt;
+		margin-bottom: 0.1875in;
+		margin-top: 0;
+		color: #0848a2;
+	}
+
+	p.CamModelNumber
+	{
+		font-weight: normal;
+		font-style: normal;
+		line-height: 22px;
+		font-size: 16pt;
+		margin-bottom: 0.1875in;
+		margin-top: 0;
+		color: #0848a2;
+		font-family: 'Proxima Nova Lt';
+	}
+
+	img.icon
+	{
+		width: 24px;
+		height: auto;
+	}
+
+	h3
+	{
+		margin-top: 18px;
+		margin-bottom: 9px;
+		mc-heading-level: 3;
+		font-size: 12pt;
+	}
+
+	p.MiniTOC1
+	{
+		font-weight: normal;
+		font-style: italic;
+		color: #404040;
+		mc-leader-format: 'dot';
+	}
+
+	p.important
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.note
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.tip
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.warning
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.MiniTOC2
+	{
+		color: #404040;
+	}
+
+	p.MiniTOC3
+	{
+		color: #404040;
+	}
+
+	p.TOC1
+	{
+		margin: 0;
+		margin-left: 0pt;
+		mc-pagenum-display: all;
+		mc-leader-format: '.';
+		color: #0848a2;
+		margin-top: 10pt;
+		page-break-after: inherit;
+	}
+
+	p.TOC2
+	{
+		margin: 0;
+		margin-left: 10pt;
+		font-weight: normal;
+		mc-pagenum-display: all;
+		mc-leader-format: '.';
+		color: #000000;
+		margin-top: 5pt;
+		page-break-after: inherit;
+	}
+
+	p.TOC3
+	{
+		margin: 0;
+		margin-left: 20pt;
+		font-weight: normal;
+		color: #000000;
+		margin-top: 5pt;
+	}
+
+	p.TOC4
+	{
+		margin: 0;
+		margin-left: 30pt;
+		font-weight: normal;
+		mc-pagenum-display: all;
+		mc-leader-format: '.';
+		color: #000000;
+		margin-top: 5pt;
+		page-break-after: inherit;
+	}
+
+	p.TOC5
+	{
+		margin: 0;
+		margin-left: 40pt;
+		font-weight: normal;
+		color: #000000;
+		margin-top: 5pt;
+	}
+
+	p.TOC6
+	{
+		color: #000000;
+		margin: 0;
+		margin-left: 50pt;
+		font-weight: normal;
+	}
+
+	p.TOC7
+	{
+		margin: 0;
+		margin-left: 60pt;
+		color: #000000;
+		font-weight: normal;
+	}
+
+	p.TOC8
+	{
+		color: #000000;
+		margin: 0;
+		margin-left: 70pt;
+		font-weight: normal;
+	}
+
+	p.TOC9
+	{
+		color: #000000;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	h4
+	{
+		mc-heading-level: 4;
+		font-family: 'Proxima Nova Rg';
+		color: #404040;
+		font-size: 11pt;
+	}
+
+	h5
+	{
+		font-size: 10pt;
+	}
+
+	h6
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|xref
+	{
+		color: #404040;
+		mc-format: '{i}{para}{/i} {pageref}';
+	}
+
+	p.TOCHeading
+	{
+		font-family: 'Proxima Nova Lt';
+	}
+
+	MadCap|relationshipsHeading
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsHeading.concept
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsHeading.reference
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsHeading.task
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsItem
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|miniTocProxy
+	{
+		font-size: 10pt;
+	}
+}
+
+@media printBW
+{
+	p.Title
+	{
+		font-size: 34pt;
+		line-height: 36pt;
+		margin-top: 0.5in;
+		font-family: 'Proxima Nova Lt';
+		color: #000000;
+	}
+
+	p
+	{
+		mc-hyphenate: never;
+		font-size: 10pt;
+	}
+
+	body
+	{
+		mc-hyphenate: never;
+		font-size: 10pt;
+	}
+
+	img.HWFitPage
+	{
+		mc-float: center;
+		height: 4in;
+		vertical-align: top;
+		max-width: 80%;
+		width: auto;
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	img.HWFitHeight
+	{
+		width: auto;
+		height: 2.5in;
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		vertical-align: baseline;
+		max-width: 80%;
+	}
+
+	p.Copyright
+	{
+		font-size: 6pt;
+	}
+
+	h1
+	{
+		page-break-before: always;
+		column-break-before: always;
+		frame-break-before: always;
+		frame-break-after: avoid;
+		margin-bottom: 36px;
+		font-size: 22pt;
+		mc-heading-level: 1;
+		font-family: 'Proxima Nova Lt';
+		color: #000000;
+	}
+
+	h2
+	{
+		margin-bottom: 15pt;
+		font-size: 16pt;
+		mc-heading-level: 2;
+		font-family: 'Proxima Nova Lt';
+	}
+
+	p.FrontAndBackmatterHeadings
+	{
+		page-break-after: avoid;
+		column-break-after: avoid;
+		frame-break-after: avoid;
+		margin-bottom: 5px;
+		margin-top: 30px;
+		font-family: 'Proxima Nova Lt';
+		color: #000000;
+	}
+
+	p.DocNumber
+	{
+		font-size: 6pt;
+	}
+
+	p.Subtitle
+	{
+		font-weight: normal;
+		font-style: normal;
+		line-height: 22px;
+		font-size: 16pt;
+		margin-bottom: 0.1875in;
+		margin-top: 0;
+		color: #455560;
+	}
+
+	p.CamModelNumber
+	{
+		font-weight: normal;
+		font-style: normal;
+		line-height: 22px;
+		font-size: 16pt;
+		margin-bottom: 0.1875in;
+		margin-top: 0;
+		font-family: 'Proxima Nova Lt';
+		color: #465661;
+	}
+
+	img.icon
+	{
+		width: 24px;
+		height: auto;
+	}
+
+	h3
+	{
+		margin-top: 18px;
+		margin-bottom: 9px;
+		mc-heading-level: 3;
+		font-size: 12pt;
+	}
+
+	p.MiniTOC1
+	{
+		font-weight: normal;
+		font-style: italic;
+		color: #404040;
+		mc-leader-format: 'dot';
+	}
+
+	p.important
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.note
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.tip
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.warning
+	{
+		page-break-before: avoid;
+		column-break-before: avoid;
+		frame-break-before: avoid;
+	}
+
+	p.MiniTOC2
+	{
+		color: #404040;
+	}
+
+	p.MiniTOC3
+	{
+		color: #404040;
+	}
+
+	p.TOC1
+	{
+		margin: 0;
+		margin-left: 0pt;
+		mc-pagenum-display: all;
+		mc-leader-format: '.';
+		color: #0848a2;
+		margin-top: 10pt;
+	}
+
+	p.TOC2
+	{
+		margin: 0;
+		margin-left: 10pt;
+		font-weight: normal;
+		mc-pagenum-display: all;
+		mc-leader-format: '.';
+		color: #000000;
+		margin-top: 5pt;
+	}
+
+	p.TOC3
+	{
+		margin: 0;
+		margin-left: 20pt;
+		font-weight: normal;
+		color: #000000;
+		margin-top: 5pt;
+	}
+
+	p.TOC4
+	{
+		margin: 0;
+		margin-left: 30pt;
+		font-weight: normal;
+		mc-pagenum-display: all;
+		mc-leader-format: '.';
+		color: #000000;
+		margin-top: 5pt;
+	}
+
+	p.TOC5
+	{
+		margin: 0;
+		margin-left: 40pt;
+		font-weight: normal;
+		color: #000000;
+		margin-top: 5pt;
+	}
+
+	p.TOC6
+	{
+		color: #000000;
+		margin: 0;
+		margin-left: 50pt;
+		font-weight: normal;
+	}
+
+	p.TOC7
+	{
+		margin: 0;
+		margin-left: 60pt;
+		color: #000000;
+		font-weight: normal;
+	}
+
+	p.TOC8
+	{
+		color: #000000;
+		margin: 0;
+		margin-left: 70pt;
+		font-weight: normal;
+	}
+
+	p.TOC9
+	{
+		color: #000000;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	h4
+	{
+		mc-heading-level: 4;
+		font-family: 'Proxima Nova Rg';
+		font-size: 12pt;
+		color: #404040;
+	}
+
+	h5
+	{
+		font-size: 10pt;
+	}
+
+	h6
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|xref
+	{
+		color: #455560;
+		mc-format: '{i}{para}{/i} {pageref}';
+	}
+
+	p.TOCHeading
+	{
+		font-family: 'Proxima Nova Lt';
+		color: #000000;
+	}
+
+	MadCap|relationshipsHeading
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsHeading.concept
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsHeading.reference
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsHeading.task
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|relationshipsItem
+	{
+		font-size: 10pt;
+	}
+
+	MadCap|miniTocProxy
+	{
+		font-size: 10pt;
+	}
+
+	p.VolumeTitle
+	{
+		color: #000000;
+	}
+
+	p.Green
+	{
+		color: #696969;
+	}
+
+	a
+	{
+		color: #455560;
+	}
+
+	a:link
+	{
+		color: #455560;
+	}
+
+	MadCap|xref.IndexPageNumber
+	{
+		color: #455560;
+	}
+
+	MadCap|conceptLink
+	{
+		color: #455560;
+	}
+
+	MadCap|keywordLink
+	{
+		color: #455560;
+	}
+
+	MadCap|relatedTopics
+	{
+		color: #455560;
+	}
+
+	MadCap|shortcut
+	{
+		color: #455560;
+	}
+
+	p.TOC1
+	{
+		font-weight: bold;
+		color: #455560;
+	}
+
+	a:visited
+	{
+		color: #a9a9a9;
+	}
+
+	table.notice
+	{
+		width: 100%;
+		padding-left: 2px;
+		padding-right: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		background-color: #ECF1F4;
+		border: none;
+		border-width: 0px;
+		border-spacing: 0px;
+	}
+}
+
+@media eDocs
+{
+	/* HTML CSS */
+	/* Keep the header from scrolling off the page using absolute position */
+
+	.tab-bar
+	{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+	}
+
+	/* Header height changes when media is used, adjust the top position of the body to match  
+	   Also need to change the width to match the skin settings in the target*/
+
+	.main-section
+	{
+		overflow: auto;
+		position: absolute;
+		width: 100%;
+		top: 60px;
+		bottom: 0;
+	}
+
+	.search-bar
+	{
+		width: calc(100% - 60px);
+		height: 100%;
+		left: 0px;
+		top: 0px;
+	}
+
+	.move-right .exit-off-canvas,
+	.move-left .exit-off-canvas
+	{
+		box-shadow: none;
+	}
+
+	MadCap|breadcrumbsProxy
+	{
+		mc-breadcrumbs-prefix: '';
+		border-bottom-style: solid;
+		border-bottom-width: 0px;
+		border-bottom-color: white;
+		padding: 0px;
+	}
+}

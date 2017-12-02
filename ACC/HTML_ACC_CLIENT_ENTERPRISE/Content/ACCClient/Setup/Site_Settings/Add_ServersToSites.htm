@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Site Settings|Managing Servers in a Site">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Connecting Servers to Sites</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Connecting Servers to Sites</h1>
+                            <p>By default, each site only has one server but you can add multiple servers to a site so that they can be managed together. All servers within the site share settings and are represented as one unit in the System&#160;Explorer.</p>
+                            <p class="tip" data-mc-autonum="&lt;b&gt;Tip: &lt;/b&gt;"><span class="autonumber"><span><b>Tip: </b></span></span>It is recommended that you only add new servers to an existing site to avoid managing a large number of duplicate settings, and more easily configure device connections across the combined site.</p>
+                            <p>This procedure is primarily for grouping a number of servers in the same local area network to work together and share settings. </p>
+                            <p>If the servers are installed a wide distance apart but only need to share users and group information — you can join the sites together into a site family instead. For more information, see <a href="Corporate_Hierarchy/parent_child_site_setup.htm" class="MCXref xref">Connecting Site Families</a>.</p>
+                            <ol style="list-style-type: decimal;">
+                                <li value="1">In the site <span class="UI_ACCSetupWindowTitleText">Setup</span> tab, click <img src="../../../0Graphics/ACC/ClusterLarge.png" />. <p>The <span class="UI_ACCClusterMgmtSetupPageTitle">Site Management</span> tab lists all the sites that you can access and all the servers that are connected to each site.  
+			</p><p>If you do not see the site or server you want to configure, you may need to add the site. <MadCap:conditionalText data-mc-conditions="Primary.Client_Enterprise">For more information, see <a href="../Discovering_Site.htm" class="MCXref xref">Discovering Sites</a>.</MadCap:conditionalText></p></li>
+                                <li value="2">When you select a <img src="../../../0Graphics/ACC/Server.png" alt="" style="border: none;" border="0" /> server, you will see the available options at the bottom of the application window.</li>
+                                <li value="3">To move a server: 
+				<ul><li value="1">Select the <img src="../../../0Graphics/ACC/Server.png" alt="" style="border: none;" border="0" /> server and drag it to a different site.</li><li value="2">Or, select the <img src="../../../0Graphics/ACC/Server.png" alt="" style="border: none;" border="0" /> server then click <b><span class="UI_ACCClusterMgmtSetupPageMoveServer">Connect to Site…</span></b> at the bottom-right corner of the tab. In the  following dialog box, select the site you want the server to connect to.</li></ul><p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>Sites without any servers are automatically removed from the list.</p></li>
+                                <li value="4">After the server has joined the new site, reactivate the site licenses. <MadCap:conditionalText data-mc-conditions="Primary.Client_Enterprise">For more information, see <a href="Licensing/Reactivate_License.htm" class="MCXref xref">Reactivating a&#160;License</a>.</MadCap:conditionalText></li>
+                            </ol>
+                            <p>Once the server is connected to the site, the settings are merged.</p>
+                            <ul>
+                                <li value="1">Unique settings from the server are added to the site.</li>
+                                <li value="2">If the settings are identical, only the site version is kept.</li>
+                                <li value="3">If a server setting and a site setting have the same name but are configured differently, the server setting is added to the site and renamed in this format: <i>&lt;setting name&gt; (server name),</i> e.g. Email1 (Server2F).</li>
+                                <ul>
+                                    <li value="1">In the rules engine, the <i><span class="UI_ACCRuleSystemDefaultNameShowToUsers">Notify users (default)</span></i> rule is always added and renamed, even if the settings are the same. The site version remains enabled but the added rule is disabled by default.</li>
+                                </ul>
+                                <li value="4">The two site Views are combined. </li>
+                                <ul>
+                                    <li value="1">The site settings take precedence. 
+			<p>For example, a map from the site was copied to the server in the past. In the server, the map was placed at the top of the site View. But in the site, the same map is placed at the bottom. After the server is connected to the site, the map takes the position used by the site (the bottom).</p></li>
+                                    <li value="2">New, unorganized elements from the server are listed at the bottom of the site View. </li>
+                                </ul>
+                                <li value="5">User permission groups are merged.</li>
+                                <ul>
+                                    <li value="1">If groups have the same name, the site settings are used and the users from both the site and the server are added to the group.</li>
+                                    <li value="2">Groups that are new to the site automatically get access to all the devices in the site.</li>
+                                    <li value="3">Groups that are new to the server automatically get access to all the devices that are connected to the server.</li>
+                                </ul>
+                                <li value="6">Users with the same name will use the settings configured in the site (including passwords), and gain group permissions from the server. </li>
+                                <li value="7">If the site is connected to a Windows Active Directory, the server must be connected to the same <span class="UI_ACCThirdPartyAuthenticationTypeLdapString">Active Directory</span> domain or the connection will fail. <MadCap:conditionalText data-mc-conditions="Primary.Client_Enterprise">For more information, see <a href="Users_and_Groups/Importing_AD_Groups.htm" class="MCXref xref">Importing Active Directory Groups</a>.</MadCap:conditionalText></li>
+                            </ul>
+                            <div class="MCMiniTocBox_0 miniToc nocontent" data-mc-depth="6" data-mc-toc="True">
+                            </div>
+                            <p>&#160;</p>
+                            <p>  <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

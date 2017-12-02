@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Investigating Events|Search">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Performing a Motion Search</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/Simple.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../ACCClient/Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Performing a Motion Search</h1>
+                            <p>The <img src="../0Graphics/ACC/SearchPixel.png" />Motion Search tab allows you to search for classified object motion and pixel motion. </p>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span><span class="UI_ACCSearchClassifiedObjectModeToolbarButtonText">Classified Object Motion</span> search is always displayed but only video from a self-learning video analytics device will generate meaningful search results.</p>
+                            <ol style="list-style-type: decimal;">
+                                <li value="1" data-mc-conditions="Primary.Client_Enterprise,Primary.Client_Core,Primary.Client_Standard">Open the <span class="UI_ACCSearchPanelPixelTitle">Search: Motion</span> tab. For more information about accessing the search tab, see <a href="Searching.htm" class="MCXref xref">Search</a></li>
+                                <li value="2">In the <b><span class="UI_ACCSearchSystemTreeTitleSingle">Camera to Search:</span></b> area, select a camera.</li>
+                                <li value="3">
+                                    <p>In the <b><span class="UI_ACCSearchTimeRangeText">Time Range to Search:</span></b> area, set the date and time range of your search. The time range is highlighted on the Timeline by the black time range markers. You can also drag the time range markers to modify the time range.</p>
+                                </li>
+                                <li value="4">Select the type of motion search that you would like to perform:<table style="width: 100%;mc-table-style: url('../Resources/TableStyles/Simple.css');" class="TableStyle-Simple" cellspacing="0"><col class="TableStyle-Simple-Column-Column1" /><col class="TableStyle-Simple-Column-Column1" /><thead><tr class="TableStyle-Simple-Head-Header1"><th class="TableStyle-Simple-HeadE-Column1-Header1">Search Type</th><th class="TableStyle-Simple-HeadD-Column1-Header1">Description</th></tr></thead><tbody><tr class="TableStyle-Simple-Body-Row1"><td class="TableStyle-Simple-BodyE-Column1-Row1">Click <b><span class="UI_ACCSearchClassifiedObjectModeToolbarButtonText">Classified Object Motion</span></b> to search for objects detected by a video analytics camera.</td><td class="TableStyle-Simple-BodyD-Column1-Row1"><ol style="list-style-type: lower-alpha;"><li value="1">In the  <span class="UI_ACCSearchClassifiedObjectModeToolbarButtonText">Classified Object Motion</span> area, check the <img src="../0Graphics/ACC/Person.png" /> box to search for persons.</li><li value="2">Check the <img src="../0Graphics/ACC/Vehicle.png" /> box to search for vehicles.</li><li value="3">Move the <b><span class="UI_ACCSearchResultInfoLprConfidence">Confidence:</span></b> slider to set how certain the system must be that it identified the correct object type.</li><li value="4">Enter a time in seconds in the <b>Object Duration:</b> field to define how long each result must be in the scene.</li><li value="5">Select one of the following options:<ul><li value="1"><b><span class="UI_ACCSearchPixelResultSeparateText">Individual objects</span></b> — select this option to display each classified object as an individual search result.</li><li value="2"><b><span class="UI_ACCSearchClassifiedResultJoinText">Joined by time</span></b> — select this option to display objects that appear simultaneously as one search result. Define the minimum number of  <b><span class="UI_ACCSearchPixelResultJoinPostText">seconds apart</span></b> before the next search result is generated.</li></ul></li></ol></td></tr><tr class="TableStyle-Simple-Body-Row1"><td class="TableStyle-Simple-BodyB-Column1-Row1">Click <b><span class="UI_ACCSearchPixelModeToolbarButtonText">Pixel Motion</span></b> to search for tiny pixel changes in a specific area in the camera's field of view.</td><td class="TableStyle-Simple-BodyA-Column1-Row1"><ol style="list-style-type: lower-alpha;"><li value="1">In the <span class="UI_ACCSearchPixelSettingsGroupBoxText">Pixel Search Options:</span> area, click the toggle to set the <span class="UI_ACCMotionOverlayCommandText">Motion Activity</span> overlay on or off.
+										<p>If enabled, pixel motion in the search results are highlighted in red.</p></li><li value="2">Drag the <b><span class="UI_ACCSearchPixelThresholdText">Threshold:</span></b> slider to select the amount of motion required to return a search result. 
+ <p>A high threshold requires more pixels to change before results are found.</p></li><li value="3">Enter a number in the <b><span class="UI_ACCSearchPixelResultJoinText">Join results less than</span></b> field to set the minimum number of seconds between separate search results. You can enter any number between 1-100 seconds.</li></ol></td></tr></tbody></table></li>
+                                <li value="5">Define the green search area by using the tools above the image panel.
+				<p data-mc-conditions="Primary.Client_Core,Primary.Client_Enterprise,Primary.Client_Standard">For more information about using the classified object motion tools, see <a href="../ACCClient/Setup/Camera_Settings/Motion_Detection/setup_analytics_motion.htm" class="MCXref xref">Setting Up Classified Object Motion Detection</a>.</p><p data-mc-conditions="Primary.Client_Core,Primary.Client_Enterprise,Primary.Client_Standard">For more information about using the pixel motion tools, see <a href="../ACCClient/Setup/Camera_Settings/Motion_Detection/Setup_PixelMotion.htm" class="MCXref xref">Setting Up Pixel Motion Detection</a>.</p></li>
+                                <li value="6">
+	Click <b><span class="UI_ACCSearchStartButtonText">Search</span></b>. 
+</li>
+                            </ol>
+                            <h2>Viewing Search Results</h2>
+                            <p>Depending on the type of Motion Search you performed, some of the following options may not be available.</p>
+                            <ol>
+                                <li value="1">
+                                    <p>In the <b>Search Results</b> area, select a search result. The event is highlighted on the Timeline and available video is displayed in the image panel. Details about the search result are displayed to the right. </p>
+                                    <p>If you performed a <span class="UI_ACCSearchClassifiedObjectModeToolbarButtonText">Classified Object Motion</span> search, the objects in the search result are highlighted in the image panel.</p>
+                                </li>
+                                <li value="2">
+                                    <p>Use the Timeline controls to review the event.</p>
+                                    <p>For more information, see <a href="../Video/Recorded/Play_Recorded_Video.htm" class="MCXref xref">Playing Back Recorded Video</a>.</p>
+                                </li>
+                                <li value="3">
+                                    <p>Click <b><span class="UI_ACCSearchResultActionExportText">Export this event</span></b> to export the selected event video. </p>
+                                    <p>For more information, see <a href="../Export/Export_intro.htm" class="MCXref xref">Export</a>.</p>
+                                </li>
+                                <li value="4" data-mc-conditions="Primary.Client_Core,Primary.Client_Enterprise,Primary.Client_Standard,Primary.WebClient_Core,Primary.WebClient_Enterprise,Primary.WebClient_Standard">
+                                    <p>Click <b><span class="UI_ACCSearchResultActionAddBookmarkText">Bookmark this event</span></b> to bookmark the selected search result. </p>
+                                    <p>For more information, see <a href="../Video/Recorded/bookmarking_recorded_video.htm" class="MCXref xref">Bookmarking Recorded Video</a>.</p>
+                                </li>
+                                <li value="5">Click <b><span class="UI_ACCSearchResultActionAddToNewView">Add to new View</span></b> to display the search result video in a new View tab.</li>
+                                <li value="6">
+ To export all listed search results, click <b><span class="UI_ACCSearchExportToCsvText">Export results to a file</span></b> and save the file. The search results can be 
+ saved as either a CSV or Text file. 
+</li>
+                                <li value="7">If you performed a <span class="UI_ACCSearchClassifiedObjectModeToolbarButtonText">Classified Object Motion</span> search and chose to join the search results, you will have the option to <b><span class="UI_ACCSearchResultActionIndividualClassifiedObjectSearchText">Find individual objects in this event</span></b>. Click this button to perform a new search to identify each individual object in the search result.</li>
+                            </ol>
+                            <p>&#160;</p>
+                            <p>  <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

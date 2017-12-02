@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Site Settings|Connecting/Disconnecting Cameras and Devices">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Failover Connections</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Failover Connections</h1>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;" data-mc-conditions="General.Online"><span class="autonumber"><span><b>NOTE: </b></span></span>
+                                <B>Enterprise Edition only.</B>
+                            </p>
+                            <p>You can set up failover connections so that if a server fails, the devices 
+ connected to it will automatically connect to a backup server and continue 
+ recording.</p>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>
+            Failover connections can only be made between servers within the same site. 
+	 </p>
+                            <p>Failover connections are set up in the <span class="UI_ACCShowServerConnectionFormCommandText">Connect/Disconnect Devices…</span> tab 
+ and are defined by the <span class="UI_ACCConnectionFormConnectionTypeLabel">Connection Type:</span> setting and the <span class="UI_ACCConnectionFormPriorityLabel">License Priority:</span> 
+ setting.</p>
+                            <p>The <span class="UI_ACCConnectionFormConnectionTypeLabel">Connection Type:</span> determines when the device will connect to a server:</p>
+                            <ul>
+                                <li value="1"> <b><span class="UI_ACCConnectionFormConnectionTypePrimary">Primary</span>:</b> the device 
+	 will automatically connect to this server if they are in the same 
+	 network.</li>
+                                <li value="2"> <b><span class="UI_ACCConnectionFormConnectionTypeSecondary">Secondary</span>:</b> if the 
+	 <span class="UI_ACCConnectionFormConnectionTypePrimary">Primary</span> server is not available, the device will try to connect to 
+	 this server.</li>
+                                <li value="3"> <b><span class="UI_ACCConnectionFormConnectionTypeTertiary">Tertiary</span>:</b> if the 
+	 <span class="UI_ACCConnectionFormConnectionTypePrimary">Primary</span> and <span class="UI_ACCConnectionFormConnectionTypeSecondary">Secondary</span> servers are not available, the device will try 
+	 to connect to this server.</li>
+                            </ul>
+                            <p>The <span class="UI_ACCConnectionFormPriorityLabel">License Priority:</span> setting decides the order that devices are connected 
+ to the server — <b>1</b> is the highest and <b>5</b> 
+ is the lowest. The server will try to connect devices with a higher
+ priority before devices with lower priority. If the server does not have 
+ enough camera failover licenses, low priority devices may not be connected. 
+ A camera failover license is only used when the device actually connects 
+ to the server.</p>
+                            <p>Camera failover licenses are only required for <span class="UI_ACCConnectionFormConnectionTypeSecondary">Secondary</span> and <span class="UI_ACCConnectionFormConnectionTypeTertiary">Tertiary</span> connections.</p>
+                            <h2>Setting Up a Failover Connection</h2>
+                            <ol style="list-style-type: decimal;">
+                                <li value="1">In the <span class="UI_ACCShowServerConnectionFormCommandText">Connect/Disconnect Devices…</span> tab, select 
+	 a device that is currently connected to its <span class="UI_ACCConnectionFormConnectionTypePrimary">Primary</span> server.</li>
+                                <li value="2">At the bottom of the application window, click 
+	 <b><span class="UI_ACCDeviceInfoPanelConnectTitle">Connect…</span></b>.</li>
+                                <li value="3">When you see the <span class="UI_ACCConnectionFormConnectDeviceTitle">Connect Device</span> dialog box, select 
+	 a different server within the same site and set the <span class="UI_ACCConnectionFormConnectionTypeLabel">Connection Type:</span> as either <b><span class="UI_ACCConnectionFormConnectionTypeSecondary">Secondary</span></b> or <b><span class="UI_ACCConnectionFormConnectionTypeTertiary">Tertiary</span></b>.</li>
+                                <li value="4">Select a <b><span class="UI_ACCConnectionFormPriorityLabel">License Priority:</span></b> for the failover connection.</li>
+                                <li value="5">Click <b><span class="UI_ACCOkButtonText">OK</span></b>.</li>
+                                <li value="6">Repeat this procedure until all the required 
+	 failover connections have been made.</li>
+                            </ol>
+                            <p>The following is an examples of how failover will work in the event 
+ of server failure.</p>
+                            <h2>Example</h2>
+                            <p>Cameras A, B, C, D, E and F have failover connections set up to two 
+ different servers in the site. Assume the site has 6 camera channel licenses and 4 failover licenses, and 
+ the license priority is set to 1 for each connection. The camera failover licenses are only required for <span class="UI_ACCConnectionFormConnectionTypeSecondary">Secondary</span> and <span class="UI_ACCConnectionFormConnectionTypeTertiary">Tertiary</span> connections.</p>
+                            <div class="KeepTogether">
+                                <p>
+                                    <img src="../../../../0Graphics/ACC/Failover/failover-example1_origin.png" title="Primary connections" />
+                                </p>
+                                <p class="figure" data-mc-autonum="&lt;b&gt;Figure 10: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 10: </b></span></span>Primary connections</p>
+                            </div>
+                            <p>When the server NVR 1 fails, cameras A and B from NVR 1 automatically 
+ connect to their <span class="UI_ACCConnectionFormConnectionTypeSecondary">Secondary</span> server, NVR 2.</p>
+                            <div class="KeepTogether">
+                                <p>
+                                    <img src="../../../../0Graphics/ACC/Failover/failover-example1_nvrfail1.png" title="NVR 1 fails" />
+                                </p>
+                                <p class="figure" data-mc-autonum="&lt;b&gt;Figure 11: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 11: </b></span></span>NVR 
+	 1 fails</p>
+                            </div>
+                            <p>When the server NVR 3 fails, cameras E and F automatically connect 
+ to their <span class="UI_ACCConnectionFormConnectionTypeTertiary">Tertiary</span> server, NVR 2.</p>
+                            <div class="KeepTogether">
+                                <p>
+                                    <img src="../../../../0Graphics/ACC/Failover/failover-example1_nvrfail2.png" title="NVR 3 fails" />
+                                </p>
+                                <p class="figure" data-mc-autonum="&lt;b&gt;Figure 12: &lt;/b&gt;"><span class="autonumber"><span><b>Figure 12: </b></span></span>NVR 
+	 3 fails</p>
+                            </div>
+                            <p>&#160;</p>
+                            <p> <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

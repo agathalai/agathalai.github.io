@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Device Settings|Compression and Image Rate">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Manually Adjusting Recorded Video Streams</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Manually Adjusting Recorded Video Streams</h1>
+                            <p><span class="CompanyInfoCompanyName">Avigilon</span> and third party ONVIF compliant cameras support the configuration of secondary stream compression settings.</p>
+                            <p>If you have a 1-3 megapixel <span class="CompanyInfoCompanyName">Avigilon</span> H4 HD camera, you also have the option of manually adjusting the primary and secondary video stream, or allowing the system to automatically use HDSM technology. HDSM technology allows <span class="CompanyInfoACC">ACC</span> software to automatically record both the primary and secondary stream so that the system can intelligently adjust video bandwidth and storage efficiencies to meet your requirements. </p>
+                            <p>If your local regulations require that a specific video stream be recorded or be a certain resolution, you have the option of manually adjusting the settings to meet the requirements.</p>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;" data-mc-conditions="Primary.Client_Enterprise"><span class="autonumber"><span><b>NOTE: </b></span></span>If the camera is connected to multiple servers (including for failover), the following settings must be the same at each server connection. Otherwise, the settings may constantly overwrite each other and the camera is unable to record the correct video stream settings. </p>
+                            <ol>
+                                <li value="1">In the <span class="UI_ACCImageQualitySetupPageText">Compression and Image Rate</span> dialog box, select the preferred bandwidth you want the camera to record from the  <span class="UI_ACCImageQualityStreamingProfileLabel">Recording Profile:</span> drop down list.
+From the  <span class="UI_ACCImageQualityStreamingProfileLabel">Recording Profile:</span> drop down list, select Record High Bandwidth or Record Low Bandwidth.  Selecting Record High Bandwidth enables streaming and the recording of the <span class="UI_ACCImageQualityPrimaryStreamLabel">High Bandwidth Stream</span>, while viewing the live low profile stream. <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>The option for selecting Record High Bandwidth or Record Low Bandwidth is applicable to third party ONVIF compliant cameras only.</p><p>The <span class="UI_ACCImageQualityPrimaryStreamLabel">High Bandwidth Stream</span> is automatically disabled for recorded video but the settings are still available for you to configure the live video stream. The Low Bandwidth Stream settings are enabled.</p></li>
+                                <li value="2">The default <span class="UI_ACCCameraRecordingProfileAuto">HDSM Auto</span> option allows the system to use the HDSM feature for viewing live and recorded video. Be aware that if you are using the <span class="UI_ACCCameraRecordingProfileManual">Manual</span> setting, HDSM technology is disabled for recorded video but is still used for live video streams. If you are using the Flexible  setting, HDSM technology is enabled for recorded video and can still be used for live video streams. Selecting the Flexible setting only enables the control in the <b><span class="UI_ACCImageQualityMaxBitRateLabel">Max Bit Rate:</span></b> field and the <b><span class="UI_ACCImageQualityResolutionLabel">Resolution:</span></b> drop down list.</li>
+                                <li value="3">If you need to adjust the live video stream, change the <span class="UI_ACCImageQualityPrimaryStreamLabel">High Bandwidth Stream</span> settings first.
+			<p>The <span class="UI_ACCImageQualityPrimaryStreamLabel">High Bandwidth Stream</span> settings are used to optimize the Low Bandwidth Stream settings, so some of the settings may change depending on your settings for the <span class="UI_ACCImageQualityPrimaryStreamLabel">High Bandwidth Stream</span>.</p></li>
+                                <li value="4">If it is not displayed, click <img src="../../../0Graphics/ACC/Expand_icon.png" alt="" style="border: none;" border="0" /> to display the Low Bandwidth Stream settings.
+				<p>If you prefer to record a higher resolution video, clear the <b><span class="UI_ACCImageQualityLowBandwidthStreamingLabel">Enable Low Bandwidth Stream</span></b>  check box and adjust the <span class="UI_ACCImageQualityPrimaryStreamLabel">High Bandwidth Stream</span> settings.</p></li>
+                                <li value="5">In the <b><span class="UI_ACCImageQualityResolutionLabel">Resolution:</span></b> drop down list, select the preferred image resolution. </li>
+                                <li value="6">In the <b><span class="UI_ACCImageQualityFrameRateLabel">Image Rate:</span></b> bar, move the slider to select the number of images per second (ips) you want the camera to stream over the network. 
+	</li>
+                                <li value="7">In the <b><span class="UI_ACCImageQualityQualityLabel">Image Quality:</span></b> drop down list, select an image quality setting. An image quality setting of <b>1</b> will produce the highest quality video and require the most bandwidth. The default setting is <b>6</b>.</li>
+                                <li value="8">In the <b><span class="UI_ACCImageQualityMaxBitRateLabel">Max Bit Rate:</span></b> field, select the maximum bandwidth the camera can use in kilobits per second (kbps).</li>
+                                <li value="9">In the <b><span class="UI_ACCImageQualityKeyFrameIntervalFramesLabel">Keyframe Interval:</span></b> drop down list, enter the preferred number of frames between each keyframe.<p>To help you determine how frequently keyframes are recorded,  the <span class="UI_ACCImageQualityKeyFramePeriodLabel">Keyframe Period:</span> area tells you the amount of time that passes between each recorded keyframe.</p><p>It is recommended that you have at least one keyframe per second. </p></li>
+                                <li value="10">
+                                    <p>Click <b><span class="UI_ACCApplyToDevicesButton">Apply to Devices…</span></b> to apply the same settings to other cameras of the same model.</p>
+                                </li>
+                                <li value="11">Click <b><span class="UI_ACCOkButtonText">OK</span></b>.</li>
+                            </ol>
+                            <p>The changes immediately take effect. The <span class="CompanyInfoACC">ACC</span> Client software will continue to use HDSM technology to manage the display of live video, but recorded video will only display the configured video stream. </p>
+                            <p>The data aging settings in the  <span class="UI_ACCBandwidthSetupText">Recording and Bandwidth</span> dialog box update to reflect the new recording profile settings.</p>
+                            <p>&#160;</p>
+                            <p>  <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

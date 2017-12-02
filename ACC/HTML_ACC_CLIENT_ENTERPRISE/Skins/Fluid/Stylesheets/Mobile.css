@@ -1,0 +1,245 @@
+/*<meta />*/
+
+@media only screen and (max-width: 767px)
+{
+	nav.title-bar
+	{
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-color: #efefef;
+	}
+
+	.title-bar-section a.logo
+	{
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 143px;
+		height: 20px;
+		top: 0;
+		bottom: auto;
+		margin-top: 0;
+		background: transparent url('Images/avigilon-logo_blue_1.png') no-repeat center center;
+	}
+
+	.search-bar .search-submit
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.search-bar .search-filter
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background: #ffffff url('Images/FilterOutline.png') no-repeat center center;
+	}
+
+	.search-input
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.off-canvas.position-right
+	{
+		background-position: top center;
+	}
+
+	.off-canvas.position-right ul ul
+	{
+		background-position: top center;
+	}
+
+	.off-canvas.position-left
+	{
+		background-position: top center;
+	}
+
+	.off-canvas.position-left ul ul
+	{
+		background-position: top center;
+	}
+
+	.title-bar-section.middle > div
+	{
+		min-height: 40px;
+	}
+
+	.off-canvas-wrapper-inner nav.title-bar .outer-row
+	{
+		
+	}
+
+	.title-bar .menu-icon span
+	{
+		top: 10px;
+		background: #005DAA url('Images/Menu.png') no-repeat center center;
+	}
+
+	.off-canvas-wrapper-inner .outer-row
+	{
+		max-width: 640px;
+	}
+
+	.main-section > .outer-row
+	{
+		max-width: 640px;
+	}
+
+	.off-canvas
+	{
+		background-repeat: no-repeat;
+		background-color: #f2f2f2;
+	}
+
+	.off-canvas ul ul
+	{
+		background-repeat: no-repeat;
+		background-color: #f2f2f2;
+	}
+
+	ul.off-canvas-list li a
+	{
+		border-bottom: none 0px #262626;
+		line-height: 1em;
+	}
+
+	ul.off-canvas-list ul > li > a
+	{
+		
+	}
+
+	ul.off-canvas-list ul ul > li > a
+	{
+		
+	}
+
+	ul.off-canvas-list ul ul ul > li > a
+	{
+		
+	}
+
+	ul.off-canvas-list ul ul ul ul > li > a
+	{
+		
+	}
+
+	ul.off-canvas-list li.js-drilldown-back > a
+	{
+		
+	}
+
+	ul.off-canvas-list li a:hover
+	{
+		color: #ffffff;
+		background-color: #8f999f;
+	}
+
+	ul.off-canvas-list ul > li > a:hover
+	{
+		background-color: #8f999f;
+	}
+
+	ul.off-canvas-list ul ul > li > a:hover
+	{
+		background-color: #8f999f;
+	}
+
+	ul.off-canvas-list ul ul ul > li > a:hover
+	{
+		background-color: #8f999f;
+	}
+
+	ul.off-canvas-list ul ul ul ul > li > a:hover
+	{
+		background-color: #8f999f;
+	}
+
+	ul.off-canvas-list li.js-drilldown-back > a:hover
+	{
+		background-color: #8f999f;
+	}
+
+	nav.title-bar .menu-icon
+	{
+		right: -13px;
+	}
+
+	.row.nav-search
+	{
+		
+	}
+
+	.search-bar
+	{
+		
+	}
+
+	.search-bar .search-field
+	{
+		padding-right: 106px;
+		background-color: #ffffff;
+	}
+
+	.search-filter-content
+	{
+		top: 2em;
+		background-color: #ffffff;
+	}
+
+	.search-bar .search-filter.open
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar .search-filter:hover
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar .search-filter.selected
+	{
+		background: transparent url('Images/Filter.png') no-repeat center center;
+	}
+
+	.search-filter-content ul li:hover
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar .search-field::-webkit-input-placeholder
+	{
+		
+	}
+
+	.search-bar .search-field::-moz-placeholder
+	{
+		
+	}
+
+	.search-bar .search-field:-moz-placeholder
+	{
+		
+	}
+
+	.search-bar .search-field:-ms-input-placeholder
+	{
+		
+	}
+
+	.search-bar.search-bar-container .search-submit
+	{
+		background: #005DAA url('Images/SearchIcon.png') no-repeat center center;
+	}
+
+	.search-bar .search-filter-wrapper
+	{
+		right: 56px;
+	}
+
+	.search-bar.search-bar-container .search-submit:hover
+	{
+		background-color: #005DAA;
+	}
+}
+

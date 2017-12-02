@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Site Settings|Connecting/Disconnecting Cameras and Devices">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Connecting a Camera to a Server</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Connecting a Device to a Server</h1>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>
+     Some features are not displayed&#160;if the server does not have the required 
+	 license, or if you do not have the required user permissions.
+		</p>
+                            <p>To access a device from a site, it must be connected to a server within 
+ the site. The server 
+ manages and stores the camera's recorded video, while the site manages 
+ the events that are generated by a connected device (such as an Avigilon&#160;Presence Detector sensor) or from the camera's video .</p>
+                            <p>After a device has been discovered on the network, it can be connected 
+ to the server. <MadCap:conditionalText data-mc-conditions="Primary.Client_Standard,Primary.Client_Enterprise,Primary.Client_Core">If you do not see a device you want to connect, see 
+ <a href="Discovering_a_Camera.htm" class="MCXref xref">Discovering a Device</a>.</MadCap:conditionalText></p>
+                            <ol style="list-style-type: decimal;">
+                                <li value="1">In the site <span class="UI_ACCSetupWindowTitleText">Setup</span> tab, click <img src="../../../../0Graphics/ACC/CameraLarge.png" />. 
+	<p>The <span class="UI_ACCShowServerConnectionFormCommandText">Connect/Disconnect Devices…</span> tab is displayed.</p></li>
+                                <li value="2">In the <span class="UI_ACCConnectionFormDiscoveredLabel">Discovered Devices</span> area, select one or more devices 
+	 then click <b><span class="UI_ACCDeviceInfoPanelConnectTitle">Connect…</span></b>.
+	<p class="Tip" data-mc-autonum="&lt;b&gt;Tip: &lt;/b&gt;"><span class="autonumber"><span><b>Tip: </b></span></span>You 
+		 can also drag the device to a server on the <span class="UI_ACCConnectionFormConnectedLabel">Connected Devices</span> 
+		 list.</p></li>
+                                <li value="3">In the <span class="UI_ACCConnectionFormConnectDeviceTitle">Connect Device</span> dialog box, select the 
+	 server you want the device to connect to. 
+				<p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>If you are connecting multiple devices, all the cameras must use the same connection settings.</p></li>
+                                <li value="4">If you are connecting a third-party device, you may choose to connect the device by its native driver. In the <b><span class="UI_ACCConnectionFormApiTypeLabel">Device Type:</span></b> drop down list, select the device's brand name. If there is only one option in the drop down list, the system only supports one type of driver from the device.</li>
+                                <li class="procedure" value="5" data-mc-conditions="Primary.Client_Enterprise">In the <b><span class="UI_ACCConnectionFormConnectionTypeLabel">Connection Type:</span></b> drop down list, select <b><span class="UI_ACCConnectionFormConnectionTypePrimary">Primary</span></b>. The device 
+	 will automatically connect to this server if they are in the same 
+	 network.<p>If you are creating a failover connection, select <span class="UI_ACCConnectionFormConnectionTypeSecondary">Secondary</span> or <span class="UI_ACCConnectionFormConnectionTypeTertiary">Tertiary</span>.</p></li>
+                                <li class="procedure" value="6" data-mc-conditions="Primary.Client_Enterprise">In the <b><span class="UI_ACCConnectionFormPriorityLabel">License Priority:</span></b> drop down list, select the appropriate license priority. The highest priority is <b>1</b> and the lowest priority is <b>5</b>. 
+			<p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>This option is only available if you are connecting to a Secondary or Tertiary server.</p><p>The <span class="UI_ACCConnectionFormPriorityLabel">License Priority:</span> setting decides the order that devices are connected to the server. The server will try to connect cameras with a higher priority before cameras with lower priority. If the server does not have enough camera channel licenses, low priority devices may not be connected. A camera channel license is only used when the device actually connects to the server.</p></li>
+                                <li value="7">If the camera supports a secure connection, the  <b><span class="UI_ACCConnectionFormSupportsSecureConnection">Device Control:</span></b> drop down list is displayed. Select one of the following options:
+			<p clas="note" class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>The setting may not be displayed if the camera only supports one of the  options.</p><ul><li value="1"><b><span class="UI_ACCConnectionFormSupportsSecureConnectionSecure">Secure</span></b> — The system will protect and secure the camera's configuration and login details. This option is selected by default. </li><li value="2"><b><span class="UI_ACCConnectionFormSupportsSecureConnectionUnsecure">Unsecure</span></b> — The camera's configuration and login details will not be secured and may be accessible to users with unauthorized access.
+				<p>Cameras with a secure connection are identified with the<img src="../../../../0Graphics/ACC/LockOverlay.png" /> icon in the <span class="UI_ACCConnectionFormDeviceListStatusTitle">Status</span> column.</p></li></ul></li>
+                                <li value="8">
+				If it is not displayed, click <img src="../../../../0Graphics/ACC/Expand_icon.png" alt="" style="border: none;" border="0" /> to display the <span class="UI_ACCClusterSiteViewSetupText">Site View Editor</span> and choose where the device appears in the System Explorer.<![CDATA[
+				]]><ul><li value="1">In the <img src="../../../../0Graphics/ACC/Cluster.png" />site directory, drag devices up and down the right pane to set where it is displayed.</li><li value="2">If your site includes <img src="../../../../0Graphics/ACC/folder-site.png" />folders, select a location for the device in the left pane. The right pane updates to show what is stored in that directory.</li><li value="3">If you are connecting multiple devices at the same time, the selected devices must be assigned to the same location.</li></ul><p class="Tip" data-mc-autonum="&lt;b&gt;Tip: &lt;/b&gt;"><span class="autonumber"><span><b>Tip: </b></span></span>If the site you want is not listed, you may need to connect the device to a different server. Make sure the selected server is connected to the site you want.</p></li>
+                                <li value="9">Click <b><span class="UI_ACCOkButtonText">OK</span></b>.</li>
+                                <li value="10">If the device is password protected, the <span class="UI_ACCConnectionFormAuthTitle">Device Authentication</span> dialog box appears. Enter the device's username and 
+	 password, then click <b><span class="UI_ACCOkButtonText">OK</span></b>.</li>
+                            </ol>
+                            <div class="MCRelationshipsProxy_0">
+                                <p class="taskHeading_task_0">Related Tasks</p>
+                                <p class="taskItem_task_0"><a href="Failover_Connections.htm">Failover Connections</a>
+                                </p>
+                            </div>
+                            <p>&#160;</p>
+                            <p>  <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

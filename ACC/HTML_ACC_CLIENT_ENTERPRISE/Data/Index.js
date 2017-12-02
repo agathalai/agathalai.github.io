@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Index_Chunk',terms:[{t:'collaborate',c:0,$:1},{t:'log in',c:0,$:1},{t:'log out',c:0,$:1},{t:'shared View',c:0,$:1},{t:'Status',c:0,$:0},{t:'System Explorer',c:0,$:1},{t:'views',c:0,$:1},{t:'Virtual Matrix',c:0,$:1}]});

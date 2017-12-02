@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Site Settings|External Notifications">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Enabling Central Station Monitoring</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Enabling Central Station Monitoring</h1>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;" data-mc-conditions="General.Online"><span class="autonumber"><span><b>NOTE: </b></span></span><b>Standard and Enterprise Edition only.</b>
+                            </p>
+                            <p>If you use a central station monitoring service, you can set up  the <span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> System to communicate with your central monitoring service.</p>
+                            <p>Consult with your central monitoring service for the correct settings for each field.</p>
+                            <ol style="list-style-type: decimal;">
+                                <li value="1">In the site <span class="UI_ACCSetupWindowTitleText">Setup</span> tab, click 
+	 <img src="../../../../0Graphics/ACC/Email.png" />. 
+				<p>The <span class="UI_ACCExternalNotificationSetupText">External Notifications</span> dialog box is displayed.</p></li>
+                                <li value="2">Select the <span class="UI_ACCCentralMonitoringTabTitle">Central Station Monitoring</span> tab. 
+			</li>
+                                <li value="3">Select the <b><span class="UI_ACCCentralMonitoringEnableLabel">Enable Central Station Monitoring</span></b> check box to enable this service.</li>
+                                <li value="4">Complete the SMTP fields with the information provided by your central monitoring service. 
+			<p>The central monitoring service will typically provide you with a specific name, email and SMTP details to identify you in their system.</p></li>
+                                <li value="5">To periodically check the state of the connection to the central monitoring service, select a time interval from the <b><span class="UI_ACCCentralMonitoringHeartbeatIntervalLabel">Minimum Heartbeat Interval:</span></b>  drop down list. 
+			<p>The selected amount of time must pass before a confirmation message is sent. The confirmation message is only sent if no other notifications are sent during the set time period.</p><p>This feature allows the system to automatically send a message to the central monitoring service to confirm that the systems are still connected and no issues have occurred. </p><p>If the central monitoring service requires the system to send a heartbeat test message at specific intervals, select the option that is equal to half the requested interval. For example, if the central monitoring service requires a confirmation message be sent once a day, assign the system to send a message every 12 hours.</p></li>
+                                <li value="6">From the <b><span class="UI_ACCCentralMonitoringHeartbeatAttachment">Attachment:</span></b> options, select one of the following:<p>Attaching an image or video of an event allows the central monitoring service to verify alarms and take the appropriate actions.</p><ul><li value="1"><b><span class="UI_ACCGenericXmlCfgNoAttachment">None</span></b> — The system sends a message to the central monitoring service without any attachments.</li><li value="2"><b><span class="UI_ACCGenericXmlCfgAttachClip">Video Clip for Device Events</span></b> —  The system automatically exports a video of the event in H.264 format, and attaches it in the message. 
+				</li><li value="3"><b><span class="UI_ACCGenericXmlCfgAttachImage">Image for Device Events</span></b> — The system takes a snapshot of the event and attaches it in the message.</li></ul><p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>To send a message to the central monitoring service, the rule action for an event must be setup to <b><span class="UI_ACCRuleActionSendExternalNotificationTitle">Send notification to Central Monitoring Station</span></b>.</p></li>
+                                <li value="7">Click <b><span class="UI_ACCOkButtonText">OK</span></b> to save your changes.</li>
+                                <li value="8">Create rules that will notify the central monitoring service of specific events. <ul><li value="1">On the <span class="UI_ACCRuleWizardActionPaneTitle">Select Rule Action(s)</span> page, make sure the <b><span class="UI_ACCRuleActionSendExternalNotificationTitle">Send notification to Central Monitoring Station</span></b> option is selected. This ensures the central monitoring service is notified of the rule event.</li></ul><p data-mc-conditions="Primary.Client_Enterprise,Primary.Client_Standard">For more information about creating rules, see <a href="../Rules/adding_a_rule.htm" class="MCXref xref" xrefformat="{para}">Adding a Rule</a>. </p></li>
+                            </ol>
+                            <p class="tip" data-mc-autonum="&lt;b&gt;Tip: &lt;/b&gt;"><span class="autonumber"><span><b>Tip: </b></span></span>The system <span class="UI_ACCEmailSetupNotificationTabTitle">Email Notifications</span> feature works separately from the <span class="UI_ACCCentralMonitoringTabTitle">Central Station Monitoring</span> feature, but you can configure the rules to send you the same notifications as the central monitoring service. When you create rules for the central monitoring service, include the <b><span class="UI_ACCRuleActionSendEmailTitle">Send email</span></b> option on the <span class="UI_ACCRuleWizardActionPaneTitle">Select Rule Action(s)</span> page. You can configure the rule to send you details that are not included in the central monitoring notification.</p>
+                            <p>&#160;</p>
+                            <p> <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

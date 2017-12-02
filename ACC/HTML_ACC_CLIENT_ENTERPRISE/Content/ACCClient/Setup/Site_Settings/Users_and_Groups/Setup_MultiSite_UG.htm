@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Site Settings|Corporate Hierarchy">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Managing Users and Groups Across Multiple Sites</title>
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Managing Users and Groups Across Multiple Sites</h1>
+                            <p>
+			When you have a large organization, you need detailed user access permissions to manage how the system is used each day.
+		</p>
+                            <p>
+			The <span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> system offers several features to help you manage large organizations:
+		</p>
+                            <ul type="square">
+                                <li value="1"><b>Active Directory Support:</b> The system can synchronize with Windows Active Directory to quickly import large number of users. For more information, see <a href="Importing_AD_Groups.htm" class="MCXref xref" xrefformat="{para}">Importing Active Directory Groups</a>.
+			</li>
+                                <li value="2"><b><span class="UI_ACCGroupPermissionsGroupBoxLabel">Group Privileges:</span></b> Users must be added to at least one group that defines what they can access within the system. This includes system features and 
+				specific devices. Only users with <b><span class="UI_ACCGroupPermissionSetupServerUsersAndGroups">Setup user and group settings</span></b> permission are able to edit other users and groups at all. For more information, see 
+<a href="Adding_Groups.htm" class="MCXref xref" xrefformat="{para}">Adding Groups</a>.<p>
+					To help you manage groups across the system, here are some features to help you maintain secure group access: 
+				</p><ul><li value="1"><b><span class="UI_ACCRankHierarchySetupRankLabel">Corporate Hierarchy</span>:</b> Create a <span class="UI_ACCRankHierarchySetupRankLabel">Corporate Hierarchy</span> to determine which groups have control over other groups. For more information, see 
+							<a href="../Corporate_Hierarchy/corporate_hierarchy.htm" class="MCXref xref" xrefformat="{para}">Corporate Hierarchy</a>.</li><li value="2"><p><b>Site Families:</b> You can connect multiple child sites to an Enterprise parent site. You can then control group settings for all of the sites from the parent site. For more information, see 
+							<a href="../Corporate_Hierarchy/parent_child_site_setup.htm" class="MCXref xref" xrefformat="{para}">Connecting Site Families</a>.
+						</p></li></ul></li>
+                            </ul>
+                            <h2>Best Practices</h2>
+                            <p>
+			Listed here are some recommendations for maintaining an efficient and secure system:
+		</p>
+                            <ul type="square">
+                                <li value="1">Use a strong administrator password. The default administrator user has control over all aspects of the system, so adding a strong password to the account is highly recommended.</li>
+                                <li value="2">
+				Create a secondary user for the Administrator group. It is recommended that you do not use the default administrator user account, instead create a secondary user account with the same privileges so that 
+				the default administrator user can still be used in the rare event that the system becomes compromised. 
+			</li>
+                            </ul>
+                            <p class="Tip" data-mc-autonum="&lt;b&gt;Tip: &lt;/b&gt;"><span class="autonumber"><span><b>Tip: </b></span></span>
+			If you forget your administrator user password, the alternate administrator user can be used to reset the password. &#160;This will avoid the need for a system-wide reset to restore the default administrator 
+			user password.
+		</p>
+                            <ul type="square">
+                                <li value="1">
+				Assign a rank to all groups. <span class="UI_ACCGroupRankUnranked">Unranked</span> groups have access over all other groups, so it is recommended that any groups with users be assigned a rank to further 
+				define their access privileges. The default Administrators group is <span class="UI_ACCGroupRankUnranked">Unranked</span> by default, but you can create a new group with same permissions and assign a rank to 
+				the new group.
+For more information, see <a href="../Corporate_Hierarchy/corporate_hierarchy.htm" class="MCXref xref" xrefformat="{para}">Corporate Hierarchy</a>.</li>
+                                <li value="2">
+				Limit the number of users in the default Administrator group. The Administrator group is the oversight group that should only be used for system maintenance. For example, users in the default Administrator 
+				group are the only ones who can see or remove private bookmarks made by all users.
+			</li>
+                                <li value="3">
+				Always check that the device access permissions are correct after a child site has been connected to a parent site. Ranked groups from the parent site whose rank is above or equal to the child site retain their permissions on the child site. These groups automatically gain access to all devices, maps, saved Views, and web pages on the child&#160;site.		</li>
+                                <li value="4">
+				Always check group access permissions after a new server has been merged into the site. 
+				<ul><li value="1"><p>
+							If groups have the same name, the site settings are used and the users from both the site and the server are added to the group.
+						</p></li><li value="2"><p>
+							Groups that are new to the site automatically get access to all the devices in the site.
+						</p></li><li value="3"><p>
+							Groups that are new to the server automatically get access to all the devices that are connected to the server.
+						</p></li></ul></li>
+                                <li value="5">
+				Always check group access permissions after new users and groups settings are imported into the site. 
+				<ul><li value="1">
+						If groups have the same name, the import settings are used and the users from both the import file and the current site are added to the group.
+					</li><li value="2"><p>
+							Groups added from the import file automatically gain access to all the new devices that were added since the settings were exported.
+						</p></li></ul></li>
+                            </ul>
+                            <p>&#160;</p>
+                            <p> <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

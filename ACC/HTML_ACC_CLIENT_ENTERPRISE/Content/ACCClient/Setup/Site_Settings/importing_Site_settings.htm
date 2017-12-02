@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration|Site Settings">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Restoring System Settings</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <script src="../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Restoring System Settings</h1>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>You cannot restore settings from a 5.2.2 or earlier server through this version of the <span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> Client software. </p>
+                            <p>
+			If you have a backup <span class="CompanyInfoCompanyName">Avigilon</span> Settings File (<span class="filepath">.avs</span>), you can restore the settings as needed.
+ You would typically restore settings after a server has been replaced in the site, or when setting up several independent sites that require similar settings.	</p>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>Make sure the new site is licensed to run the same features as the server that generated the backup file. If not, you will lose access to features that were included in the backup file but are not supported by the new site.</p>
+                            <p>Be aware that when you restore server settings, all existing settings are overwritten by the restored settings. When you restore site settings, the restored settings are merged with any existing settings.	 </p>
+                            <ol style="list-style-type: decimal;">
+                                <li value="1">In the site <span class="UI_ACCSetupWindowTitleText">Setup</span> tab, click <img src="../../../0Graphics/ACC/ImportSettings.png" />.</li>
+                                <li value="2">In the following dialog box, find and select the <span class="filepath">.avs</span> file that you want to restore.</li>
+                                <li value="3">If the backup file is encrypted, enter the required password in the following dialog box. You will not be asked to provide a password if the file is not encrypted.</li>
+                                <li value="4">Select the settings you want to restore. 
+			<p>By default, the system will select the recommended option for you.</p><ul><li value="1"><b><span class="UI_ACCRestoreSettingsSiteAndServer">Restore site and server settings</span></b> — select this option to restore all settings in the site and the selected server. 
+				<p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>If the server is part of a multi-server site, do not select this option because the site settings are maintained by the other connected servers.</p></li><li value="2"><b><span class="UI_ACCRestoreSettingsServerOnly">Restore server settings</span></b> — select this option to restore all settings to the selected server.</li><li value="3"><b><span class="UI_ACCRestoreSettingsCustom">Use custom settings </span></b> — click <b><span class="UI_ACCRestoreSettingsCustomButton">Choose Settings</span></b> to specify the settings that you want to restore.
+				<p>Be careful when selecting the custom settings because some settings have dependencies that may cause unexpected issues if they are not supported by the server.</p></li></ul></li>
+                                <li value="5">Select the server that you want to restore the settings to. 
+			<p>It is recommended that you only select servers in the <span class="UI_ACCRestoreSettingsCleanServers">Recommended Servers</span> list. Servers in this list do not have any existing device connections. Restoring settings to a server that is not in this list may overwrite existing device connection details or cause the system to exceed its license and processing limits.</p></li>
+                                <li value="6">Click <b><span class="UI_ACCOkButtonText">OK</span></b>. 
+				</li>
+                            </ol>
+                            <p>If you restored the site settings, the settings are merged:</p>
+                            <ul>
+                                <li value="1">Unique settings are added to the site.</li>
+                                <li value="2">If the settings are identical, only the current site version is kept.</li>
+                                <li value="3">If an import setting and a site setting have the same name but are configured differently, the import setting is added to the site and renamed in this format: <i>&lt;setting name&gt;</i> (Import), like Email1 (Import).<ul data-mc-conditions="Primary.Client_Enterprise,Primary.Client_Standard"><li value="1">In the rules engine, the <span class="UI_ACCRuleSystemDefaultNameShowToUsers">Notify users (default)</span> rule is always added and renamed, even if the settings are the same. The import version is enabled and the site version is disabled by default. </li></ul></li>
+                                <li value="4">The two site Views are combined. <ul><li value="1">The import settings take precedence. <p>For example, a map from the import file is already used in the site. Currently, the map is stored at the top of the site View. But in the import file, the map is kept at the bottom. After the import settings are merged with the current site settings, the map is moved to the bottom.</p></li><li value="2">Unorganized elements from the import file are listed at the bottom of the site View. </li></ul></li>
+                                <li value="5">User permission groups are merged.</li>
+                                <ul>
+                                    <li value="1">If groups have the same name, the import settings are used and the users from both the import file and the current site are added to the group.</li>
+                                    <li value="2">If the site supports new permissions not available in the import file, the new permissions are disabled by default for the imported group.</li>
+                                    <li value="3">Default group settings (i.e. <span class="UI_ACCGroupAdministratorDefaultName">Administrators</span>, <span class="UI_ACCGroupPowerUserDefaultName">Power Users</span>, <span class="UI_ACCGroupRestrictedUserDefaultName">Restricted Users</span>, <span class="UI_ACCGroupStandardUserDefaultName">Standard Users</span>) will use the default site settings for permissions not available in the import file.</li>
+                                    <li value="4">Groups added from the import file automatically gain access to all the new devices that were added since the settings were exported.</li>
+                                </ul>
+                                <li value="6">Users with the same name will use the import settings, including passwords. </li>
+                            </ul>
+                            <p>&#160;</p>
+                            <p> <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

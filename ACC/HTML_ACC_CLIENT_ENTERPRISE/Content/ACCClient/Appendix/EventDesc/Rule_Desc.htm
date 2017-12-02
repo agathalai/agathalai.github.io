@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Getting Started|For More Information|Appendix|Detailed Feature Descriptions">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Rule Event and Action Descriptions</title>
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Simple.css" rel="stylesheet" />
+        <script src="../../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1>Rule Event and Action Descriptions</h1>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;" data-mc-conditions="General.Online"><span class="autonumber"><span><b>NOTE: </b></span></span><b>Standard and Enterprise Edition only.</b>
+                            </p>
+                            <p>The following tables describe the trigger events 
+ and actions that are available when you set up a rule. For more information 
+ about setting up a rule, see <a href="../../Setup/Site_Settings/Rules/adding_a_rule.htm" class="MCXref xref">Adding a Rule</a>.</p>
+                            <h2>Rule Events</h2>
+                            <p>Rule events are the events that trigger a rule.</p>
+                            <table class="TableStyle-Simple" cellspacing="0" style="mc-table-style: url('../../../Resources/TableStyles/Simple.css');width: 100%;">
+                                <col style="width: 10.613%;" class="TableStyle-Simple-Column-Column1" />
+                                <col style="width: 44.177%;" class="TableStyle-Simple-Column-Column1" />
+                                <col style="width: 45.21%;" class="TableStyle-Simple-Column-Column1" />
+                                <thead>
+                                    <tr class="TableStyle-Simple-Head-Header1">
+                                        <th class="TableStyle-Simple-HeadE-Column1-Header1" colspan="2">Rule Events</th>
+                                        <th class="TableStyle-Simple-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleTriggerServerCategory">Server Events</span> <![CDATA[ ]]></p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1"> <![CDATA[ ]]></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerServerStartTitle">Server application starting up</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server software starts 
+		 up.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerServerShutdownNormalTitle">Server application shutting down</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server software shuts 
+		 down.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerServerShutdownBadTitle">Server application terminated unexpectedly</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server software shuts 
+		 down unexpectedly.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerLowResourcesTitle">Server application low on resources</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server software is 
+		 low on memory or storage.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerExternalPluginTitle">Server application installation error</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server software was 
+		 installed incorrectly.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerLicenseExpirySoonTitle">License expires soon</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server software license 
+		 expires soon.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerLicenseExpiredTitle">License expired</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server software license 
+		 has expired.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerDbRecoveredTitle">Database error</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server database has 
+		 generated an error.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageInitErrorTitle">Data initialization error</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server database has 
+		 generated an error during initialization.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageVolumeFailedTitle">Data volume failed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data volume 
+		 has failed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageVolumeRestoredTitle">Data volume recovered</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data volume 
+		 was recovered.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageLowDiskSpaceTitle">Data volume size reduced</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data volume 
+		 size was reduced.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageWriteErrorTitle">Data write error</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server generated an 
+		 error while writing data.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageUpgradeStartedTitle">Data upgrade started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data upgrade 
+		 has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageUpgradeEndedTitle">Data upgrade completed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data upgrade 
+		 has completed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageUpgradeFailedTitle">Data upgrade failed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data upgrade 
+		 has failed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageRecoveryStartedTitle">Data recovery started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data recovery 
+		 has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageRecoveryEndedTitle">Data recovery completed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data recovery 
+		 has completed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageRecoveryFailedTitle">Data recovery failed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server data recovery 
+		 has failed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerStorageBookmarkSaveFailedTitle">Bookmark save failed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A bookmark failed 
+		 to save.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerNetworkAddedTitle">Network connection found</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server network connection 
+		 was found.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerNetworkRemovedTitle">Network connection lost</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server network connection 
+		 was lost.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerEmailErrorTitle">Email send error</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An error was generated while sending an email 
+		 notification.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerHardwareErrorTitle">Server hardware event</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A server hardware error 
+		 has occurred.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerBackupStartedTitle">Archiving started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server backup has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerBackupEndedTitle">Archiving completed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server backup has completed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerBackupFailedTitle">Archiving interrupted</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server backup has failed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerServerConnectionLostTitle">Server connection lost</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Server connection to 
+		 the site was lost.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAnalyticsQueueFullTitle">Analytics server queue full</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Video analytics service is unable to process all the objects detected by the system. This typically occurs if the system detects a large number of objects in a short period of time.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAnalyticsConnectionLostTitle">Analytics server connection lost</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Server is unable to communicate with the video analytics service to perform <span class="CompanyInfoCompanyName">Avigilon</span> <span class="UI_ACC!AnalyticsAppearanceSearch">Appearance Search</span> queries.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleTriggerDeviceCategory">Device Events</span> <![CDATA[ ]]></p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerDeviceConnectedTitle">Connection created</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device has connected 
+		 to a server.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerDeviceDisconnectedTitle">Connection removed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device has disconnected 
+		 from a server.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerFailoverStartedTitle">Connection created to standby server</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device has connected 
+		 to a standby server.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerFailoverStoppedTitle">Connection removed from standby server</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device has disconnected 
+		 from a standby server.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerDeviceLostTitle">Connection failure</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device connection 
+	has	 failed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerDeviceRecoveredTitle">Connection restored</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device connection 
+		 has been restored.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerPacketsLostTitle">Network packet loss unacceptable</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device network 
+		 packet loss is unacceptable.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerPacketsRecoveredTitle">Network packet loss acceptable</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device network 
+		 packet loss is acceptable.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerMotionStartedTitle">Motion detection started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Motion detection 
+		 has started on a camera.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerMotionEndedTitle">Motion detection ended</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>Motion detection 
+		 has ended on a camera.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAnalyticsStartedTitle">Video analytics event started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A video analytics event has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAnalyticsEndedTitle">Video analytics event ended</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A video analytics event has ended.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerTamperingTitle">Tampering detected</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A video analytics camera or device has detected an unexpected change in the scene.</p> <![CDATA[ ]]></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerRecordingStartedTitle">Recording started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device recording has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerRecordingEndedTitle">Recording ended</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device recording 
+		 has ended.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerRecordingInterruptedTitle">Recording interrupted</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device recording 
+		 was interrupted.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerRecordingResumedTitle">Recording resumed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device recording 
+		 has resumed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerDigitalInputActivatedTitle">Digital input activated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device digital 
+		 input was activated.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerDigitalInputDeactivatedTitle">Digital input deactivated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device digital 
+		 input was deactivated.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerFwUpgradeStartTitle">Firmware upgrade started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device firmware 
+		 upgrade has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerFwUpgradeSuccessTitle">Firmware upgrade completed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device firmware 
+		 upgrade has been completed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerFwUpgradeFailedTitle">Firmware upgrade failed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A camera or device firmware 
+		 upgrade has failed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerObsoleteFirmwareTitle">Obsolete firmware detected</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">A camera or device is detected to be running obsolete firmware. The system is unable to perform an automatic upgrade.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerDeviceUserDefinedArbitraryEventStartedTitle">User-defined event started</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Customized third-party camera ONVIF event has started.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerDeviceUserDefinedArbitraryEventStoppedTitle">User-defined event ended</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Customized third-party camera ONVIF event has ended.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerPresenceStartedTitle">Presence detected</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">A presence has been detected in range of an Avigilon Presence Detector sensor.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerPresenceDwellStartedTitle">Presence dwell time exceeded</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">A continuous presence has been detected in range of an Avigilon&#160;Presence Detector sensor for longer than the configured dwell time.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerPresenceDwellStoppedTitle">Presence dwell ended</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">The presence detected for longer than the configured dwell time by an Avigilon&#160;Presence Detector sensor has ended. </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerPresenceStoppedTitle">Presence ended</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">The presence detected is no longer in range of the Avigilon Presence Detector sensor. If the presence was longer than the configured dwell time, a <span class="UI_ACCRuleTriggerPresenceDwellStoppedTitle">Presence dwell ended</span> event will also be triggered.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleTriggerUserCategory">User Events</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserLoginTitle">User login</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has logged in.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserLogoutTitle">User logout</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has logged out.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserServerSettingTitle">Server setting changed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has changed the 
+		 server settings.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserSiteSettingTitle">Site setting changed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has changed the 
+		 site settings.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserDeviceSettingTitle">Device setting changed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has changed the 
+		 camera or device settings.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserDeviceConnectedTitle">Device connected</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has connected a 
+		 camera or device to a server.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserDeviceDisconnectedTitle">Device disconnected</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has disconnected 
+		 a camera or device from a server.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserDigitalOutputTriggeredTitle">Digital output triggered</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has manually triggered 
+		 a digital output.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserBookmarkAddTitle">Bookmark added</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has added a bookmark.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserBookmarkUpdateTitle">Bookmark updated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has updated a bookmark.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserBookmarkDeleteTitle">Bookmark deleted</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has deleted a bookmark.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserPtzActivatedTitle">PTZ moved</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has moved a PTZ 
+		 camera.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserPtzIdleTitle">PTZ idle</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has left a PTZ 
+		 camera idle.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserExportTitle">Export performed</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has performed a 
+		 video export.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserSpeakerActivatedTitle">Speaker activated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user is broadcasting 
+		 audio through  camera or device speakers.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserSpeakerDeactivatedTitle">Speaker deactivated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has stopped broadcasting 
+		 audio.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserVirtualMatrixMonitorOpenedTitle">Virtual matrix monitor opened</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has opened a Virtual 
+		 Matrix monitor in the View.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserMapCreateTitle">Map added</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has added a new 
+		 map.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserMapModifyTitle">Map updated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has updated a map.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserMapDeleteTitle">Map deleted</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has deleted a map.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserSavedViewCreateTitle">View added</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has added a saved View.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserSavedViewModifyTitle">View updated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has updated a saved 
+		 View.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserSavedViewDeleteTitle">View deleted</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has deleted a saved 
+		 View.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserWebLinkCreateTitle">Web Page added</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has added a new 
+		 web page.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserWebLinkModifyTitle">Web Page updated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has updated a web 
+		 page.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserWebLinkDeleteTitle">Web Page deleted</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has deleted a web 
+		 page.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserSiteViewModifyTitle">Site View updated</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has updated the 
+		 way cameras are organized in the System Explorer.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerUserMacroTitle">Custom keyboard command triggered</span> <![CDATA[ ]]></p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A user has triggered a 
+		 custom keyboard command.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleTriggerAlarmCategory">Alarm Events</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAlarmAcknowledgedTitle">Alarm acknowledged</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An alarm has been acknowledged.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAlarmAutoAcknowledgedTitle">Alarm auto acknowledged</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An alarm has been acknowledged 
+		 automatically.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAlarmTriggeredTitle">Alarm triggered</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An alarm has been triggered.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAlarmAssignedTitle">Alarm assigned</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An alarm has been assigned 
+		 to a user.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAlarmUnassignedTitle">Alarm unassigned</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An alarm has been unassigned 
+		 from a user.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerAlarmPurgedTitle">Alarm purged</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An alarm has been purged.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleTriggerPointOfSaleCategory">POS Transaction Events</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerTTxTransactionStartedTitle">POS transaction started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A POS transaction has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerTTxTransactionEndedTitle">POS transaction ended</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A POS transaction has ended.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerTTxWatchItemMatchTitle">POS transaction exception</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A POS transaction exception 
+		 has occurred.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleTriggerLprCategory">License Plate Recognition Events</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerLicensePlateInSightTitle">License plate detection started</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>License plate detection 
+		 has started.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerLicensePlateOutOfSightTitle">License plate detection ended</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>License plate detection 
+		 has ended.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleTriggerLicensePlateMatchTitle">License plate watchlist match</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A license plate on the 
+		 LPR Watch List has been detected.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1" colspan="3"><span class="UI_ACCRuleTriggerAccessControlCategory">Access Control Events</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;<p>&#160;</p></td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAccessControlDoorAccessDeniedTitle">Door access denied</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reasons:<ul><li value="1">Unknown card</li><li value="2">Expired card attempt</li><li value="3">Valid card at an unauthorized reader</li><li value="4">Deactivated card attempt</li><li value="5">Invalid card schedule</li><li value="6">Invalid PIN code has been entered</li><li value="7">Invalid facility code</li><li value="8">Valid card with an incorrect issue level</li><li value="9">Antipassback error</li><li value="10">Deny count exceeded</li><li value="11">Invalid forward card read</li><li value="12">Invalid reverse card read</li><li value="13">Attempt to open locked door</li><li value="14">Two card control violation - second card not presented</li><li value="15">Access denied - occupancy limit reached</li><li value="16">Access denied - area disabled</li><li value="17">Invalid card - before activation</li><li value="18">Invalid facility code ext</li><li value="19">Invalid card format</li><li value="20">Invalid PIN only request</li><li value="21">Door mode does not allow card</li><li value="22">Door mode does not allow unique PIN</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;<p>&#160;</p></td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAccessControlDoorAccessGrantedTitle">Door access granted</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reasons:<ul><li value="1">Local grant</li><li value="2">Opened unlocked door</li><li value="3">Local grant - APB error - not used</li><li value="4">Local Grant - APB error - used</li><li value="5">Facility code grant - not used</li><li value="6">Local grant - not used</li><li value="7">Facility code grant</li><li value="8">Local grant use pending</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAccessControlDoorClosedTitle">Door closed</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reason:<ul><li value="1">Door closed</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAccessControlDoorForcedTitle">Door forced</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reason:<ul><li value="1">Door forced</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAccessControlDoorForcedNormalTitle">Forced door closed</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reason:<ul><li value="1">Forced door returns to closed</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAccessControlDoorHeldOpenTitle">Door held open</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reason:<ul><li value="1">Door held open</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleTriggerAccessControlDoorHeldOpenNormalTitle">Held door closed</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reason:<ul><li value="1">Held open door returns to closed</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;<span class="UI_ACCRuleTriggerAccessControlDoorOpenedTitle">Door opened</span></td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reason:<ul><li value="1">Door opened</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;<span class="UI_ACCRuleTriggerAccessControlDuressTitle">Door duress</span></td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">Possible Reasons:<ul><li value="1">Duress detected - access denied</li><li value="2">Local grant - duress - Not Used</li><li value="3">Local Grant - Duress - Used</li></ul></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyB-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyB-Column1-Row1">&#160;<span class="UI_ACCRuleTriggerAccessControlRexTitle">Door request to exit</span></td>
+                                        <td class="TableStyle-Simple-BodyA-Column1-Row1">Possible Reasons:<ul><li value="1">Request to exit Pressed, Non-verified</li><li value="2">Request to exit Pressed, Door not used</li><li value="3">Request to exit Pressed, Door used</li><li value="4">Request to exit Pressed, Use Pending</li><li value="5">Host Request to exit, Non-verified</li><li value="6">Host Request to exit, Door not used</li><li value="7">Host Request to exit, Door used</li><li value="8">Host Request to exit, Use Pending</li></ul></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2>Rule Actions</h2>
+                            <p>Rule actions are the response to a rule event.</p>
+                            <table class="TableStyle-Simple" cellspacing="0" style="width: 100%;mc-table-style: url('../../../Resources/TableStyles/Simple.css');">
+                                <col style="width: 10.613%;" class="TableStyle-Simple-Column-Column1" />
+                                <col style="width: 44.177%;" class="TableStyle-Simple-Column-Column1" />
+                                <col style="width: 45.21%;" class="TableStyle-Simple-Column-Column1" />
+                                <thead>
+                                    <tr class="TableStyle-Simple-Head-Header1">
+                                        <th class="TableStyle-Simple-HeadE-Column1-Header1" colspan="2">Rule Actions</th>
+                                        <th class="TableStyle-Simple-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleActionUserNotificationCategory">User Notification Actions</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionMsgUsersTitle">Display on-screen message</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An on-screen message is 
+		 displayed about the rule event.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionSendEmailTitle">Send email</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An email notification is 
+		 sent about the rule event to the selected recipient(s).</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionSendExternalNotificationTitle">Send notification to Central Monitoring Station</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An email notification is sent to the central monitoring station.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionPlaySoundTitle">Play a sound</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A notification sound is 
+		 played within the Client when the rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleActionMonitoringCategory">Monitoring Actions</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">&#160;</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionOpenLiveStreamTitle">Start live streaming</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The linked live video stream 
+		 is displayed when the rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionCreateBookmarkTitle">Create Bookmark</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The recorded video of the 
+		 rule event is bookmarked.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionOpenViewTitle">Open a saved view</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The selected saved View 
+		 is automatically displayed.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1" data-mc-conditions="Primary.Client_Enterprise">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionMonitorOpenLiveStreamTitle">Start live streaming on a virtual matrix monitor</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The live stream from the selected camera 
+		 is automatically displayed on the selected Virtual Matrix monitor.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1" data-mc-conditions="Primary.Client_Enterprise">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionMonitorOpenMapTitle">Open a map on a virtual matrix monitor</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The selected map is automatically displayed 
+		 on the selected Virtual Matrix monitor.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1" data-mc-conditions="Primary.Client_Enterprise">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionMonitorOpenWebTitle">Open a web page on a virtual matrix monitor</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The selected web page is automatically 
+		 displayed on the selected Virtual Matrix monitor.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleActionDeviceCategory">Device Actions</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionRebootDeviceTitle">Reboot device</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The camera or device reboots 
+		 when the rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionTriggerDigitalOutputTitle">Activate digital output</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>A digital output is triggered when the rule 
+		 event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleActionPTZCategory">PTZ Actions</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1"> <p>&#160;</p></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionPtzGoToPresetTitle">Go to Preset</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The selected PTZ camera moves to 
+		 the selected preset position when the rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">&#160;</td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><span class="UI_ACCRuleActionPtzGoToHomeTitle">Go to Home Preset</span>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">The selected PTZ camera moves to the home position when the rule event occurs.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionPtzRunPatternTitle">Run a Pattern</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The selected PTZ camera runs a selected pattern 
+		 when the rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionPtzSetAuxTitle">Set Auxiliary</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The selected PTZ camera starts the 
+		 selected auxiliary command when the rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionPtzClearAuxTitle">Clear Auxiliary</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The selected PTZ camera  ends the selected
+		 auxiliary command when the rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1" data-mc-conditions="Primary.Client_Enterprise">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleActionAlarmCategory">Alarm Actions</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1"> <p>&#160;</p></td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1" data-mc-conditions="Primary.Client_Enterprise">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionAlarmTriggerTitle">Trigger an alarm</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>An alarm is triggered when the rule event 
+		 occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1" data-mc-conditions="Primary.Client_Enterprise">
+                                        <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                            <p><span class="UI_ACCRuleActionAlarmAckTitle">Acknowledge an alarm</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                            <p>An alarm is acknowledged when the rule 
+		 event occurs.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h2>&#160;</h2>
+                            <h2>Rule Conditions</h2>
+                            <p>Rule conditions are the scenarios that must be met before the rule is triggered.</p>
+                            <table style="width: 100%;mc-table-style: url('../../../Resources/TableStyles/Simple.css');margin-left: auto;margin-right: auto;" class="TableStyle-Simple" cellspacing="0">
+                                <col style="width: 10.613%;" class="TableStyle-Simple-Column-Column1" />
+                                <col style="width: 44.177%;" class="TableStyle-Simple-Column-Column1" />
+                                <col style="width: 45.21%;" class="TableStyle-Simple-Column-Column1" />
+                                <thead>
+                                    <tr class="TableStyle-Simple-Head-Header1">
+                                        <th class="TableStyle-Simple-HeadE-Column1-Header1" colspan="2">Rule Condition</th>
+                                        <th class="TableStyle-Simple-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1" colspan="2">
+                                            <p><span class="UI_ACCRuleConditionDeviceCategory">Device Events</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><span class="UI_ACCRuleConditionDigitalInputIsActiveTitle">Digital input is active</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The rule is triggered if the connected digital input is active while the selected rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                            <p><span class="UI_ACCRuleConditionDigitalInputIsDeactivatedTitle">Digital input is not active</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyA-Column1-Row1">
+                                            <p>The rule is triggered if the connected digital input is inactive while the selected rule event occurs.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                            <p>  <![CDATA[ ]]></p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

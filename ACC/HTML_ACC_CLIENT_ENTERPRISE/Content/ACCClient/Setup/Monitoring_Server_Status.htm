@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="System Administration">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Monitoring Site Health</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/styles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/print-blue.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../Resources/TableStyles/Simple.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../Introduction/Client_Overview.htm" alt="Avigilon"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <div class="nocontent">
+                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                </div>
+                            </div>
+                            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_HTML5___Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                <div class="button-group-container-left">
+                                    <button class="button needs-pie print-button" title="Print">
+                                        <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                    </button>
+                                </div>
+                            </div>
+                            <h1><a name="kanchor4"></a>Monitoring Site Health</h1>
+                            <p>
+			To help you monitor the health of your site, you can access a quick overview in the <span class="UI_ACCServerStatusAuditPanelTitle">Site Health</span> tab.
+		</p>
+                            <ul>
+                                <li value="1">
+				In the <span class="UI_ACCNewTabToolTip">New Task</span> menu, click <img src="../../0Graphics/ACC/ReviewServerStatus.png" />.
+ 	The <span class="UI_ACCServerStatusAuditPanelTitle">Site Health</span> tab is displayed.	<ul style="list-style-type: circle;"><li value="1">To export a PDF copy of all the  site details, click  <b><span class="UI_ACCServeStatusAuditPanelExportToPdf">Export Site Report to PDF</span></b> at the bottom-right corner.</li></ul></li>
+                            </ul>
+                            <p>The status icons beside each site name identifies the overall health of the site. 
+		In the System Explorer, select a site to display the status of the connected servers. </p>
+                            <p>If your sites are configured into a family, you will be able to see the status of all child sites if you are logged into the parent site. If you are only logged into a child site, the parent site status is displayed as unknown.</p>
+                            <p>The following health symbols identify the status of each component in the <span class="CompanyInfoACC">ACC</span> software:</p>
+                            <ul>
+                                <li colspan="2" value="1">
+                                    <img src="../../0Graphics/ACC/Check.png" /> — the component is functioning normally.</li>
+                                <li colspan="2" value="2">
+                                    <img src="../../0Graphics/ACC/Warning.png" /> — the component requires your attention.</li>
+                                <li colspan="2" value="3">
+                                    <img src="../../0Graphics/ACC/Error.png" /> — the component is unavailable or offline.</li>
+                                <li colspan="2" value="4">
+                                    <img src="../../0Graphics/ACC/NoInfo.png" /> — the component status is unknown. </li>
+                            </ul>
+                            <p>Near the top of the tab, click any of the available filters to choose what type of information is displayed. By default, all available information is displayed. </p>
+                            <p>To help you find information from a specific server in a site, enter the name of the server in the search bar.</p>
+                            <p>Listed information includes:
+</p>
+                            <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/Simple.css');margin-left: auto;margin-right: auto;" class="TableStyle-Simple" cellspacing="0">
+                                <col class="TableStyle-Simple-Column-Column1" />
+                                <col class="TableStyle-Simple-Column-Column1" />
+                                <thead>
+                                    <tr class="TableStyle-Simple-Head-Header1">
+                                        <th class="TableStyle-Simple-HeadE-Column1-Header1">Feature</th>
+                                        <th class="TableStyle-Simple-HeadD-Column1-Header1">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1" colspan="2">
+                                            <p colspan="2">
+                                                <img src="../../0Graphics/ACC/Cluster.png" alt="" style="border: none;" border="0" /><b><span class="UI_ACCServerStatusClusterPanelTitle">Site Information:</span></b> At the top of the tab are details about the site. </p>
+                                            <p colspan="2">This information is not displayed if the <span class="CompanyInfoACC">ACC</span> ES HD Recorder or <span class="CompanyInfoACC">ACC</span> ES Analytics Appliance is functioning as an independent site.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><b><span class="UI_ACCLicenseViewerLicenseIdHeader">License Id</span></b>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">The ID used to identify the site in the <span class="CompanyInfoCompanyName">Avigilon</span> licensing server.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1"><b><span class="UI_ACCServerStatusAuditPanelVideoUsed">Site License Usage - Camera Connections:</span></b>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The number of connected cameras over the total number of licenses available in the site.</p>
+                                            <p>For example, 3/16 would indicate the site currently has 3 camera connections but is licensed for 16.</p>
+                                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>Cameras connected directly to an <span class="CompanyInfoACC">ACC</span> ES HD  Recorder or <span class="CompanyInfoACC">ACC</span> ES Analytics Appliance would not be listed in this count.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1" colspan="2">
+                                            <p colspan="2">
+                                                <img src="../../0Graphics/ACC/Server.png" /> <var>Server Name</var>: At the top of each pane is the name of the individual server in the site. Beside the name is the server status.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1" colspan="2">
+                                            <p>
+                                                <img src="../../0Graphics/ACC/Info.png" /> <b><span class="UI_ACCServerStatusAuditPanelGeneralInformation">General Information:</span></b> Information about the server in the site.
+</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelServerIP">Server IP:</span></b>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The server's IP address.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelProcessCPU">CPU Load of ACC Server:</span></b>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The percentage of server processing power that is used by the <span class="CompanyInfoCompanyName">Avigilon</span>&#160;<span class="CompanyInfoProductName">Control Center</span> Server software.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelActiveUsage">Memory usage of ACC Server:</span></b>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The amount of memory used by the <span class="CompanyInfoCompanyName">Avigilon</span>&#160;<span class="CompanyInfoProductName">Control Center</span> Server software.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelSpaceAvailable">System Available Memory:</span></b>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The amount of storage available for video recording.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelUpTimeSec">Up Time:</span></b>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>   The amount of time the server has been running since it was last rebooted.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelVideoUsed">Site License Usage - Camera Connections:</span></b> or </p>
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelServerVideoUsed">Server License Usage - Camera Connections:</span></b>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The number of cameras currently connected to the server over the total number of licenses available in the site.</p>
+                                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>Devices that do not generate video streams do not use camera licenses.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1" colspan="2">
+                                            <p>
+                                                <img src="../../0Graphics/ACC/NetworkAdapter.png" /> <b><span class="UI_ACCServerStatusAuditPanelNetworks">Network Adapters:</span></b> The networks that the server is connected to, including the IP address of the network connection, the network speed and the amount of data passing through the connection.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelAdapterName">Adapter Name</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The name of the network adapter that is connected to the server.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelLinkSpeed">Link Speed</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The maximum speed supported by the network adapter.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelNetworkIp">IP</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The IP address of the network adapter.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelIn">Incoming</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The speed of incoming data. This includes recording video.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelOut">Outgoing</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>  The speed of outgoing data. This includes video streaming to the Client software.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1" colspan="2">
+                                            <p>
+                                                <img src="../../0Graphics/ACC/Camera.png" /> <b><span class="UI_ACCServerStatusAuditPanelCameras">Devices:</span></b>   Information about the devices that are connected to this server.</p>
+                                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>If the device is disconnected, the device's details may still be displayed but the <span class="UI_ACCServerStatusAuditPanelCamerasCompression">Compression</span> column will be empty because there is no video streaming.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelCamerasGeneral">General</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>  The name, model number and location of the device.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelCamerasNetwork">Network</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>The IP and MAC addresses of the device.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelCamerasHardware">Hardware</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>  The serial number of the device.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p><b><span class="UI_ACCServerStatusAuditPanelCamerasCompression">Compression</span></b>:</p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">
+                                            <p>  The video compression rate, resolution, quality and images per second (ips) of video streamed from the device.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1" colspan="2">
+                                            <img src="../../0Graphics/ACC/AccessControl.png" /> <span style="font-weight: bold;font-style: normal;">Access Control Manager Appliance</span>: Information about the <span class="CompanyInfoAccessControlName">Access Control Manager</span> (<span class="CompanyInfoACM">ACM</span>) appliance that is connected to this site.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyE-Column1-Row1">
+                                            <p> <span style="font-weight: bold;font-style: normal;"><span class="UI_ACCServerStatusAccessControlSystemName">Appliance Name:</span></span></p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyD-Column1-Row1">The name of the <span class="CompanyInfoACM">ACM</span> appliance.</td>
+                                    </tr>
+                                    <tr class="TableStyle-Simple-Body-Row1">
+                                        <td class="TableStyle-Simple-BodyB-Column1-Row1">
+                                            <p style="font-weight: bold;font-style: normal;"><span class="UI_ACCServerStatusAccessControlSystemNetworkIP">IP:</span>
+                                            </p>
+                                        </td>
+                                        <td class="TableStyle-Simple-BodyA-Column1-Row1">The IP&#160;address of the <span class="CompanyInfoACM">ACM</span>&#160;appliance.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&#160;</p>
+                            <p> </p>
+                            <p>&#160;</p>
+                            <p class="Copyright"><span class="CompanyInfoCompanyName">Avigilon</span> <span class="CompanyInfoProductName">Control Center</span> 6.6 | <span class="CompanyInfoRevised">20170922</span></p>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>
