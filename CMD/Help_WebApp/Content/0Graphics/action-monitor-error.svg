@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="action-monitor-error.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>action-monitor-error</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1342"
+     inkscape:window-height="951"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-1.1694915"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="action-monitor-error" />
+  <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">action-monitor-error</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <g
+     id="Page-1"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+     transform="translate(0,-4)">
+    <g
+       id="action-monitor-error">
+      <path
+         d="m 16.088729,14.166667 -2.071254,-3.45209 c -0.04222,-0.07037 -0.101124,-0.129273 -0.171498,-0.171498 -0.23679,-0.142074 -0.54392,-0.06529 -0.685995,0.171498 L 9.9887285,16 h -4.4 c -0.2761424,0 -0.5,0.223858 -0.5,0.5 0,0.276142 0.2238576,0.5 0.5,0.5 h 3.8 l -2.4,4 h -2.9 c -1.1045695,0 -2,-0.895431 -2,-2 V 9 c 0,-1.1045695 0.8954305,-2 2,-2 H 14.088729 c 1.104569,0 2,0.8954305 2,2 z M 5.5887285,10 c -0.2761424,0 -0.5,0.223858 -0.5,0.5 0,0.276142 0.2238576,0.5 0.5,0.5 h 6.0000005 c 0.276142,0 0.5,-0.223858 0.5,-0.5 0,-0.276142 -0.223858,-0.5 -0.5,-0.5 z m 0,3 c -0.2761424,0 -0.5,0.223858 -0.5,0.5 0,0.276142 0.2238576,0.5 0.5,0.5 h 3 c 0.276142,0 0.5,-0.223858 0.5,-0.5 0,-0.276142 -0.223858,-0.5 -0.5,-0.5 z m 7.7821055,0.387367 c 0.02245,-0.03991 0.05542,-0.07288 0.09533,-0.09533 0.120339,-0.06769 0.272767,-0.02501 0.340458,0.09533 l 4.072539,7.240068 c 0.02105,0.03742 0.03211,0.07963 0.03211,0.122565 0,0.138071 -0.111928,0.25 -0.25,0.25 H 9.5161955 c -0.04293,0 -0.08515,-0.01106 -0.122565,-0.03211 -0.12034,-0.06769 -0.16302,-0.22012 -0.09533,-0.340459 L 13.370839,13.387363 Z M 13.588729,16 c -0.276142,0 -0.5,0.223858 -0.5,0.5 V 18 c 0,0.276142 0.223858,0.5 0.5,0.5 0.276142,0 0.5,-0.223858 0.5,-0.5 v -1.5 c 0,-0.276142 -0.223858,-0.5 -0.5,-0.5 z m 0,3 c -0.276142,0 -0.5,0.223858 -0.5,0.5 0,0.276142 0.223858,0.5 0.5,0.5 0.276142,0 0.5,-0.223858 0.5,-0.5 0,-0.276142 -0.223858,-0.5 -0.5,-0.5 z"
+         id="Combined-Shape"
+         inkscape:connector-curvature="0"
+         style="fill:#000000" />
+    </g>
+  </g>
+</svg>

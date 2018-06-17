@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="160" MadCap:lastWidth="1404">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,400,300" rel="stylesheet" type="text/css" />
+		<script>
+			parent.postMessage(document.location.href, "*")
+			window.addEventListener("message", function(e) {
+			let key = e.message ? "message" : "data";
+
+			if (e[key] === "go_back") {
+			window.history.back();
+			}
+			});
+		</script>
+    </head>
+    <body>
+        <div class="cmd-header">
+            <div class="container">
+                <img src="../../0Graphics/logo_cmd.svg" />
+                <div class="cmd-header-divider">
+                </div><span class="cmd-header-title">Alpha Help Center</span>
+            </div>
+        </div>
+        <MadCap:searchBarProxy />
+        <div class="toc">
+            <MadCap:bodyProxy />
+        </div>
+    </body>
+</html>

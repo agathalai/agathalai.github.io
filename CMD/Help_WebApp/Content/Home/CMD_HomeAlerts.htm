@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="[%=UI_WebApp.navigation.home%]">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Investigating alerts</title>
+        <script>/* <![CDATA[ */
+			parent.postMessage(document.location.href, "*")
+			window.addEventListener("message", function(e) {
+			let key = e.message ? "message" : "data";
+
+			if (e[key] === "go_back") {
+			window.history.back();
+			}
+			});
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/CMD_styles.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="cmd-header">
+            <div class="container">
+                <img src="../0Graphics/logo_cmd.svg" />
+                <div class="cmd-header-divider">
+                </div><span class="cmd-header-title">Alpha Help Center</span>
+            </div>
+        </div>
+        <form class="search" action="#">
+            <div class="search-bar search-bar-container needs-pie _Skins_searchbar mc-component">
+                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                <div class="search-filter-wrapper">
+                    <div class="search-filter">
+                        <div class="search-filter-content">
+                            <ul>
+                                <li>All Files</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-submit-wrapper" dir="ltr">
+                    <div class="search-submit" title="Search">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <div class="left_menu">
+                <div data-sticky-container="" id="tYnyzwEvRkmxxlWtdlIz1Q">
+                    <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="tYnyzwEvRkmxxlWtdlIz1Q:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="only screen and (min-width: 1280px)">
+                        <ul class="nocontent menu _Skins_TocMenu mc-component" data-mc-linked-toc="Data/Tocs/Help.js" data-mc-side-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">©&#160;2017<!-- - <MadCap:variable name="Variables.Year" />-->, cmdWatch Inc. All rights reserved.</p>
+                <p class="copyright">Revised: <span class="SystemShortDate">6/23/2017</span>&#160;<span class="SystemLongTime">11:51:49 AM</span></p>
+            </div>
+            <h1 id="Investigatingalerts" data-magellan-target="Investigatingalerts">Investigating alerts</h1>
+            <p>The bottom half  of the <span class="UI_WebAppnavigationhome">Home</span> page displays violation alerts that need to be investigated and resolved. Alerts are generated from triggers that are configured to identify system violations. Triggers that generate violation alerts are assigned a risk level of 1 (lowest) to 5 (highest). </p>
+            <p>If you are a server operator, your <span class="UI_WebAppnavigationhome">Home</span> page will only display your account information. For more information, see <a href="../GettingStarted/CMD_SetupServerOp.htm#Home" class="MCXref xref">Server operator Home page	</a>. </p>
+            <ul data-magellan="" data-animation-duration="250" data-active-class="selected" class="nocontent menu _Skins_InternalMenu mc-component">
+                <li><a href="#Investigatingalerts">Investigating alerts</a>
+                </li>
+                <ul>
+                    <li><a href="#Alertslist">Alerts list</a>
+                    </li>
+                    <li><a href="#Sortalertdetails">Sort alert details</a>
+                    </li>
+                    <li><a href="#Exportalertslist">Export alerts list</a>
+                    </li>
+                    <li><a href="#Displayalertsummaries">Display alert summaries</a>
+                    </li>
+                    <li><a href="#Displaycommandinterminal">Display command in terminal</a>
+                    </li>
+                    <li><a href="#Resolveanalert">Resolve an alert</a>
+                    </li>
+                </ul>
+            </ul>
+            <h2 id="Alertslist" data-magellan-target="Alertslist">Alerts list</h2>
+            <p>To help you quickly review unresolved alerts, the alerts on the <span class="UI_WebAppnavigationhome">Home</span> page are sorted under <span class="UI_WebApphomeunresolved_tab_users">Users</span>, <span class="UI_WebApphomeunresolved_tab_triggers">Triggers</span>, <span class="UI_WebApphomeunresolved_tab_city">City</span>, and <span class="UI_WebApphomeunresolved_tab_ip">IP</span> tabs. The rows under each tab display the following information:</p>
+            <p>
+                <img src="../0Graphics/Screenshots/Home_Alerts.svg" class="screenshot" />
+            </p>
+            <ol style="list-style-type: upper-alpha;">
+                <li value="1">The highest risk level assigned to the row item. 
+			<p>For example, if a user generated more than one alert, the risk level label under the <span class="UI_WebApphomeunresolved_tab_users">Users</span> tab would be attributed to the alert with the highest risk level.</p></li>
+                <li value="2">The name of the row item and the number of unresolved instances of the alert. <ul><li value="1">Click the username to go to the account page.</li><li value="2">Click the trigger name to see the details on the <span class="UI_WebAppnavigationtriggers">Triggers</span> page.</li></ul></li>
+                <li value="3">The percentage of violations among the listed items.</li>
+                <li value="4">The affected totals.<ul><li value="1"><img src="../0Graphics/icon_triggers.svg" /> — total number of unique alerts. There may be more than one instance of each alert.</li><li value="2"><img src="../0Graphics/icon_servers.svg" /> — total number of affected servers.</li><li value="3"><img src="../0Graphics/icon_sessions.svg" /> — total number of unique sessions that caused an alert.</li><li value="4"><img src="../0Graphics/icon_globe.svg" /> — (<span class="UI_WebApphomeunresolved_tab_triggers">Triggers</span> tab only) total number of unique IP addresses that caused an alert.</li></ul></li>
+            </ol>
+            <p>To investigate any of the listed alerts, click the row or click <b><span class="UI_WebAppunresolvedinvestigate">Investigate</span></b> to expand the row. The expanded row displays the specific command that caused each instance of the alert.</p>
+            <p>
+                <img src="../0Graphics/Screenshots/Home-Alert-expanded.svg" class="screenshot" />
+            </p>
+            <h2 id="Sortalertdetails" data-magellan-target="Sortalertdetails">Sort alert details</h2>
+            <p>On the <span class="UI_WebAppnavigationhome">Home</span> page, expand an alert row then sort the listed alerts using any of the following options: </p>
+            <ul>
+                <li value="1">Click <img src="../0Graphics/icon_filters.svg" /> on the far right to show or hide headings that are relevant to you. <ul><li value="1">Select <img src="../0Graphics/icon_list.svg" /><b>Toggle density</b> to change the amount of spacing in each row.</li></ul></li>
+                <li value="2">Click a heading to sort the list by that heading.</li>
+                <li value="3">Click and drag a heading to move the column left or right.</li>
+            </ul>
+            <h2 id="Exportalertslist" data-magellan-target="Exportalertslist">Export alerts list</h2>
+            <ol>
+                <li value="1">On the <span class="UI_WebAppnavigationhome">Home</span> page, expand an alert row.</li>
+                <li value="2">Click <img src="../0Graphics/icon_export.svg" /> on the top-right corner of the table to export a copy of the listed items in .CSV or JSON format.<ol style="list-style-type: lower-alpha;"><li value="1">In the following dialog, select the preferred export format from the drop down list.</li><li value="2">Enter the number of rows that you want to export. </li><li value="3">Select the headings that you want to include in the export.</li><li value="4">Click <b>Export</b>.</li><li value="5">In the following dialog, right-click the  bar and save the linked target file as instructed.</li><li value="6">When the file finishes downloading, click <b><span class="UI_WebAppcommonok">OK</span></b> to close the dialog.</li></ol></li>
+            </ol>
+            <h2 id="Displayalertsummaries" data-magellan-target="Displayalertsummaries">Display alert summaries</h2>
+            <ol>
+                <li value="1">On the <span class="UI_WebAppnavigationhome">Home</span> page, expand an alert row.</li>
+                <li value="2"> Hover over the displayed command or link text to show a summary of the users, servers, and triggers affected by the command.</li>
+            </ol>
+            <p>
+                <img src="../0Graphics/Screenshots/command_summary.svg" class="dialog" />
+            </p>
+            <ul>
+                <li value="1">In the summary display, click any of the linked text to see more details.</li>
+                <li value="2">Click <b>Run in Sources</b> to see the command in context on the <span class="UI_WebAppnavigationsources">Sources</span> page.</li>
+                <li value="3">Click <b>Run in Insights</b> to create a new report about the summarized item.</li>
+            </ul>
+            <h2 id="Displaycommandinterminal" data-magellan-target="Displaycommandinterminal">Display command in terminal</h2>
+            <ol>
+                <li value="1">On the <span class="UI_WebAppnavigationhome">Home</span> page, expand an alert row.</li>
+                <li value="2">Click a command row to show the terminal display.</li>
+            </ol>
+            <ul>
+                <li value="1"><b><span class="red">&gt;_</span></b> command triggered a violation. </li>
+                <li value="2">Click [<var>link</var>] to see the command output or child commands.</li>
+            </ul>
+            <img src="../0Graphics/Screenshots/Terminal_Outline.svg" class="screenshot" />
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />A. Search</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>Use the search bar to find specific command text.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />B. Display mode</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>Click <img src="../0Graphics/icon_list.svg" /> to display the commands in <span class="UI_WebAppterminallist_mode">List mode</span>.</p>
+                    <p>Click <img src="../0Graphics/icon_tree.svg" /> to display the commands in <span class="UI_WebAppterminalhierachy_mode">Hierarchy mode</span>.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />C. <span class="UI_WebAppterminaluser_only">User only</span></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>Toggle this option to only show all commands or only commands executed by a user.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />D. <span class="UI_WebAppterminaldetails">Details</span></a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>Toggle this option to show or hide the <span class="UI_WebAppterminaldetails">Details</span> pane.</p>
+                    <p>When you select any command in the terminal, the <span class="UI_WebAppterminaldetails">Details</span> pane displays the information about the source of the command and any affected files.</p>
+                    <p>In the <span class="UI_WebAppterminaldetails">Details</span> pane, hover or click any linked text to see more details.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />E. Scrub data</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>Scrubbing data redacts the command or output for all users. </p>
+                    <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>When you scrub one command, all instances of the same command is scrubbed as well.</p>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li value="1">Click <img src="../0Graphics/icon_edit.svg" /> to manually scrub sensitive information.<p>The <img src="../0Graphics/icon_edit.svg" /> icon is displayed in the <span class="UI_WebAppterminaldetails">Details</span> pane or in the top-right corner of the command output display.</p></li>
+                        <li value="2">When the field becomes editable, press <kbd>Backspace</kbd> to scrub some or all of the displayed information. </li>
+                        <li value="3">Click <img src="../0Graphics/icon_save.svg" /> to save your changes.</li>
+                        <li value="4">In the confirmation dialog, click <b>Scrub</b>.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />F. Customize</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>Click <img src="../0Graphics/icon_settings.svg" /> to customize the terminal display. For more information, see <a href="../GettingStarted/CMD_TerminalSettings.htm" class="MCXref xref">Configuring your terminal display</a>.</p>
+                </div>
+            </div>
+            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />G. Maximize</a></span>
+                <div class="MCDropDownBody dropDownBody">
+                    <p>Click <img src="../0Graphics/icon_full-screen.svg" /> to maximize the terminal display.</p>
+                </div>
+            </div>
+            <h2 id="Resolveanalert" data-magellan-target="Resolveanalert">Resolve an alert</h2>
+            <ol>
+                <li value="1">On the <span class="UI_WebAppnavigationhome">Home</span> page, expand an alert row.</li>
+                <li value="2">At the right-end of the alert instance, click <b><span class="UI_WebAppcommonresolve">Resolve</span></b>.</li>
+                <li value="3">In the following dialog, enter any notes related to the alert.</li>
+                <li value="4">If there are other violations associated with the alert, you can click to enable them all to be resolved at the same time.
+			<p><img src="../0Graphics/Screenshots/resolve_multi.svg" class="dialog" /></p></li>
+                <li value="5">Click <b><span class="UI_WebAppcommonresolve">Resolve</span></b>.</li>
+            </ol>
+        </div>
+    </body>
+</html>

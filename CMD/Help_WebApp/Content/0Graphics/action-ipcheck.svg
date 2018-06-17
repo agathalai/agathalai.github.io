@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="action-ipcheck.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>action-ipcheck</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1252"
+     inkscape:window-height="932"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-1.1694915"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="action-ipcheck" />
+  <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">action-ipcheck</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <g
+     id="Page-1"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
+     transform="translate(0,-4)">
+    <g
+       id="action-ipcheck">
+      <path
+         d="M 16.338687,12 H 15.5 v 0.5 H 14.909183 C 14.4385,9.9409056 12.194534,8.0000002 9.5000002,8.0000002 c -0.168537,0 -0.335312,0.00759 -0.5,0.022456 v 1.4228564 c 0,0.4296875 -0.375,0.7812504 -0.8333329,0.7812504 H 6.5000002 v 1.5625 H 12.5 c 0.447533,0 0.815613,0.335188 0.832712,0.751007 -2.241638,0.271112 -4.0677918,1.890705 -4.6432677,4.023585 L 4.2596779,11.826128 C 4.0910383,12.353993 4.0000002,12.91643 4.0000002,13.5 c 0,2.694534 1.9409053,4.9385 4.5,5.409183 V 19.5 h -0.5 v 0.838687 c -3.1439833,-0.687263 -5.5,-3.489509 -5.5,-6.838687 0,-3.8639998 3.136,-6.9999998 7,-6.9999998 3.3491778,0 6.1514238,2.3560167 6.8386868,5.4999998 z m -0.393313,7.238267 1.408179,1.40818 c 0.195262,0.195262 0.195262,0.511844 0,0.707106 -0.195262,0.195262 -0.511844,0.195262 -0.707106,0 l -1.40818,-1.408179 C 14.747858,20.294604 14.147915,20.5 13.5,20.5 c -1.656854,0 -3,-1.343146 -3,-3 0,-1.656854 1.343146,-3 3,-3 1.656854,0 3,1.343146 3,3 0,0.647915 -0.205396,1.247858 -0.554626,1.738267 z M 13.5,19.5 c -1.104569,0 -2,-0.895431 -2,-2 0,-1.104569 0.895431,-2 2,-2 1.104569,0 2,0.895431 2,2 0,1.104569 -0.895431,2 -2,2 z M 8.5000002,18.913491 c 0.364977,0.110114 0.5937351,0.481484 0.5182541,0.863284 -0.08033,0.406349 -0.47487,0.670635 -0.881218,0.590301 -0.04585,-0.0091 -0.09153,-0.01857 -0.1370361,-0.02852 V 19.5 h 0.5 z M 14.913158,12.5 H 15.5 V 12 h 0.838561 c 0.01021,0.04671 0.01996,0.09361 0.02924,0.140695 0.08012,0.406391 -0.184381,0.800784 -0.590772,0.880901 C 15.394182,13.097071 15.021987,12.866711 14.913158,12.5 Z"
+         id="Combined-Shape"
+         inkscape:connector-curvature="0"
+         style="fill:#000000" />
+    </g>
+  </g>
+</svg>

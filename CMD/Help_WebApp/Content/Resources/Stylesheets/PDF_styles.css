@@ -1,0 +1,185 @@
+/*<meta />*/
+
+body
+{
+	margin: 0;
+	font-family: 'Roboto Light';
+	font-weight: 300;
+	font-size: 12pt;
+	line-height: 20pt;
+	color: #3b4763;
+	mc-hyphenate: never;
+}
+
+a,
+.xref
+{
+	text-decoration: none;
+	font-weight: 400;
+	color: #759DE0;
+}
+
+ul,
+ol
+{
+	margin-left: 20px;
+}
+
+li
+{
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+h1
+{
+	font-weight: 400;
+	margin-bottom: 40px;
+	font-family: Roboto;
+	font-size: 30pt;
+	line-height: 46pt;
+	letter-spacing: 0.7pt;
+	color: #3b4763;
+}
+
+h2
+{
+	font-weight: 400;
+	font-size: 18pt;
+	margin-top: 40px;
+}
+
+h3
+{
+	margin-top: 30px;
+	font-size: 14pt;
+}
+
+p.title
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-size: 44pt;
+	line-height: normal;
+	color: #3b4763;
+	margin-top: 20px;
+}
+
+p.note
+{
+	mc-auto-number-format: '{b}NOTE: {/b}';
+}
+
+p.tip
+{
+	mc-auto-number-format: '{b}Tip: {/b}';
+}
+
+p.TOCTitle
+{
+	font-weight: 400;
+	margin-bottom: 40px;
+	font-family: Roboto;
+	font-size: 30pt;
+	line-height: 46pt;
+	letter-spacing: 0.7pt;
+	color: #3b4763;
+}
+
+p.TOC1
+{
+	font-family: 'Roboto Medium';
+	font-weight: 500;
+	line-height: 20pt;
+	color: #3b4763;
+	mc-leader-format: 'dash';
+}
+
+p.TOC2
+{
+	color: #3b4763;
+	font-family: Roboto;
+	font-weight: 400;
+	line-height: 20pt;
+	mc-leader-format: 'dash';
+}
+
+p.copyright
+{
+	font-family: 'Roboto Light';
+	font-size: 12pt;
+	color: #9ca3b2;
+	mc-hyphenate: yes;
+}
+
+img.dialog
+{
+	width: 100%;
+	max-width: 300px;
+}
+
+img.screenshot
+{
+	max-width: 80%;
+}
+
+img.fitpanel
+{
+	max-width: 80%;
+}
+
+div.MCPopupContainer
+{
+	background-color: #FFFFFF;
+	border-style: none;
+	padding: 10px;
+	position: absolute;
+}
+
+p.docType
+{
+	font-family: 'Roboto Mono';
+	font-size: 16pt;
+	letter-spacing: 1pt;
+	color: #9CA3B2;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+p.footer
+{
+	font-size: 14pt;
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	line-height: normal;
+	color: #6B5ECA;
+}
+
+p.TOC3
+{
+	mc-leader-format: 'dash';
+}
+
+img
+{
+	align: middle;
+}
+
+span.red
+{
+	color: #ff7e70;
+}
+
+span.green
+{
+	color: #1abc9c;
+}
+
+@media print
+{
+	p.copyright
+	{
+		
+	}
+}
+

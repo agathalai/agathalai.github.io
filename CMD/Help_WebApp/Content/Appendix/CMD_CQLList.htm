@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Appendix">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>CQL values</title>
+        <script>/* <![CDATA[ */
+			parent.postMessage(document.location.href, "*")
+			window.addEventListener("message", function(e) {
+			let key = e.message ? "message" : "data";
+
+			if (e[key] === "go_back") {
+			window.history.back();
+			}
+			});
+		/* ]]> */</script>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/CMD_styles.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/Table.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+    </head>
+    <body>
+        <div class="cmd-header">
+            <div class="container">
+                <img src="../0Graphics/logo_cmd.svg" />
+                <div class="cmd-header-divider">
+                </div><span class="cmd-header-title">Alpha Help Center</span>
+            </div>
+        </div>
+        <form class="search" action="#">
+            <div class="search-bar search-bar-container needs-pie _Skins_searchbar mc-component">
+                <input class="search-field needs-pie" type="search" placeholder="Search" />
+                <div class="search-filter-wrapper">
+                    <div class="search-filter">
+                        <div class="search-filter-content">
+                            <ul>
+                                <li>All Files</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-submit-wrapper" dir="ltr">
+                    <div class="search-submit" title="Search">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container">
+            <div class="left_menu">
+                <div data-sticky-container="" id="r55QQ6PVikSTJHIGEq0skA">
+                    <div class="sticky sticky-menu" style="width:100%" data-sticky="" data-top-anchor="r55QQ6PVikSTJHIGEq0skA:top" data-bottom-anchor="contentBody:bottom" data-sticky-on="only screen and (min-width: 1280px)">
+                        <ul class="nocontent menu _Skins_TocMenu mc-component" data-mc-linked-toc="Data/Tocs/Help.js" data-mc-side-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">©&#160;2017<!-- - <MadCap:variable name="Variables.Year" />-->, cmdWatch Inc. All rights reserved.</p>
+                <p class="copyright">Revised: <span class="SystemShortDate">6/23/2017</span>&#160;<span class="SystemLongTime">11:53:01 AM</span></p>
+            </div>
+            <h1 id="CQLvalues" data-magellan-target="CQLvalues"><a name="kanchor12"></a>CQL values</h1>
+            <p>Listed here are all the CQL&#160;values that can be used to perform searches, queries, and filters in the system. The CQL values are used to create reports and triggers, and are used to filter source activity for investigations.</p>
+            <p>Use the following list as a reference when you enter queries in the simplified query builder or when you enter the queries manually.</p>
+            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>Some values are only listed in the web interface if they are available to the query type.</p>
+            <ul data-magellan="" data-animation-duration="250" data-active-class="selected" class="nocontent menu _Skins_InternalMenu mc-component">
+                <li><a href="#CQLvalues">CQL values</a>
+                </li>
+                <ul>
+                    <li><a href="#Booleanoperators">Boolean operators</a>
+                    </li>
+                    <li><a href="#CQLoperators">CQL operators</a>
+                    </li>
+                    <li><a href="#Command">Command</a>
+                    </li>
+                    <li><a href="#Session">Session</a>
+                    </li>
+                    <li><a href="#Server">Server</a>
+                    </li>
+                    <li><a href="#Trigger">Trigger</a>
+                    </li>
+                    <li><a href="#Macros">Macros</a>
+                    </li>
+                    <li><a href="#MFAMultifactorauthentication">MFA (Multi-factor authentication)</a>
+                    </li>
+                </ul>
+            </ul>
+            <h2 id="Booleanoperators" data-magellan-target="Booleanoperators">Boolean operators</h2>
+            <p>By default, all searches and  trigger queries must begin with the <code>WHERE</code> clause.</p>
+            <p>You can create complex queries by joining CQL values together using Boolean search operators. For example:</p>
+            <blockquote><code>WHERE (cmd_user_typed = 'true' and cmd = 'clear') and (cmd_hour_of_day &lt; '08' or cmd_day_of_week IN 'saturday,sunday')</code>
+            </blockquote>
+            <p>The example query would return results <i>where (the user manually typed the command, <b>and</b> the command is "clear") <b>and</b> (the command was executed before 8am <b>or</b> on Saturday/Sunday)</i>.</p>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/Table.css');" class="TableStyle-Table" cellspacing="1">
+                <col class="TableStyle-Table-Column-Column1" style="width: 25%;" />
+                <col class="TableStyle-Table-Column-Column1" style="width: 75%;" />
+                <thead>
+                    <tr class="TableStyle-Table-Head-Header1">
+                        <th class="TableStyle-Table-HeadE-Column1-Header1">Boolean operators</th>
+                        <th class="TableStyle-Table-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>' '</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Quotation marks are used to contain the search values.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>( )</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Parentheses are used to group CQL values to create complex queries.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>and</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p><b>All</b> of the queries must be true</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyB-Column1-Body1">
+                            <p>or</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyA-Column1-Body1">
+                            <p><b>Any</b> of the queries must be true</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="CQLoperators" data-magellan-target="CQLoperators">CQL operators</h2>
+            <p>You can use the following operators to define specific CQL query values:</p>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/Table.css');" class="TableStyle-Table" cellspacing="1">
+                <col class="TableStyle-Table-Column-Column1" style="width: 25%;" />
+                <col class="TableStyle-Table-Column-Column1" style="width: 75%;" />
+                <thead>
+                    <tr class="TableStyle-Table-Head-Header1">
+                        <th class="TableStyle-Table-HeadE-Column1-Header1">CQL Operator</th>
+                        <th class="TableStyle-Table-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>=</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Is equal to</p>
+                            <p><code>cmd = 'clear'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>!=</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Is not </p>
+                            <p><code>cmd != 'clear'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>&lt;</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Less than. When used with time or dates, it represents "before".</p>
+                            <p><code>cmd_hour_of_day &lt; '08'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>&gt;</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Greater than. When used with time or dates, it represents "after".</p>
+                            <p><code>cmd_hour_of_day &gt; '08'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>&lt;=</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Less than or equal to</p>
+                            <p><code>session_violation_count &lt;= '3'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>&gt;=</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Greater than or equal to</p>
+                            <p><code>session_violation_count &gt;= '3'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>IN</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Includes</p>
+                            <p>Should only be used when looking for specific values, do not use to find random wildcards.</p>
+                            <p><code>cmd_day_of_week IN 'saturday,sunday'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>NOT&#160;IN</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Excludes </p>
+                            <p>Should only be used when looking for specific values, do not use to find random wildcards.</p>
+                            <p><code>cmd_day_of_week NOT IN 'saturday,sunday'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyB-Column1-Body1">
+                            <p>*</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyA-Column1-Body1">
+                            <p>Wildcard</p>
+                            <p> Supported by most CQL values except where noted.</p>
+                            <p><code>server_os = '*ubuntu*'</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="Command" data-magellan-target="Command">Command</h2>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/Table.css');" class="TableStyle-Table" cellspacing="1">
+                <col class="TableStyle-Table-Column-Column1" style="width: 25%;" />
+                <col class="TableStyle-Table-Column-Column1" style="width: 75%;" />
+                <thead>
+                    <tr class="TableStyle-Table-Head-Header1">
+                        <th class="TableStyle-Table-HeadE-Column1-Header1">Query</th>
+                        <th class="TableStyle-Table-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command</p>
+                            <p><code>cmd = '<var>&lt;command value&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd = 'clear'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​​​_date</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command date </p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p>You can also enter time frames, like "yesterday", "4 days ago" or "last month." </p>
+                            <p>Be aware that integer values will be treated as Unix timestamps and non-integer values will be treated as date strings.</p>
+                            <p><code>cmd_date = '<var>&lt;date and/or time&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+                            <p><code>cmd_date &gt;= '1494842400'</code>
+                            </p>
+                            <p><code>cmd_date = 'yesterday'</code>
+                            </p>
+                            <p><code>cmd_date &lt; 'Jan 1 2017'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_day​_of​_week</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command day of week.</p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p><code>cmd_day_of_week = '<var>&lt;day of week in lowercase&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd_day_of_week = 'monday'</code>
+                            </p>
+                            <p><code>cmd_day_of_week IN 'saturday,sunday'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_exec​_path</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command executable path</p>
+                            <p><code>cmd_exec_path = '<var>&lt;executable path&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd_exec_path = 'root'</code>
+                            </p>
+                            <p><code>cmd_exec_path NOT IN '/usr/*'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_file​_modified</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command file that was modified</p>
+                            <p><code>cmd_file_modified = '<var>&lt;filename&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd_file_modified != 'readme.txt'</code>
+                            </p>
+                            <p><code>cmd_file_modified IN '*.exe'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_first​_time​_command</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command that is executed for the first time</p>
+                            <p><code>cmd_first_time_command = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_first_time_command = 'true'</code>
+                            </p>
+                            <p><code>cmd_first_time_command = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_first​_time​_command​_root</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Root command that is executed for the first time.</p>
+                            <p><code>cmd_first_time_command_root = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_first_time_command_root = 'true'</code>
+                            </p>
+                            <p><code>cmd_first_time_command_root = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_has​_alert</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger matching this command generates an alert</p>
+                            <p><code>cmd_has_alert = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_has_alert = 'true'</code>
+                            </p>
+                            <p><code>cmd_has_alert = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_has​_error</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command generates an error output</p>
+                            <p><code>cmd_has_error = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_has_error = 'true'</code>
+                            </p>
+                            <p><code>cmd_has_error = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_has​_modified​_files</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command that modified files</p>
+                            <p><code>cmd_has_modified_files = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_has_modified_files = 'true'</code>
+                            </p>
+                            <p><code>cmd_has_modified_files = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_has​_output</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command generated an output</p>
+                            <p><code>cmd_has_output = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_has_output = 'true'</code>
+                            </p>
+                            <p><code>cmd_has_output = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_has​_violation</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command caused a violation</p>
+                            <p><code>cmd_has_violation = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_has_violation = 'true'</code>
+                            </p>
+                            <p><code>cmd_has_violation = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_hour​_of​_day</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command hour of day.</p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p><code>cmd_hour_of_day = '<var>&lt;## in 24 hour format&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =, !=, &lt;, &gt;, IN, NOT&#160;IN</p>
+                            <p><code>cmd_hour_of_day = '21'</code>
+                            </p>
+                            <p><code>cmd_hour_of_day &lt; '08'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_include​_system​_calls</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command including system calls</p>
+                            <p><code>cmd_include_system_calls = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>cmd_include_system_calls = 'true'</code>
+                            </p>
+                            <p><code>cmd_include_system_calls = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_​parameters</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command parameters</p>
+                            <p><code>cmd_parameters = '<var>&lt;parameter&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd_parameters = -l*</code>
+                            </p>
+                            <p><code>cmd_parameters != -la</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_parent​_cmd</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command's parent command</p>
+                            <p><code>cmd​_parent_cmd = '<var>&lt;parent command&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd_parent_cmd = 'stat /var/lib/resolvconf'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_parent​_pid</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command's parent process ID</p>
+                            <p><code>cmd_parent_cmd = '<var>&lt;PID #&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>cmd_parent_cmd = '2359'</code>
+                            </p>
+                            <p><code>cmd_parent_cmd &gt;= '912'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_pid</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command process ID</p>
+                            <p><code>cmd_pid = '<var>&lt;PID #&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>cmd_pid &lt; '2723'</code>
+                            </p>
+                            <p><code>cmd_pid != '19493'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>cmd​_root</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Command root</p>
+                            <p><code>cmd_root = '<var>&lt;root username&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd_root != 'admin'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyB-Column1-Body1">
+                            <p>cmd​_working​_directory</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyA-Column1-Body1">
+                            <p>Command working directory</p>
+                            <p><code>cmd_working_directory = '<var>&lt;directory path&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>cmd_working_directory = /root/</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="Session" data-magellan-target="Session">Session</h2>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/Table.css');" class="TableStyle-Table" cellspacing="1">
+                <col class="TableStyle-Table-Column-Column1" style="width: 25%;" />
+                <col class="TableStyle-Table-Column-Column1" style="width: 75%;" />
+                <thead>
+                    <tr class="TableStyle-Table-Head-Header1">
+                        <th class="TableStyle-Table-HeadE-Column1-Header1">Query</th>
+                        <th class="TableStyle-Table-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session ID</p>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>Wildcard queries are not supported. You must enter the exact session ID.</p>
+                            <p>The session ID can be found on the Sources page, under the Sessions tab. The session ID value is case sensitive.</p>
+                            <p><code>session = '<var>&lt;SES-xxxx&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session != 'SES-2856'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_city</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session city</p>
+                            <p><code>session_city = '<var>&lt;city name&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_city = 'vancouver'</code>
+                            </p>
+                            <p><code>session_city IN 'london,paris'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_command​_count</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Total of user entered commands during a session</p>
+                            <p><code>session_command_count = '<var>&lt;#&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>session_command_count &gt; '4'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_connect</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session connected</p>
+                            <p><code>session_connect = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_connect = 'true'</code>
+                            </p>
+                            <p><code>session_connect = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_country</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session country.</p>
+                            <p>Use the 2 character <a href="https://en.wikipedia.org/wiki/ISO_3166-2" target="_blank">ISO country abbreviation</a> (link goes to a third-party site).</p>
+                            <p><code>session_country = '<var>&lt;XX&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_country = 'ca'</code>
+                            </p>
+                            <p><code>session_country IN 'cn,kp'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_date</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session date</p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p>You can also enter time frames, like "yesterday", "4 days ago" or "last month." </p>
+                            <p>Be aware that integer values will be treated as Unix timestamps and non-integer values will be treated as date strings.</p>
+                            <p><code>session_date = '<var>&lt;date and/or time&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+                            <p><code>session_date = 05-01-2017</code>
+                            </p>
+                            <p><code>session_date &lt;= last month</code>
+                            </p>
+                            <p><code>session_date &gt; 1494842400</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_day​_of​_week</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session day of the week </p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p><code>session​_day​_of​_week = '<var>&lt;day of week in lowercase&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_day_of_week = tuesday</code>
+                            </p>
+                            <p><code>session_day_of_week IN 'thursday, wednesday'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_dualauth​_approved</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Multi-factor authentication is approved for the session</p>
+                            <p><code>session_dualauth_approved = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_dualauth_approved = 'true'</code>
+                            </p>
+                            <p><code>session_dualauth_approved = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_dualauth​_provider</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session used a specific 2-factor authentication provider. Options include:</p>
+                            <ul>
+                                <li value="1">cmd</li>
+                                <li value="2">one​_time​_code</li>
+                                <li value="3">google</li>
+                                <li value="4">sms</li>
+                            </ul>
+                            <p><code>session_dualauth_provider = '<var>&lt;2-factor authentication provider&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_dualauth_provider IN 'cmd,google'</code>
+                            </p>
+                            <p><code>session_dualauth_provider = 'one​_time​_code'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_dualauth​_required</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session required 2-factor authentication</p>
+                            <p><code>session_dualauth_required = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_dualauth_required = 'true'</code>
+                            </p>
+                            <p><code>session_dualauth_required = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_duoapi​_approved</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session activity is successfully authenticated through Duo Security</p>
+                            <p><code>session_duoapi_approved = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_duoapi_approved = 'true'</code>
+                            </p>
+                            <p><code>session_duoapi_approved = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_duoapi​_approver</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session activity is approved by a specific Duo Security user</p>
+                            <p><code>session_duoapi_approver = '<var>&lt;Duo username&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_duoapi_approver = 'j.smith'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_duoapi​_required</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session activity required authentication through Duo Security</p>
+                            <p><code>session_duoapi_required = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_duoapi_required = 'true'</code>
+                            </p>
+                            <p><code>session_duoapi_required = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_duration</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session duration</p>
+                            <p><code>session_duration &gt;= '<var>&lt;# seconds&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: &gt;=, &lt;=</p>
+                            <p><code>session_duration &lt;= '60'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_first​_time​_ip</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session initiated from a new IP address</p>
+                            <p><code>session_first_time_ip = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_first_time_ip = 'true'</code>
+                            </p>
+                            <p><code>session_first_time_ip = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_has​_alert</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger matching this session generated an alert that is still unresolved.</p>
+                            <p><code>session_has_alert = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_has_alert = 'true'</code>
+                            </p>
+                            <p><code>session_has_alert = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_has​_violation</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger matching this session generated a violation. Includes resolved and unresolved alerts.</p>
+                            <p><code>session_has_violation = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_has_violation = 'true'</code>
+                            </p>
+                            <p><code>session_has_violation = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_hour​_of​_day</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session hour of day</p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p><code>session_hour_of_day = '<var>&lt;## in 24 hour format&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =,!=, &lt;, &gt;, IN, NOT IN</p>
+                            <p><code>session_hour_of_day = '18'</code>
+                            </p>
+                            <p><code>session_hour_of_day &gt; '22'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_how​_connected</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session connected via a specific method. Options include:</p>
+                            <ul>
+                                <li value="1">ssh</li>
+                            </ul>
+                            <p><code>session_how_connected = '<var>&lt;connection method&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =, !=</p>
+                            <p><code>session_how_connected != 'ssh'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_ip</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session IP address</p>
+                            <p><code>session_ip = '<var>&lt;IP address&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_ip = '192.168.1.23'</code>
+                            </p>
+                            <p><code>session_ip NOT IN '192.168.1.23,172.31.55.245'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_ip​_type</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session IP address type can be internal or external.</p>
+                            <p><code>session_ip_type = '<var>&lt;Internal or External&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_ip_type = 'External'</code>
+                            </p>
+                            <p><code>session_ip_type != 'Internal'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_jira​_approved</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session activity is linked to a valid Jira ticket</p>
+                            <p><code>session_jira_approved = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_jira_approved = 'true'</code>
+                            </p>
+                            <p><code>session_jira_approved = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_jira​_required</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session activity must be linked to a Jira ticket</p>
+                            <p><code>session_jira_required = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_jira_required = 'true'</code>
+                            </p>
+                            <p><code>session_jira_required = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_jira​_ticket</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session activity is linked to a specific Jira ticket</p>
+                            <p><code>session_jira_ticket = '<var>&lt;Jira ticket number&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_jira_ticket = 'JIRA-001'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_open</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session is open. </p>
+                            <p class="tip" data-mc-autonum="&lt;b&gt;Tip: &lt;/b&gt;"><span class="autonumber"><span><b>Tip: </b></span></span>A session is considered closed if it is inactive for 3 minutes.</p>
+                            <p><code>session_open = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>session_open = 'true'</code>
+                            </p>
+                            <p><code>session_open = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_pid</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session process ID</p>
+                            <p><code>session_pid = '<var>&lt;PID #&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>session_pid &gt; '25000'</code>
+                            </p>
+                            <p><code>session_pid != '24963'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_region</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session state or province</p>
+                            <p>Use the 2 character <a href="https://en.wikipedia.org/wiki/ISO_3166-2" target="_blank">ISO abbreviation</a> (link goes to a third-party site).</p>
+                            <p><code>session_region = '<var>&lt;XX&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_region = 'BC'</code>
+                            </p>
+                            <p><code>session_region NOT IN 'NY,PA'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_user</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session user </p>
+                            <p>Use the server username, or the <span class="VariablesProduct">Cmd</span> username.</p>
+                            <p><code>session_user = '<var>&lt;username&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_user = 'jsmith'</code>
+                            </p>
+                            <p><code>session_user IN 'jsmith,jane.smith'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>session​_user​_job</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Session user's assigned job category</p>
+                            <p>A user's job category is listed in their <span class="VariablesProduct">Cmd</span> user account.</p>
+                            <p><code>session_user_job = '<var>&lt;job category&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>session_user_job = 'developer'</code>
+                            </p>
+                            <p><code>session_user_job NOT IN 'developer,engineering'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyB-Column1-Body1">
+                            <p>session​_violation​_count</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyA-Column1-Body1">
+                            <p>Session violation total</p>
+                            <p><code>session_violation​_count = '<var>&lt;#&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>session_violation​_count &lt; '4'</code>
+                            </p>
+                            <p><code>session_violation​_count &gt;= '2'</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="Server" data-magellan-target="Server">Server</h2>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/Table.css');" class="TableStyle-Table" cellspacing="1">
+                <col class="TableStyle-Table-Column-Column1" style="width: 25%;" />
+                <col class="TableStyle-Table-Column-Column1" style="width: 75%;" />
+                <thead>
+                    <tr class="TableStyle-Table-Head-Header1">
+                        <th class="TableStyle-Table-HeadE-Column1-Header1">Query</th>
+                        <th class="TableStyle-Table-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server ID</p>
+                            <p class="note" data-mc-autonum="&lt;b&gt;NOTE: &lt;/b&gt;"><span class="autonumber"><span><b>NOTE: </b></span></span>Wildcard queries are not supported. You must enter the exact server ID.</p>
+                            <p>The server ID can be found on the Sources page, under the Server tab.</p>
+                            <p><code>server = '<var>&lt;SVR-xxx&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>server = 'SVR-L46'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_added</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server is added on specified date </p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p>You can also enter time frames, like "yesterday", "4 days ago" or "last month." </p>
+                            <p>Be aware that integer values will be treated as Unix timestamps and non-integer values will be treated as date strings.</p>
+                            <p><code>server_added = '<var>&lt;date and/or time&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+                            <p><code>server_added &lt; 'last week'</code>
+                            </p>
+                            <p><code>server_added &gt;= '1494842400'</code>
+                            </p>
+                            <p><code>server_added != 'february'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_capture​_output</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server output that has been captured by the system</p>
+                            <p><code>server_capture_output = '<var>&lt;all, errors, or none&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_capture_output = 'all'</code>
+                            </p>
+                            <p><code>server_capture_output != 'errors'</code>
+                            </p>
+                            <p><code>server_capture_output NOT&#160;IN 'none'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_city</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server city</p>
+                            <p><code>server_city = '<var>&lt;city name&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_city = 'london'</code>
+                            </p>
+                            <p><code>server_city IN 'toronto,montreal'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_command​_count</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>User entered command total on the server</p>
+                            <p><code>server_command_count = '<var>&lt;#&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>server_command_count &gt; '3'</code>
+                            </p>
+                            <p><code>server_command_count &lt;= '20'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_country</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server country</p>
+                            <p>Use the 2 character <a href="https://en.wikipedia.org/wiki/ISO_3166-2" target="_blank">ISO country abbreviation</a> (link goes to a third-party site).</p>
+                            <p><code>server_country = '<var>&lt;XX&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_country != 'us'</code>
+                            </p>
+                            <p><code>server_country NOT IN 'ca,gb'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_date</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Date on the server </p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time. </p>
+                            <p>You can also enter time frames, like "yesterday", "4 days ago" or "last month." </p>
+                            <p>Be aware that integer values will be treated as Unix timestamps and non-integer values will be treated as date strings.</p>
+                            <p><code>server_date = '<var>&lt;date and/or time&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+                            <p><code>server_date = '05-15-2018'</code>
+                            </p>
+                            <p><code>server_date &lt;= '<var>&lt;date and/or time&gt;</var>'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_get​_file​_diff</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server captures file differences</p>
+                            <p><code>server_get_file_diff = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>server_get_file_diff = 'true'</code>
+                            </p>
+                            <p><code>server_get_file_diff = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_group</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server group</p>
+                            <p><code>server_group = '<var>&lt;server group name&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_group = 'development'</code>
+                            </p>
+                            <p><code>server_group != 'www'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_has​_alert</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger matching this server generates an alert that is still unresolved.</p>
+                            <p><code>server_has_alert = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>server_has_alert = 'true'</code>
+                            </p>
+                            <p><code>server_has_alert = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_has​_violation</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger matching this session generated a violation. Includes resolved and unresolved alerts.</p>
+                            <p><code>server_has_violation = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>server_has_violation = 'true'</code>
+                            </p>
+                            <p><code>server_has_violation = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_hostname</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server hostname</p>
+                            <p><code>server_hostname = '<var>&lt;hostname&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_hostname = 'cmd.com'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_ip</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server IP&#160;address</p>
+                            <p><code>server_ip = '<var>&lt;IP&#160;address&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_ip = '192.168.1.23'</code>
+                            </p>
+                            <p><code>server_ip != '127.0.0.1'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_last​_login</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server last login date</p>
+                            <p>You can also enter time frames, like "yesterday", "4 days ago" or "last month." </p>
+                            <p>Be aware that integer values will be treated as Unix timestamps and non-integer values will be treated as date strings.</p>
+                            <p><code>server_last_login = '<var>&lt;date and/or time&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+                            <p><code>server_last_login = 'two weeks ago'</code>
+                            </p>
+                            <p><code>server_last_login &lt;= '1494842400'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_name</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server name</p>
+                            <p><code>server_name = '<var>&lt;server name&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_name = 'test-1'</code>
+                            </p>
+                            <p><code>server_name NOT IN 'test-1,test-3'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_os</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server operating system</p>
+                            <p>Include the build or kernel version to narrow the query.</p>
+                            <p><code>server_os = '<var>&lt;OS build / kernel version&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=</p>
+                            <p><code>server_os = '*ubuntu*'</code>
+                            </p>
+                            <p><code>server_os != 'debian'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_region</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server state or province</p>
+                            <p>Use the 2 character <a href="https://en.wikipedia.org/wiki/ISO_3166-2" target="_blank">ISO abbreviation</a> (link goes to a third-party site).</p>
+                            <p><code>server_region = '<var>&lt;XX&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>server_region = 'CA'</code>
+                            </p>
+                            <p><code>server_region != 'TX'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>server​_session​_count</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Server session total</p>
+                            <p><code>server_session_count = '<var>&lt;#&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>server_session_count &gt; '5'</code>
+                            </p>
+                            <p><code>server_session_count != '1'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyB-Column1-Body1">
+                            <p>server​_violation​_count</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyA-Column1-Body1">
+                            <p>Server violation total</p>
+                            <p><code>server_violation_count = '<var>&lt;#&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>server_violation_count &gt; '10'</code>
+                            </p>
+                            <p><code>server_violation_count = '1'</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="Trigger" data-magellan-target="Trigger">Trigger</h2>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/Table.css');" class="TableStyle-Table" cellspacing="1">
+                <col class="TableStyle-Table-Column-Column1" style="width: 25%;" />
+                <col class="TableStyle-Table-Column-Column1" style="width: 75%;" />
+                <thead>
+                    <tr class="TableStyle-Table-Head-Header1">
+                        <th class="TableStyle-Table-HeadE-Column1-Header1">Query</th>
+                        <th class="TableStyle-Table-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_date</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger date </p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p>You can also enter time frames, like "yesterday", "4 days ago" or "last month." </p>
+                            <p>Be aware that integer values will be treated as Unix timestamps and non-integer values will be treated as date strings.</p>
+                            <p><code>trigger_date = '<var>&lt;date and/or time&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+                            <p><code>trigger_date &gt; 'yesterday'</code>
+                            </p>
+                            <p><code>trigger_date &lt;= 'May 16 2017'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_day​_of​_week</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger day of the week </p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p><code>trigger_day_of_week = '<var>&lt;day of week in lowercase&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>trigger_day_of_week = 'sunday'</code>
+                            </p>
+                            <p><code>trigger_day_of_week NOT IN 'monday,friday'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_group</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger group name</p>
+                            <p><code>trigger_group = '<var>&lt;trigger group name&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>trigger_group != 'generic'</code>
+                            </p>
+                            <p><code>trigger_group IN 'auth,bad'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_has​_unresolved</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger has unresolved alerts</p>
+                            <p><code>trigger​_has​_unresolved = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_has​_violation</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger has resolved and unresolved alerts</p>
+                            <p><code>trigger​_has​_violation = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_hour​_of​_day</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger hour of day </p>
+                            <p>For triggers, the date is in UTC. For all other CQL search queries, the date is based on your local time.</p>
+                            <p><code>trigger_hour_of_day = '<var>&lt;## in 24 hour format&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>trigger_hour_of_day = '22'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_name</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger name</p>
+                            <p><code>trigger_name = '<var>&lt;name of trigger&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>trigger_name = 'stop_sudo'</code>
+                            </p>
+                            <p><code>trigger_name IN 'warning*,beware*'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>trigger​_risk​_level</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Trigger violation risk level</p>
+                            <p><code>trigger_risk_level = '<var>&lt;1 to 5&gt;</var>'</code>
+                            </p>
+                            <p>Supports all CQL operators.</p>
+                            <p><code>trigger_risk_level = '5'</code>
+                            </p>
+                            <p><code>trigger_risk_level &gt; '1'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyB-Column1-Body1">
+                            <p>trigger​_verified​_by​_name</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyA-Column1-Body1">
+                            <p>Trigger is resolved by  <span class="VariablesProduct">Cmd</span> user</p>
+                            <p><code>trigger_verified_by_name = '<var>&lt;user's name in <span class="VariablesProduct">Cmd</span>&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>trigger_verified_by_name = 'John Smith'</code>
+                            </p>
+                            <p><code>trigger_verified_by_name != 'KJ'</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="Macros" data-magellan-target="Macros">Macros</h2>
+            <p>Macros are CQL trigger queries that have been saved and are used in other triggers. Macro queries are always prefixed with <code>macro_</code> followed by the user defined name. For more information, see <a href="../Triggers/CMD_AddMacro.htm" class="MCXref xref">Macros</a>.</p>
+            <p> The query itself would be in this format: </p>
+            <p><code>macro_<var>&lt;user defined macro name&gt;</var> = '<var>&lt;true or false&gt;</var>'</code>
+            </p>
+            <p>Supports the following CQL operator: =</p>
+            <p><code>macro_stop_sudo = 'true'</code>
+            </p>
+            <h2 id="MFAMultifactorauthentication" data-magellan-target="MFAMultifactorauthentication">MFA (Multi-factor authentication)</h2>
+            <table style="width: 100%;mc-table-style: url('../Resources/Stylesheets/Table.css');" class="TableStyle-Table" cellspacing="1">
+                <col class="TableStyle-Table-Column-Column1" style="width: 25%;" />
+                <col class="TableStyle-Table-Column-Column1" style="width: 75%;" />
+                <thead>
+                    <tr class="TableStyle-Table-Head-Header1">
+                        <th class="TableStyle-Table-HeadE-Column1-Header1">Query</th>
+                        <th class="TableStyle-Table-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_dualauth​_approved</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>2-factor authentication is approved</p>
+                            <p><code>mfa_dualauth_approved = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>mfa_dualauth_approved = 'true'</code>
+                            </p>
+                            <p><code>mfa_dualauth_approved = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_dualauth​_provider</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>2-factor authentication method. Typically Google or Duo.</p>
+                            <p><code>mfa_dualauth_provider = '<var>&lt;authentication provider&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>mfa_dualauth_provider = 'google'</code>
+                            </p>
+                            <p><code>mfa_dualauth_provider NOT IN 'duo,google'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_dualauth​_required</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>2-factor authentication is required</p>
+                            <p><code>mfa_dualauth_required = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>mfa_dualauth_required = 'true'</code>
+                            </p>
+                            <p><code>mfa_dualauth_required = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_duoapi​_approved</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>2-factor authentication by Duo is approved</p>
+                            <p><code>mfa_duoapi_approved = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>mfa_duoapi_approved = 'true'</code>
+                            </p>
+                            <p><code>mfa_duoapi_approved = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_duoapi​_approver</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>2-factor authentication is approved by specified Duo user</p>
+                            <p><code>mfa_duoapi_approver = '<var>&lt;Duo username&gt;</var></code>'</p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>mfa_duoapi_approver = 'j.smith</code>
+                            </p>
+                            <p><code>mfa_duoapi_approver IN 'smith,jones</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_duoapi​_required</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>2-factor authentication is required through Duo</p>
+                            <p><code>mfa_duoapi_required = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>mfa_duoapi_required = 'true'</code>
+                            </p>
+                            <p><code>mfa_duoapi_required = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_jira​_approved</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Authenticated user is linked to a valid Jira ticket</p>
+                            <p><code>mfa_jira_approved = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>mfa_jira_approved = 'true'</code>
+                            </p>
+                            <p><code>mfa_jira_approved = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyE-Column1-Body1">
+                            <p>mfa​_jira​_required</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyD-Column1-Body1">
+                            <p>Authenticated user activity must be linked to a Jira ticket</p>
+                            <p><code>mfa_jira_required = '<var>&lt;true or false&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operator: =</p>
+                            <p><code>mfa_jira_required = 'true'</code>
+                            </p>
+                            <p><code>mfa_jira_required = 'false'</code>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-Table-Body-Body1">
+                        <td class="TableStyle-Table-BodyB-Column1-Body1">
+                            <p>mfa​_jira​_ticket</p>
+                        </td>
+                        <td class="TableStyle-Table-BodyA-Column1-Body1">
+                            <p>Authenticated user activity is linked to a specific Jira ticket</p>
+                            <p><code>mfa_jira_ticket = '<var>&lt;Jira ticket number&gt;</var>'</code>
+                            </p>
+                            <p>Supports the following CQL operators: =, !=, IN, NOT IN</p>
+                            <p><code>mfa_jira_ticket = 'PRJ-001'</code>
+                            </p>
+                            <p><code>mfa_jira_ticket IN 'PRJ,QA'</code>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="125px" height="125px" viewBox="0 0 125 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Chart types/List/Regular</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="125" height="125" rx="2"></rect>
+        <rect id="path-2" x="0" y="0" width="105" height="74"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chart-types/List/Regular">
+            <g id="list">
+                <g id="Group-11">
+                    <g id="Rectangle-4">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#EEEFF3" stroke-width="1" x="0.5" y="0.5" width="124" height="124" rx="2"></rect>
+                    </g>
+                    <g id="Graph" transform="translate(10.000000, 41.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <g id="Group-2" mask="url(#mask-3)">
+                            <g transform="translate(10.000000, 16.000000)">
+                                <circle id="Oval" fill="#FF7E70" opacity="0.75" cx="3" cy="3" r="3"></circle>
+                                <rect id="Rectangle" fill="#4B5671" opacity="0.3" x="11" y="1" width="74" height="4" rx="2"></rect>
+                            </g>
+                        </g>
+                        <g id="Group-3" mask="url(#mask-3)">
+                            <g transform="translate(10.000000, 32.000000)">
+                                <circle id="Oval" fill="#FF7E70" opacity="0.75" cx="3" cy="3" r="3"></circle>
+                                <rect id="Rectangle" fill="#4B5671" opacity="0.3" x="11" y="1" width="45" height="4" rx="2"></rect>
+                            </g>
+                        </g>
+                        <g id="Group-4" mask="url(#mask-3)">
+                            <g transform="translate(10.000000, 48.000000)">
+                                <circle id="Oval" fill="#FF7E70" opacity="0.75" cx="3" cy="3" r="3"></circle>
+                                <rect id="Rectangle" fill="#4B5671" opacity="0.3" x="11" y="1" width="74" height="4" rx="2"></rect>
+                            </g>
+                        </g>
+                        <g id="Group-5" mask="url(#mask-3)">
+                            <g transform="translate(10.000000, 64.000000)">
+                                <circle id="Oval" fill="#FF7E70" opacity="0.75" cx="3" cy="3" r="3"></circle>
+                                <rect id="Rectangle" fill="#4B5671" opacity="0.3" x="11" y="1" width="65" height="4" rx="2"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <path d="M50.472,20.8 L50.472,32 L57.208,32 L57.208,30.288 L52.36,30.288 L52.36,20.8 L50.472,20.8 Z M59.816,19.936 C59.208,19.936 58.744,20.4 58.744,21.056 C58.744,21.696 59.208,22.16 59.816,22.16 C60.424,22.16 60.888,21.696 60.888,21.056 C60.888,20.4 60.424,19.936 59.816,19.936 Z M58.904,23.488 L58.904,32 L60.728,32 L60.728,23.488 L58.904,23.488 Z M68.296,25.632 L68.968,24.272 C68.2,23.728 67.064,23.408 65.992,23.408 C64.36,23.408 62.856,24.144 62.856,25.872 C62.84,28.944 67.32,27.968 67.32,29.712 C67.32,30.352 66.712,30.624 65.928,30.624 C65,30.624 63.816,30.224 63.08,29.568 L62.424,30.88 C63.272,31.648 64.6,32.064 65.848,32.064 C67.56,32.064 69.112,31.28 69.112,29.536 C69.128,26.448 64.6,27.296 64.6,25.728 C64.6,25.12 65.128,24.88 65.848,24.88 C66.6,24.88 67.544,25.168 68.296,25.632 Z M75.32,30.048 C74.824,30.288 74.424,30.416 74.04,30.416 C73.464,30.416 73.128,30.144 73.128,29.264 L73.128,25.184 L75.64,25.184 L75.64,23.808 L73.128,23.808 L73.128,21.472 L71.304,21.472 L71.304,23.808 L70.104,23.808 L70.104,25.184 L71.304,25.184 L71.304,29.6 C71.304,31.344 72.408,32.08 73.688,32.08 C74.408,32.08 75.112,31.856 75.784,31.456 L75.32,30.048 Z" id="List" fill="#4B5671" opacity="0.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>
