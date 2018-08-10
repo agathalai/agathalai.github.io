@@ -103,7 +103,7 @@
                     <td>
                       <i class="fa fa-save text-success"></i>
                     </td>
-                    <td>Select this icon to download the utility data in .CSV format. </td>
+                    <td>Select this icon to download a copy of the original utility data in .CSV format. </td>
                   </tr>
                   <tr>
                     <td><i class="fa fa-refresh text-success"/></td>
@@ -136,7 +136,7 @@
 			</div>
 			<div class="tab-pane fade" id="restore-missing" role="tabpanel">
 			<h4>Restore missing data</h4>
-			<p>The Utility Data Files dashboard on your home page highlights any records that may be missing from the data files retrieved from the supplier. Select <span class="text-success">Details</span> for any record with missing data to investigate further.
+			<p>The Utility Data Files dashboard on your home page identifies a number of <span class="text-danger">Missing</span> records from the data files retrieved from the supplier. Select <span class="text-success">Details</span> for any record with missing data to investigate further.
 			<table class="table">
                 <thead>
                   <tr>
@@ -183,7 +183,8 @@
 			  <ul>
 			  <li><b>Data Files</b> - select this option to manually upload data from a .CSV (comma separated value) file from your local computer. 
 			  <p>Select the file you want to add then select <button class="btn btn-sm btn-outline-success" type="submit">Ingest</button></p>
-			  <div class="alert alert-info" role="alert"><b>NOTE:</b> Add a separate .CSV file for each calendar year or SoFi Connect may not process the data correctly.</div></li>
+			  <div class="alert alert-info" role="alert"><b>NOTE:</b> Add a separate .CSV file for each reporting period or SoFi Connect may not process the data correctly. Each file should include one extra calendar month at the beginning and end of the reporting period to ensure that all the relevant data is correctly processed. 
+			  <p>For example, if you are uploading data for December 2017, include data from the November and January utility bill to ensure that all the December dates are included.</p></div></li>
 			  <li><b>Inbox</b> - select this option to see the .CSV files that were automatically loaded to your pre-configured S3 bucket, FTP, SFTP, or server. 
 			  <p>Check the box beside any new data files then select <button class="btn btn-sm btn-outline-success" type="submit">Ingest</button> to have SoFi Connect process the data.</p></li>
 			  <li><b>PM Connect > Utility Data</b> or <b>EnergyStar Score</b> - select this option to download different types of data directly from your Energy Star Portfolio Manager account.
@@ -202,7 +203,7 @@
 			</div>
             <div class="tab-pane fade" id="sync-sites" role="tabpanel">
               <h4> Synchronize sites from SoFi software</h4>
-              <p class="">SoFi Connect is pre-configured with your SoFi software platform information. To ensure that SoFi Connect has the latest site details, download site information on a regular basis.</p>
+              <p class="">SoFi Connect is pre-configured with your SoFi software platform information. To ensure that SoFi Connect has the latest site details, it is recommended that you synchronize sites with the SoFi software each time you log into SoFi Connect.</p>
               <ol>
                 <li>From the top menu, select
                   <b>Sites</b>.</li>
