@@ -6,7 +6,7 @@
 
 body
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 body.home
@@ -42,7 +42,7 @@ html.search-results .sidenav-wrapper	/*Removes the side navigation from the sear
 
 div.home-layout
 {
-	padding: 2% 2%;
+	padding: 5% 2% 5% 2%;
 	background-color: #fafafa;
 }
 
@@ -68,11 +68,134 @@ div.search-results	/*Sets side padding on search results*/
 	padding: 0 20%;
 }
 
+div.home-banner	/*This is the first Hero/Banner on the Home Page - To replace the banner image with your own, change background-image property*/
+{
+	height: 300px;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #d3d3d3;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center 0;
+	background-image: url('../Images/blue-pit.jpg');
+}
+
+/*=Info-container section=*/
+
+div.info-container	/*div.info-container contains the first Hero/Banner on the Home Page - To replace the banner image with your own, point the background-image property to your own image.*/
+{
+	margin-left: auto;
+	margin-top: 100px;
+	margin-right: auto;
+	padding-bottom: 75px;
+	padding-top: 100px;
+	box-shadow: inset -1px 1px 17px 0px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	color: #fff;
+	background-color: #292f42;
+	/*Create the parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center 0;
+	background-image: url('../Images/core-samples.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.info-section	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0,0,0,0.3);
+}
+
+div.info-section::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.info-section::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.info-section > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.info-section > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 16.667%;
+}
+
+div.info-section > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 6%;
+}
+
+div.info-section > div:nth-child(3)	/*Div that contains "Tips"*/
+{
+	width: 33.333%;
+	margin-left: 5%;
+}
+
+div.info-container p	/*Complex Selector: Any <p> that is contained within div.info-container will have the following properties*/
+{
+	color: #fff;
+}
+
+/*=Elements for content contained within each info section=*/
+
+p.info-title
+{
+	font-size: 2em;
+	line-height: 1em;
+}
+
+p.info-content
+{
+	font-size: 0.8em;
+}
+
+p.tip	/*Paragraph style used for the Tips */
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-image: url('../Images/Tips-white.png');
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	border: solid 1px #fff;
+	border-radius: 6px;
+	line-height: 1em;
+	overflow: hidden;
+	padding: 15px 0px 15px 60px;
+	text-align: left;
+	margin: 5px 30px;
+}
+
 h1
 {
 	font-weight: bold;
 	font-size: 24.0pt;
 	color: #45494c;
+	mc-hyphenate: never;
+}
+
+h1.banner
+{
+	font-size: 2.75em;
+	line-height: 1em;
+	text-align: center;
+	color: #ffffff;
 }
 
 h2
@@ -112,14 +235,24 @@ p
 	margin-bottom: 20px;
 	line-height: 20pt;
 	letter-spacing: 0.25;
+	mc-hyphenate: never;
+}
+
+p.PDFtitle
+{
+	color: #45494c;
+	mc-hyphenate: never;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 28pt;
 }
 
 p.footer
 {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	line-height: 13pt;
-	color: #fff;
+	font-size: 10pt;
+	line-height: normal;
 }
 
 ol,
@@ -328,6 +461,32 @@ div.home-footer
 		width: 32%;
 		margin-left: 1%;
 	}
+
+	div.info-section > div
+	{
+		text-align: center;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
 }
 
 @media only screen and (max-width: 767px)
@@ -358,6 +517,56 @@ div.home-footer
 	{
 		width: 90%;
 		margin-left: 5%;
+	}
+
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
 	}
 }
 

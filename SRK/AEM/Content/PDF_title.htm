@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="home-topic _Skins_HTML5___fullHome" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-searchable="False" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___fullHome" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
@@ -18,6 +18,44 @@
         <link href="../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" />
         <link href="Resources/Stylesheets/Styles.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.separator-button
+{
+	-pie-background: linear-gradient(transparent, transparent);
+}
+
+.button.print-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/printer.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(transparent, transparent);
+}
+
+.needs-pie
+{
+	behavior: url('../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
         <script src="../Resources/Scripts/custom.modernizr.js">
         </script>
         <script src="../Resources/Scripts/jquery.min.js">
@@ -50,7 +88,7 @@
                                 </div>
                             </div>
                             <div class="title-bar-layout outer-row">
-                                <div class="logo-wrapper"><a class="logo selected" href="#" alt="Logo"></a>
+                                <div class="logo-wrapper"><a class="logo" href="Home.htm" alt="Logo"></a>
                                 </div>
                                 <div class="navigation-wrapper nocontent">
                                     <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
@@ -93,53 +131,26 @@
                             </div>
                             <div class="body-container">
                                 <div data-mc-content-body="True">
-                                    <p>&#160;</p>
-                                    <div class="home-banner">
-                                        <h1 class="banner">Geochemical Characterization Guide</h1>
-                                    </div>
-                                    <div class="home-layout">
-                                        <div class="home-tiles">
-                                            <div><a href="GeoChem/GeoChem_intro.htm"><p class="tile-title">Full Guide</p></a>
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Topic_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                                            </button>
+                                            <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                                            </button>
+                                            <div class="button-separator">
                                             </div>
-                                            <div><a href="GeoChem/GeoChem_Exploration.htm"><p class="tile-title">Exploration</p></a>
-                                            </div>
-                                            <div><a href="GeoChem/GeoChem_ScopingStudies.htm"><p class="tile-title">Scoping Studies</p></a>
-                                            </div>
-                                        </div>
-                                        <div class="home-tiles">
-                                            <div><a href="GeoChem/GeoChem_FeasibilityStudies.htm"><p class="tile-title">Feasibility Studies</p></a>
-                                            </div>
-                                            <div><a href="GeoChem/GeoChem_Operations.htm"><p class="tile-title">Operations</p></a>
-                                            </div>
-                                            <div><a href="GeoChem/GeoChem_PostClosure.htm"><p class="tile-title">Post Closure</p></a>
-                                            </div>
+                                            <button class="button needs-pie print-button" title="Print">
+                                                <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="print" />
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <img src="../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="info-container center">
-                                        <div class="info-section">
-                                            <div>
-                                                <p class="info-title">Finding the Right Solution</p>
-                                                <p class="info-content">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Praesent egestas tristique nibh. Etiam vitae tortor. Duis leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
-                                                <p class="info-content">Vivamus consectetuer hendrerit lacus. Praesent egestas tristique nibh. Nulla consequat massa quis enim. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Cras sagittis.</p>
-                                                <p class="info-content">Sed a libero. Pellentesque commodo eros a enim. Ut a nisl id ante tempus hendrerit. Duis vel nibh at velit scelerisque suscipit. Praesent congue erat at massa.</p>
-                                                <p class="info-content">Morbi ac felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Morbi vestibulum volutpat enim. Aenean ut eros et nisl sagittis vestibulum. In auctor lobortis lacus.</p>
-                                            </div>
-                                            <div>
-                                                <p class="info-title">Different Views?</p>
-                                                <p class="info-content">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Praesent egestas tristique nibh. Etiam vitae tortor. Duis leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
-                                                <p class="info-content">Vivamus consectetuer hendrerit lacus. Praesent egestas tristique nibh. Nulla consequat massa quis enim. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Cras sagittis.</p>
-                                                <p class="info-content">Sed a libero. Pellentesque commodo eros a enim. Ut a nisl id ante tempus hendrerit. Duis vel nibh at velit scelerisque suscipit. Praesent congue erat at massa.</p>
-                                            </div>
-                                            <div>
-                                                <p class="info-title">Tips</p>
-                                                <p>&#160;</p>
-                                                <p class="tip">Sed lectus. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.</p>
-                                                <p class="tip">Duis lobortis massa imperdiet quame. Etiam iaculis nunc ac metus. Etiam vitae tortor. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.</p>
-                                                <p class="tip">Aenean imperdiet. Morbi vestibulum volutpat enim. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-                                                <p class="tip">Curabitur suscipit suscipit tellus. Quisque rutrum. Phasellus ullamcorper ipsum rutrum nunc.</p>
-                                                <p class="tip">Donec pede justo, fringilla vel, aliquet ne</p>
-                                            </div>
-                                        </div>
+                                    <div class="topic-container">
+                                        <p class="PDFtitle">Geochemical Characterization Guide</p>
                                     </div>
                                 </div>
                             </div>
