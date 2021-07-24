@@ -233,9 +233,9 @@ p
 	font-size: 12.0pt;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	line-height: 20pt;
 	letter-spacing: 0.25;
 	mc-hyphenate: never;
+	line-height: normal;
 }
 
 p.PDFtitle
@@ -304,10 +304,10 @@ MadCap|dropDownHotspot
 
 MadCap|xref
 {
-	color: #45494c;
 	font-weight: bold;
 	mc-format: '{para}';
 	text-decoration: underline;
+	color: #00297A;
 }
 
 MadCap|breadcrumbsProxy
@@ -427,6 +427,16 @@ div.home-footer
 {
 	background-color: #45494c;
 	padding: 1% 5%;
+}
+
+a.GlossaryPageTerm
+{
+	
+}
+
+a
+{
+	
 }
 
 @media only screen and (max-width: 1279px)
@@ -578,5 +588,23 @@ div.home-footer
 		mc-format: '{quote}{para}{quote} on {pageref}';
 		text-decoration: none;
 	}
+}
+
+p.ref
+{
+	text-indent: -30px;
+	margin-left: 30px;
+}
+
+a.GlossaryPageLink
+{
+	font-weight: bold;
+	color: #00297A;
+}
+
+p.figure
+{
+	font-size: 10pt;
+	mc-auto-number-format: 'GF:{b}Figure {n+}: {/b}';
 }
 

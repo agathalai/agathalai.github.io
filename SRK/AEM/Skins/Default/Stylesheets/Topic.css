@@ -355,6 +355,37 @@ a.glossaryTerm
 	height: 0;
 }
 
+.MCTextPopup_Open.MCTextPopupHotSpot_
+{
+	background-position: right;
+	background-image: url('ExpandingOpen.gif');
+	padding-right: 17px;
+	padding-left: 0;
+}
+
+.MCTextPopup_Closed.MCTextPopupHotSpot_
+{
+	background-position: right;
+	background-image: url('ExpandingClosed.gif');
+	padding-right: 16px;
+	padding-left: 0;
+}
+
+.popupBody
+{
+	color: #000000;
+	background-color: #dcdcdc;
+	border: solid 1px #000000;
+	margin: 0px;
+	padding: 5px;
+}
+
+.\000023text
+{
+	font-weight: bold;
+	color: Olive;
+}
+
 div.MCBreadcrumbsBox_0
 {
 	border-bottom-width: 0;
@@ -363,6 +394,13 @@ div.MCBreadcrumbsBox_0
 	border-bottom-color: black;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
+}
+
+.xref
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #00297A;
 }
 
 .dropDown
@@ -704,9 +742,9 @@ td.mcReset
 
 MadCap|xref.TOCPageNumber_0
 {
-	color: inherit;
 	font-weight: inherit;
 	text-decoration: inherit;
+	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
 }
@@ -719,6 +757,21 @@ ul.MCGlossaryProxy_0
 	padding-top: 10px;
 	margin-top: 10px;
 	padding-left: 20px;
+}
+
+div.GlossaryPageHeading_0
+{
+	display: block;
+	margin-left: 0pt;
+	font-weight: bold;
+	margin-top: 20pt;
+	margin-bottom: 10pt;
+	text-align: left;
+	page-break-after: avoid;
+	column-break-after: avoid;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 1px;
 }
 
 .MCWebHelpFramesetLink a
