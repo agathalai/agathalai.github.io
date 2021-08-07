@@ -7,6 +7,7 @@
 body
 {
 	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
 }
 
 body.home
@@ -42,7 +43,7 @@ html.search-results .sidenav-wrapper	/*Removes the side navigation from the sear
 
 div.home-layout
 {
-	padding: 5% 2% 5% 2%;
+	padding: 2% 2% 5% 2%;
 	background-color: #fafafa;
 }
 
@@ -58,9 +59,8 @@ div.topic-container	/*Sets padding on topics*/
 
 div.sub-content
 {
-	border-top: solid 1px #dadada;
-	margin-top: 40px;
-	padding: 25px 0;
+	padding: 10px 0;
+	width: 80%;
 }
 
 div.search-results	/*Sets side padding on search results*/
@@ -72,14 +72,14 @@ div.home-banner	/*This is the first Hero/Banner on the Home Page - To replace th
 {
 	height: 300px;
 	padding-bottom: 50px;
-	padding-top: 50px;
+	padding-top: 10px;
 	background-color: #d3d3d3;
 	background-size: cover;
 	background-repeat: no-repeat;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center 0;
-	background-image: url('../Images/blue-pit.jpg');
+	background-image: url('../Images/MD_AEG_Manitou_July2019-0055.jpg');
 }
 
 /*=Info-container section=*/
@@ -97,7 +97,7 @@ div.info-container	/*div.info-container contains the first Hero/Banner on the Ho
 	/*Create the parallax scrolling effect*/
 	background-attachment: fixed;
 	background-position: center 0;
-	background-image: url('../Images/core-samples.jpg');
+	background-image: url('../Images/MD_AE_MeadowBank_Jan2018-093.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -185,7 +185,7 @@ p.tip	/*Paragraph style used for the Tips */
 h1
 {
 	font-weight: bold;
-	font-size: 24.0pt;
+	font-size: 2em;
 	color: #45494c;
 	mc-hyphenate: never;
 }
@@ -195,31 +195,31 @@ h1.banner
 	font-size: 2.75em;
 	line-height: 1em;
 	text-align: center;
-	color: #ffffff;
+	color: #45494c;
 }
 
 h2
 {
 	font-weight: bold;
-	font-size: 18.0pt;
+	font-size: 1.75em;
 }
 
 h3
 {
 	font-weight: bold;
-	font-size: 14.0pt;
+	font-size: 1.5em;
 }
 
 h4
 {
-	font-weight: bold;
-	font-size: 12.0pt;
+	font-weight: italics;
+	font-size: 1em;
 }
 
 h5
 {
 	font-weight: bold;
-	font-size: 10.0pt;
+	font-size: 0.9em;
 }
 
 h6
@@ -230,10 +230,8 @@ h6
 
 p
 {
-	font-size: 12.0pt;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	letter-spacing: 0.25;
 	mc-hyphenate: never;
 	line-height: normal;
 }
@@ -251,7 +249,7 @@ p.footer
 {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-size: 10pt;
+	font-size: .5em;
 	line-height: normal;
 }
 
@@ -297,7 +295,7 @@ MadCap|dropDownHotspot
 	cursor: hand;
 	text-decoration: none;
 	color: #45494c;
-	font-size: 20pt;
+	font-size: 1.75em;
 	font-weight: bold;
 	border-bottom: none;
 }
@@ -497,6 +495,11 @@ a
 		width: 100%;
 		margin-left: 0%;
 	}
+
+	div.sub-content
+	{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 767px)
@@ -578,6 +581,11 @@ a
 		width: 100%;
 		margin-left: 0%;
 	}
+
+	div.sub-content
+	{
+		width: 100%;
+	}
 }
 
 @media print
@@ -587,6 +595,11 @@ a
 		font-weight: normal;
 		mc-format: '{quote}{para}{quote} on {pageref}';
 		text-decoration: none;
+	}
+
+	div.sub-content
+	{
+		width: 100%;
 	}
 }
 
@@ -604,7 +617,7 @@ a.GlossaryPageLink
 
 p.figure
 {
-	font-size: 10pt;
+	font-size: .75em;
 	mc-auto-number-format: 'GF:{b}Figure {n+}: {/b}';
 }
 
