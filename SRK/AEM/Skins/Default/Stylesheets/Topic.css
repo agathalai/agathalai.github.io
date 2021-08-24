@@ -355,6 +355,16 @@ a.glossaryTerm
 	height: 0;
 }
 
+div.MCBreadcrumbsBox_0
+{
+	border-bottom-width: 0;
+	color: #888888;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
 .MCTextPopup_Open.MCTextPopupHotSpot_
 {
 	background-position: right;
@@ -386,21 +396,268 @@ a.glossaryTerm
 	color: Olive;
 }
 
-div.MCBreadcrumbsBox_0
-{
-	border-bottom-width: 0;
-	color: #888888;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
-
 .xref
 {
 	font-weight: bold;
 	text-decoration: underline;
 	color: #00297A;
+}
+
+div.MCMiniTocBox_0
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: black;
+	padding-top: 10px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+p.MiniTOC1_0
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	mc-hyphenate: never;
+	line-height: normal;
+	display: block;
+	margin: 1.12em 0;
+	margin-left: 0pt;
+	font-weight: bold;
+}
+
+a.MiniTOC1:link
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+p.MiniTOC2_0
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	mc-hyphenate: never;
+	line-height: normal;
+	display: block;
+	margin: 1.12em 0;
+	margin-left: 10pt;
+}
+
+a.MiniTOC2:link
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	color: black;
+	text-decoration: none;
+}
+
+p.MiniTOC3_0
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	mc-hyphenate: never;
+	line-height: normal;
+	display: block;
+	margin: 1.12em 0;
+	margin-left: 20pt;
+}
+
+a.MiniTOC3:link
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	color: black;
+	text-decoration: none;
+}
+
+p.MiniTOC4_0
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	mc-hyphenate: never;
+	line-height: normal;
+	display: block;
+	margin: 1.12em 0;
+	margin-left: 30pt;
+}
+
+a.MiniTOC4:link
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	color: black;
+	text-decoration: none;
+}
+
+p.MiniTOC5_0
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	mc-hyphenate: never;
+	line-height: normal;
+	display: block;
+	margin: 1.12em 0;
+	margin-left: 40pt;
+}
+
+a.MiniTOC5:link
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	color: black;
+	text-decoration: none;
 }
 
 .dropDown
@@ -453,31 +710,6 @@ div.MCBreadcrumbsBox_0
 .dropDownBody
 {
 	padding: 10px 30px 0;
-}
-
-ul.MCGlossaryProxy_0
-{
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: black;
-	padding-top: 10px;
-	margin-top: 10px;
-	padding-left: 20px;
-}
-
-div.GlossaryPageHeading_0
-{
-	display: block;
-	margin-left: 0pt;
-	font-weight: bold;
-	margin-top: 20pt;
-	margin-bottom: 10pt;
-	text-align: left;
-	page-break-after: avoid;
-	column-break-after: avoid;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	border-bottom-width: 1px;
 }
 
 div.MCTocProxy_0
@@ -772,6 +1004,31 @@ MadCap|xref.TOCPageNumber_0
 	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
+}
+
+ul.MCGlossaryProxy_0
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: black;
+	padding-top: 10px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+div.GlossaryPageHeading_0
+{
+	display: block;
+	margin-left: 0pt;
+	font-weight: bold;
+	margin-top: 20pt;
+	margin-bottom: 10pt;
+	text-align: left;
+	page-break-after: avoid;
+	column-break-after: avoid;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 1px;
 }
 
 .MCWebHelpFramesetLink a

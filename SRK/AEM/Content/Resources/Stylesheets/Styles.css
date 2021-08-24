@@ -621,3 +621,25 @@ p.figure
 	mc-auto-number-format: 'GF:{b}Figure {n+}: {/b}';
 }
 
+p.source
+{
+	font-size: .75em;
+	mc-auto-number-format: 'Source: ';
+	font-weight: bold;
+}
+
+div.highlight
+{
+	background: #f3c300;
+	font-style: italic;
+	padding: 16px;
+	display: inline-block;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+MadCap|xref.FigNum
+{
+	mc-format: '{paranumonly}';
+}
+
