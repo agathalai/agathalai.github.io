@@ -660,58 +660,6 @@ a.MiniTOC5:link
 	text-decoration: none;
 }
 
-.dropDown
-{
-	border-bottom: 1px solid #dadada;
-	padding: 10px 0;
-}
-
-.dropDownHotspot
-{
-	cursor: hand;
-	text-decoration: none;
-	color: #45494c;
-	font-size: 1.75em;
-	font-weight: bold;
-	border-bottom: none;
-}
-
-.dropDownHotspot:link
-{
-	cursor: hand;
-	text-decoration: none;
-	color: #45494c;
-	font-size: 1.75em;
-	font-weight: bold;
-	border-bottom: none;
-}
-
-.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('minus.png');
-	padding-left: 10px;
-	padding-right: 0;
-}
-
-.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('plus.png');
-	padding-left: 10px;
-	padding-right: 0;
-}
-
-.dropDownHead
-{
-	text-decoration: none;
-}
-
-.dropDownBody
-{
-	padding: 10px 30px 0;
-}
-
 div.MCTocProxy_0
 {
 	border-top-width: 1px;

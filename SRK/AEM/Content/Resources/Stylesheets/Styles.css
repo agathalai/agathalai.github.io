@@ -643,3 +643,9 @@ MadCap|xref.FigNum
 	mc-format: '{paranumonly}';
 }
 
+p.table
+{
+	font-size: .75em;
+	mc-auto-number-format: 'GT:{b}Table {n+}: {/b}';
+}
+
