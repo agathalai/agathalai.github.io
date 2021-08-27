@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/GeoChem/GeoChem_AcquisitionReqs.htm'],s:['$10','plot'],p:[['$10',23],['com',30],['guide',33],['often',13],['sooner',4]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/GeoChem/GeoChem_AcquisitionReqs.htm'],s:['$10','mixtur'],p:[['$10',23],['blocks',19],['exploration',1],['level',44],['potential',44],['submitted',14]]});
