@@ -368,16 +368,16 @@
 .micro-response .MCTextPopup_Open.MCTextPopupHotSpot_
 {
 	background-position: right;
-	background-image: url('ExpandingOpen.gif');
-	padding-right: 17px;
+	background-image: url('arrow-down.png');
+	padding-right: 15px;
 	padding-left: 0;
 }
 
 .micro-response .MCTextPopup_Closed.MCTextPopupHotSpot_
 {
 	background-position: right;
-	background-image: url('ExpandingClosed.gif');
-	padding-right: 16px;
+	background-image: url('arrow-right.png');
+	padding-right: 10px;
 	padding-left: 0;
 }
 
@@ -392,8 +392,8 @@
 
 .micro-response .\000023text
 {
+	color: #00297A;
 	font-weight: bold;
-	color: Olive;
 }
 
 .micro-response .xref

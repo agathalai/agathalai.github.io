@@ -437,6 +437,13 @@ a
 	
 }
 
+MadCap|glossaryTerm
+{
+	color: #00297A;
+	mc-closed-image: url('../Images/arrow-right.png');
+	mc-open-image: url('../Images/arrow-down.png');
+}
+
 @media only screen and (max-width: 1279px)
 {
 	div.home-tiles > div
