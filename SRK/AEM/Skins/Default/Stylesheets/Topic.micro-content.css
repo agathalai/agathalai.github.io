@@ -365,6 +365,13 @@
 	margin-bottom: 10px;
 }
 
+.micro-response .xref
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #00297A;
+}
+
 .micro-response .MCTextPopup_Open.MCTextPopupHotSpot_
 {
 	background-position: right;
@@ -394,13 +401,6 @@
 {
 	color: #00297A;
 	font-weight: bold;
-}
-
-.micro-response .xref
-{
-	font-weight: bold;
-	text-decoration: underline;
-	color: #00297A;
 }
 
 .micro-response div.MCMiniTocBox_0
@@ -695,6 +695,12 @@
 	word-spacing: inherit;
 	text-decoration: inherit;
 	text-align: inherit;
+}
+
+.micro-response .img
+{
+	border: none;
+	max-width: 100%;
 }
 
 .micro-response div.MCTocProxy_0
@@ -1251,21 +1257,6 @@
 	padding-top: 10px;
 	margin-top: 10px;
 	padding-left: 20px;
-}
-
-.micro-response div.GlossaryPageHeading_0
-{
-	display: block;
-	margin-left: 0pt;
-	font-weight: bold;
-	margin-top: 20pt;
-	margin-bottom: 10pt;
-	text-align: left;
-	page-break-after: avoid;
-	column-break-after: avoid;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	border-bottom-width: 1px;
 }
 
 .micro-response .MCWebHelpFramesetLink a
