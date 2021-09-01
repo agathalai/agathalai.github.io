@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/GeoChem/GeoChem_AcquisitionReqs.htm'],s:['$10','mineralog'],p:[['$10',23],['blocks',19],['examples',5],['late',29],['plasma',9],['structure',1]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/GeoChem/GeoChem_ActCosts.htm'],s:['$10','mous'],p:[['$10',23],['calculated',14],['following',30],['metalloids',18],['reactivity',5],['then',6]]});
