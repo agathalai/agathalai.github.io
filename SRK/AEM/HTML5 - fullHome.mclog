@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2019 Generated HTML5 - fullHome.fltar" Date="2021-08-31T11:59:36.3862726-07:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2019 Generated HTML5 - fullHome.fltar" Date="2021-08-31T19:47:55.8237424-07:00">
     <Messages>Compiling target HTML5 - fullHome...
 Removing previously generated content...
 Loading skin info...
@@ -185,7 +185,7 @@ Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
 Ignored Compiler Warnings: 35
-Output generated in 9 second(s).
+Output generated in 11 second(s).
 
 Done
 Saving log to "C:\Users\a_bit\Downloads\AEM\Output\a_bit\HTML5 - fullHome\HTML5 - fullHome.mclog"
