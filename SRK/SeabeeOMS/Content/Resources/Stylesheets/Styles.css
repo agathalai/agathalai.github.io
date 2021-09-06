@@ -1,0 +1,687 @@
+/*<meta />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*MadCap*/
+
+body
+{
+	font-family: Arial, sans-serif;
+	font-size: 1.2em;
+}
+
+body.home
+{
+	background-color: #fafafa;
+}
+
+html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+html.home-topic .sidenav-wrapper	/*Removes the side navigation from the home topic*/
+{
+	display: none;
+}
+
+html.search-results .sidenav-wrapper	/*Removes the side navigation from the search results page*/
+{
+	display: none;
+}
+
+div.home-layout
+{
+	padding: 2% 2% 5% 2%;
+	background-color: #fafafa;
+}
+
+div.layout-separator
+{
+	border-right: 1px solid #dadada;
+}
+
+div.topic-container	/*Sets padding on topics*/
+{
+	padding: 2% 0;
+}
+
+div.sub-content
+{
+	padding: 10px 0;
+	width: 80%;
+}
+
+div.search-results	/*Sets side padding on search results*/
+{
+	padding: 0 20%;
+}
+
+div.home-banner	/*This is the first Hero/Banner on the Home Page - To replace the banner image with your own, change background-image property*/
+{
+	height: 300px;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	background-color: #d3d3d3;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center 0;
+	background-image: url('../Images/seabee-banner-top.jpg');
+}
+
+/*=Info-container section=*/
+
+div.info-container	/*div.info-container contains the first Hero/Banner on the Home Page - To replace the banner image with your own, point the background-image property to your own image.*/
+{
+	margin-left: auto;
+	margin-top: 100px;
+	margin-right: auto;
+	padding-bottom: 75px;
+	padding-top: 100px;
+	box-shadow: inset -1px 1px 17px 0px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	color: #fff;
+	background-color: #292f42;
+	/*Create the parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center 0;
+	background-image: url('../Images/seabee-banner-bottom.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.info-section	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0,0,0,0.3);
+}
+
+div.info-section::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.info-section::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.info-section > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.info-section > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 16.667%;
+}
+
+div.info-section > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 6%;
+}
+
+div.info-section > div:nth-child(3)	/*Div that contains "Tips"*/
+{
+	width: 33.333%;
+	margin-left: 5%;
+}
+
+div.info-container p	/*Complex Selector: Any <p> that is contained within div.info-container will have the following properties*/
+{
+	color: #fff;
+}
+
+/*=Elements for content contained within each info section=*/
+
+p.info-title
+{
+	font-size: 2em;
+	line-height: 1em;
+}
+
+p.info-content
+{
+	font-size: 0.8em;
+}
+
+p.tip	/*Paragraph style used for the Tips */
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-image: url('../Images/Tips-white.png');
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	border: solid 1px #fff;
+	border-radius: 6px;
+	line-height: 1em;
+	overflow: hidden;
+	padding: 15px 0px 15px 60px;
+	text-align: left;
+	margin: 5px 30px;
+}
+
+h1
+{
+	font-weight: bold;
+	font-size: 2em;
+	color: #20415b;
+	mc-hyphenate: never;
+}
+
+h1.banner
+{
+	line-height: 1em;
+	text-align: center;
+	color: #20415b;
+	font-weight: lighter;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+h2
+{
+	color: #e16928;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 1em;
+	margin: 1em 0px 0.75em;
+}
+
+h3
+{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+h4
+{
+	font-weight: italics;
+	font-size: 1em;
+}
+
+h5
+{
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+}
+
+p
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	mc-hyphenate: never;
+	line-height: normal;
+}
+
+p.PDFtitle
+{
+	color: #20415b;
+	mc-hyphenate: never;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 28pt;
+}
+
+p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: .5em;
+	line-height: normal;
+}
+
+ol,
+ul
+{
+	letter-spacing: .25;
+	line-height: normal;
+}
+
+img
+{
+	border: none;
+	max-width: 100%;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+MadCap|expandingHead
+{
+	font-style: italic;
+	font-weight: normal;
+	cursor: hand;
+	text-decoration: none;
+	color: #006600;
+}
+
+MadCap|expandingBody
+{
+	color: #777777;
+	font-style: italic;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	color: #375b75;
+	font-size: 1.75em;
+	font-weight: bold;
+	border-bottom: none;
+}
+
+MadCap|xref
+{
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+	color: #375b75;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: #888888;
+}
+
+a:link	/*Color of hyperlinks*/
+{
+	color: #375b75;
+}
+
+a:visited
+{
+	color: #45494c;
+}
+
+MadCap|dropDownBody
+{
+	padding: 10px 30px 0;
+}
+
+MadCap|dropDown
+{
+	border-bottom: 1px solid #dadada;
+	mc-image-position: left;
+	mc-image-spacing: 10px;
+	mc-open-image: url('../Images/minus.png');
+	mc-closed-image: url('../Images/plus.png');
+	padding: 10px 0;
+}
+
+/*==Home Tiles section==*/
+
+div.home-tiles	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: transparent;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	/*Adds transition animation when switching between screen sizes*/
+	border: 1px solid #d3d3d3;
+	padding: 20px 10px;
+	overflow: hidden;
+}
+
+div.home-tiles > div:hover	/*When hovering over a home-tile, these properties apply*/
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 24%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 1%;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 1%;
+}
+
+div.home-tiles a	/*Complex Selector: Any anchor (links) tags that are within div.home-tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #565656;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+p.tile-title
+{
+	font-size: 1.2em;
+	letter-spacing: 0.25;
+	color: #375b75;
+	margin: 0;
+	text-align: center;
+}
+
+p.tile-subtitle
+{
+	font-size: 0.9em;
+	margin: 0;
+}
+
+div.home-footer
+{
+	background-color: #375b75;
+	padding: 1% 5%;
+}
+
+a.GlossaryPageTerm
+{
+	
+}
+
+a
+{
+	
+}
+
+MadCap|glossaryTerm
+{
+	color: #e6692a;
+	mc-closed-image: url('../Images/arrow-right.png');
+	mc-open-image: url('../Images/arrow-down.png');
+}
+
+li.sq-orange
+{
+	
+}
+
+@media only screen and (max-width: 1279px)
+{
+	div.home-tiles > div
+	{
+		float: left;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		background-color: transparent;
+		transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+		/*Adds transition animation when switching between screen sizes*/
+		border: 1px solid #d3d3d3;
+		padding: 20px 10px;
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 32%;
+		margin-left: 1%;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.sub-content
+	{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	p.tile-title
+	{
+		font-size: 1.2em;
+	}
+
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.sub-content
+	{
+		width: 100%;
+	}
+}
+
+@media print
+{
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} on {pageref}';
+		text-decoration: none;
+	}
+
+	div.sub-content
+	{
+		width: 100%;
+	}
+
+	body
+	{
+		font-size: 12.0pt;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		line-height: 20pt;
+		letter-spacing: 0.25;
+	}
+}
+
+p.ref
+{
+	text-indent: -30px;
+	margin-left: 30px;
+}
+
+a.GlossaryPageLink
+{
+	font-weight: bold;
+	color: #375b75;
+}
+
+p.figure
+{
+	font-size: .75em;
+	mc-auto-number-format: 'GF:{b}Figure {n+}: {/b}';
+}
+
+p.source
+{
+	font-size: .75em;
+	mc-auto-number-format: 'Source: ';
+	font-weight: bold;
+}
+
+div.highlight
+{
+	background: #e6692a;
+	font-style: italic;
+	padding: 16px;
+	display: inline-block;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+MadCap|xref.FigNum
+{
+	mc-format: '{paranumonly}';
+}
+
+p.table
+{
+	font-size: .75em;
+	mc-auto-number-format: 'GT:{b}Table {n+}: {/b}';
+}
+
+ul > li.sq-orange::marker
+{
+	color: #e6692a;
+	font-size: 10pt;
+	font-weight: bold;
+	font-style: normal;
+	content: '■';
+}
+
