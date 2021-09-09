@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/GeoChem/GeoChem_ActCosts.htm'],s:['$10','move'],p:[['$10',23],['calculated',14],['follows',11],['metallurgist',0],['reactivity',14],['then',12]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/GeoChem/GeoChem_ActCosts.htm'],s:['$10','mous'],p:[['$10',23],['calculations',14],['for',5],['metals',27],['receiving',5],['therefore',30]]});

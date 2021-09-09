@@ -4,6 +4,11 @@
 
 /*MadCap*/
 
+.NoGloss
+{
+	mc-disable-glossary-terms: true;
+}
+
 body
 {
 	font-family: 'Lato', sans-serif;
@@ -79,7 +84,7 @@ div.home-banner	/*This is the first Hero/Banner on the Home Page - To replace th
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center 0;
-	background-image: url('../Images/MD_AEG_Manitou_July2019-0055.jpg');
+	background-image: url('../Images/MD_AE_MeadowBank_Jan2018-093_cropped.jpg');
 }
 
 /*=Info-container section=*/
@@ -97,7 +102,7 @@ div.info-container	/*div.info-container contains the first Hero/Banner on the Ho
 	/*Create the parallax scrolling effect*/
 	background-attachment: fixed;
 	background-position: center 0;
-	background-image: url('../Images/MD_AE_MeadowBank_Jan2018-093.jpg');
+	background-image: url('../Images/MD_AEG_Manitou_July2019-0055.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -107,7 +112,7 @@ div.info-section	/*This layout was created using the Responsive Layout Editor in
 	mc-grid-row: true;
 	margin-left: auto;
 	margin-right: auto;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.5);
 }
 
 div.info-section::before
@@ -427,9 +432,9 @@ div.home-footer
 	padding: 1% 5%;
 }
 
-a.GlossaryPageTerm
+a.altcolor
 {
-	
+	color: #f3c300;
 }
 
 a
