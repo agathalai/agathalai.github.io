@@ -4,6 +4,11 @@
 
 /*MadCap*/
 
+.NoGloss
+{
+	mc-disable-glossary-terms: true;
+}
+
 body
 {
 	font-family: Arial, sans-serif;
@@ -188,6 +193,7 @@ h1
 	font-size: 2em;
 	color: #20415b;
 	mc-hyphenate: never;
+	mc-disable-glossary-terms: true;
 }
 
 h1.banner
@@ -206,32 +212,36 @@ h2
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: normal;
-	margin-top: 1em;
-	margin: 1em 0px 0.75em;
+	margin: 1.5em 0px 0.75em;
+	mc-disable-glossary-terms: true;
 }
 
 h3
 {
 	font-weight: bold;
 	font-size: 1.5em;
+	mc-disable-glossary-terms: true;
 }
 
 h4
 {
 	font-weight: italics;
 	font-size: 1em;
+	mc-disable-glossary-terms: true;
 }
 
 h5
 {
 	font-weight: bold;
 	font-size: 0.9em;
+	mc-disable-glossary-terms: true;
 }
 
 h6
 {
 	font-weight: bold;
 	font-size: 8.0pt;
+	mc-disable-glossary-terms: true;
 }
 
 p
@@ -264,6 +274,33 @@ ul
 {
 	letter-spacing: .25;
 	line-height: normal;
+}
+
+ul
+{
+	list-style: square;
+}
+
+ul.SQorange
+{
+	list-style: none;
+	/* Remove default bullets */
+}
+
+ul.SQorange li::before
+{
+	content: "■";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #e6692a;
+	/* Change the color */
+	font-weight: bold;
+	/* If you want it to be bold */
+	display: inline-block;
+	/* Needed to add space between the bullet and the text */
+	width: 1em;
+	/* Also needed for space (tweak if needed) */
+	margin-left: -1em;
+	/* Also needed for space (tweak if needed) */
 }
 
 img
@@ -312,6 +349,7 @@ MadCap|xref
 	mc-format: '{para}';
 	text-decoration: underline;
 	color: #375b75;
+	mc-disable-glossary-terms: true;
 }
 
 MadCap|breadcrumbsProxy
@@ -440,7 +478,7 @@ a.GlossaryPageTerm
 
 a
 {
-	
+	mc-disable-glossary-terms: true;
 }
 
 MadCap|glossaryTerm
@@ -676,12 +714,9 @@ p.table
 	mc-auto-number-format: 'GT:{b}Table {n+}: {/b}';
 }
 
-ul > li.sq-orange::marker
+p.note
 {
-	color: #e6692a;
-	font-size: 10pt;
-	font-weight: bold;
-	font-style: normal;
-	content: '■';
+	font-size: .75em;
+	mc-auto-number-format: '{b}{color #e6692a}Note: {/color}{/b}';
 }
 
