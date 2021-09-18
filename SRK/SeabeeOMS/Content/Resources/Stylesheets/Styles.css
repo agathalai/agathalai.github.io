@@ -493,6 +493,11 @@ li.sq-orange
 	
 }
 
+thead
+{
+	mc-disable-glossary-terms: true;
+}
+
 @media only screen and (max-width: 1279px)
 {
 	div.home-tiles > div
