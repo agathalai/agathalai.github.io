@@ -9,6 +9,11 @@
 	mc-disable-glossary-terms: true;
 }
 
+.orange
+{
+	color: #e6692a;
+}
+
 body
 {
 	font-family: Arial, sans-serif;
@@ -677,6 +682,7 @@ p.ref
 {
 	text-indent: -30px;
 	margin-left: 30px;
+	mc-disable-glossary-terms: true;
 }
 
 a.GlossaryPageLink

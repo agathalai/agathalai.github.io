@@ -396,6 +396,13 @@
 	font-weight: bold;
 }
 
+.micro-response .xref
+{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #375b75;
+}
+
 .micro-response ul.MCGlossaryProxy_0
 {
 	border-top-width: 1px;
