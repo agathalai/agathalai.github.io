@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2019 Generated HTML5 - fullHome.fltar" Date="2021-09-08T18:15:09.2220058-07:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2019 Generated HTML5 - fullHome.fltar" Date="2021-09-23T20:36:12.7498995-07:00">
     <Messages>Compiling target HTML5 - fullHome...
 Removing previously generated content...
 Loading skin info...
@@ -124,7 +124,11 @@ Generated GeoChem\GeoChem_Glossary.htm
 Processing topic: GeoChem\GeoChem_Ref.htm...
 Applying master page OtherTopics.flmsp...
 Generated GeoChem\GeoChem_Ref.htm
+Processing topic: GeoChem\GeoChem_intro.htm...
+Applying master page OtherTopics.flmsp...
+Generated GeoChem\GeoChem_intro.htm
 Processing topic: Home.htm...
+Link points outside project file:///C:/Users/a_bit/Downloads/AEM/Default.htm
 Topic marked 'not searchable': Home.htm...
 Applying master page HomePage.flmsp...
 Generated Home.htm
@@ -149,12 +153,14 @@ Generated Skins\Default\Stylesheets\TextEffects.micro-content.css
 Generated Skins\Default\Stylesheets\Topic.micro-content.css
 Generated Default.htm
 Saving result set...
-Ignored Compiler Warnings: 33
-Output generated in 1 minute(s) and 19 second(s).
+Ignored Compiler Warnings: 35
+Output generated in 1 minute(s) and 21 second(s).
 
 Done
 Saving log to "C:\Users\a_bit\Downloads\AEM\Output\a_bit\HTML5 - fullHome\HTML5 - fullHome.mclog"
 </Messages>
-    <Warnings />
+    <Warnings>
+        <LogEntry File="../../../Content/Home.htm" Message="Link points outside project file:///C:/Users/a_bit/Downloads/AEM/Default.htm&#xA;" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - fullHome" ErrorID="10056" />
+    </Warnings>
     <Errors />
 </MadCapLog>

@@ -113,6 +113,7 @@ div.info-section	/*This layout was created using the Responsive Layout Editor in
 	margin-left: auto;
 	margin-right: auto;
 	background: rgba(0,0,0,0.5);
+	text-align: justify;
 }
 
 div.info-section::before
@@ -164,6 +165,7 @@ p.info-title
 {
 	font-size: 2em;
 	line-height: 1em;
+	text-align: center;
 }
 
 p.info-content
