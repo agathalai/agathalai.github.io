@@ -365,37 +365,6 @@
 	margin-bottom: 10px;
 }
 
-.micro-response .MCTextPopup_Open.MCTextPopupHotSpot_
-{
-	background-position: right;
-	background-image: url('arrow-down.png');
-	padding-right: 15px;
-	padding-left: 0;
-}
-
-.micro-response .MCTextPopup_Closed.MCTextPopupHotSpot_
-{
-	background-position: right;
-	background-image: url('arrow-right.png');
-	padding-right: 10px;
-	padding-left: 0;
-}
-
-.micro-response .popupBody
-{
-	color: #000000;
-	background-color: #dcdcdc;
-	border: solid 1px #000000;
-	margin: 0px;
-	padding: 5px;
-}
-
-.micro-response .\000023text
-{
-	color: #e6692a;
-	font-weight: bold;
-}
-
 .micro-response .xref
 {
 	font-weight: bold;
