@@ -18,6 +18,7 @@ body
 {
 	font-family: Arial, sans-serif;
 	font-size: 1.2em;
+	mc-hyphenate: never;
 }
 
 body.home
@@ -295,6 +296,28 @@ ul.SQorange
 ul.SQorange li::before
 {
 	content: "■";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #e6692a;
+	/* Change the color */
+	font-weight: bold;
+	/* If you want it to be bold */
+	display: inline-block;
+	/* Needed to add space between the bullet and the text */
+	width: 1em;
+	/* Also needed for space (tweak if needed) */
+	margin-left: -1em;
+	/* Also needed for space (tweak if needed) */
+}
+
+ul.SQorange-sub
+{
+	list-style: none;
+	/* Remove default bullets */
+}
+
+ul.SQorange-sub li::before
+{
+	content: "–";
 	/* Add content: \2022 is the CSS Code/unicode for a bullet */
 	color: #e6692a;
 	/* Change the color */
