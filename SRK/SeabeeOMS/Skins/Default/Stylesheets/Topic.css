@@ -391,6 +391,7 @@ p.MiniTOC1_0
 	line-height: normal;
 	display: block;
 	margin: 1.12em 0;
+	color: #e6692a;
 	margin-left: 0pt;
 	font-weight: bold;
 }
@@ -429,7 +430,7 @@ a.MiniTOC1:link
 	word-spacing: inherit;
 	text-align: inherit;
 	mc-leader-format: '.';
-	color: black;
+	color: #e6692a;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -442,6 +443,7 @@ p.MiniTOC2_0
 	line-height: normal;
 	display: block;
 	margin: 1.12em 0;
+	color: #e6692a;
 	margin-left: 10pt;
 }
 
@@ -479,7 +481,7 @@ a.MiniTOC2:link
 	word-spacing: inherit;
 	text-align: inherit;
 	mc-leader-format: '.';
-	color: black;
+	color: #e6692a;
 	text-decoration: none;
 }
 
@@ -491,6 +493,8 @@ p.MiniTOC3_0
 	line-height: normal;
 	display: block;
 	margin: 1.12em 0;
+	color: #e6692a;
+	font-style: italic;
 	margin-left: 20pt;
 }
 
@@ -521,14 +525,14 @@ a.MiniTOC3:link
 	float: inherit;
 	font-size: inherit;
 	font-family: inherit;
-	font-style: inherit;
 	font-variant: inherit;
 	text-transform: inherit;
 	letter-spacing: inherit;
 	word-spacing: inherit;
 	text-align: inherit;
 	mc-leader-format: '.';
-	color: black;
+	color: #e6692a;
+	font-style: italic;
 	text-decoration: none;
 }
 

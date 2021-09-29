@@ -225,8 +225,8 @@ h2
 h3
 {
 	font-weight: bold;
-	font-size: 1.5em;
 	mc-disable-glossary-terms: true;
+	font-size: 1.25em;
 }
 
 h4
@@ -524,6 +524,27 @@ li.sq-orange
 thead
 {
 	mc-disable-glossary-terms: true;
+}
+
+MadCap|miniTocProxy
+{
+	
+}
+
+p.MiniTOC1
+{
+	color: #e6692a;
+}
+
+p.MiniTOC2
+{
+	color: #e6692a;
+}
+
+p.MiniTOC3
+{
+	color: #e6692a;
+	font-style: italic;
 }
 
 @media only screen and (max-width: 1279px)

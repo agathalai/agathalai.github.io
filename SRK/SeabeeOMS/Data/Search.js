@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/OMS_Surveillance-Weekly-Tailings.htm'],s:['0','is'],p:[['0',1],['annually',18],['dams',15],['grading',10],['mining',17],['rate',11],['tailings',5],['years',14]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/SeabeeOMS/OMS_DocControl.htm'],s:['0','have','that'],p:[['0',1],['and',19],['considering',34],['every',35],['is',23],['of',15],['report',5],['table',6],['was',14]]});
