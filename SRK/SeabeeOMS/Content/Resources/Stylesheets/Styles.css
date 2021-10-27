@@ -704,12 +704,23 @@ p.MiniTOC3
 	{
 		font-weight: normal;
 		mc-format: '{quote}{para}{quote} on {pageref}';
+		font-style: italic;
 		text-decoration: none;
 	}
 
 	div.sub-content
 	{
 		width: 100%;
+	}
+
+	MadCap|tocProxy
+	{
+		margin-top: 5px;
+		border-top-width: 0;
+		border-top-style: none;
+		border-top-color: transparent;
+		padding-top: 5px;
+		line-height: normal;
 	}
 
 	body
@@ -719,6 +730,52 @@ p.MiniTOC3
 		margin-bottom: 20px;
 		line-height: 20pt;
 		letter-spacing: 0.25;
+	}
+
+	MadCap|glossaryProxy
+	{
+		border-top-color: transparent;
+		border-top-style: none;
+		border-top-width: 0;
+	}
+
+	ul.SQorange
+	{
+		list-style: none;
+		/* Remove default bullets */
+	}
+
+	ul.SQorange li::before
+	{
+		content: "";
+		/* Add content: \2022 is the CSS Code/unicode for a bullet */
+	}
+
+	ul.SQorange > li::marker
+	{
+		color: #e6692a;
+		font-weight: bold;
+		font-style: normal;
+		content: '■';
+	}
+
+	ul.SQorange-sub
+	{
+		list-style: none;
+		/* Remove default bullets */
+	}
+
+	ul.SQorange-sub li::before
+	{
+		content: "";
+	}
+
+	ul.SQorange-sub > li::marker
+	{
+		color: #e6692a;
+		font-weight: bold;
+		font-style: normal;
+		content: '-';
 	}
 }
 
