@@ -777,6 +777,20 @@ p.MiniTOC3
 		font-style: normal;
 		content: '-';
 	}
+
+	h5
+	{
+		font-style: italic;
+		font-variant: normal;
+		color: #375b75;
+		font-weight: normal;
+		font-size: 12pt;
+	}
+
+	h4
+	{
+		color: #375b75;
+	}
 }
 
 p.ref
