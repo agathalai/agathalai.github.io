@@ -231,9 +231,9 @@ h3
 
 h4
 {
-	font-weight: italics;
 	font-size: 1em;
 	mc-disable-glossary-terms: true;
+	font-style: italic;
 }
 
 h5
