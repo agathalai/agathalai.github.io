@@ -13,6 +13,9 @@ body
 {
 	font-family: 'Lato', sans-serif;
 	font-size: 1.2em;
+	mc-hyphenate: never;
+	orphans: 2;
+	widows: 2;
 }
 
 body.home
@@ -607,7 +610,7 @@ MadCap|glossaryTerm
 	MadCap|xref
 	{
 		font-weight: normal;
-		mc-format: '{quote}{para}{quote} on {pageref}';
+		font-style: italic;
 		text-decoration: none;
 	}
 
@@ -621,8 +624,41 @@ MadCap|glossaryTerm
 		font-size: 12.0pt;
 		margin-top: 20px;
 		margin-bottom: 20px;
-		line-height: 20pt;
 		letter-spacing: 0.25;
+	}
+
+	p.figure
+	{
+		font-size: 10pt;
+		mc-auto-number-format: 'GF:Figure {n+}: ';
+	}
+
+	div.highlight
+	{
+		display: block;
+		margin: 1.12em 0;
+		margin-left: 40px;
+		margin-right: 40px;
+		background: #f3c300;
+		mc-relevant-properties: $Font$ $Block$ $Box$ $Border$;
+		background-color: #f3c300;
+	}
+
+	MadCap|miniTocProxy
+	{
+		margin-top: 5px;
+		padding-top: 5px;
+	}
+
+	ul
+	{
+		line-height: normal;
+	}
+
+	p.footer
+	{
+		font-style: italic;
+		font-size: 12px;
 	}
 }
 
@@ -654,11 +690,11 @@ p.source
 div.highlight
 {
 	background: #f3c300;
-	font-style: italic;
 	padding: 16px;
 	display: inline-block;
 	margin-left: 10%;
 	margin-right: 10%;
+	font-style: normal;
 }
 
 MadCap|xref.FigNum
