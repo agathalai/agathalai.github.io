@@ -365,6 +365,12 @@
 	margin-bottom: 10px;
 }
 
+.micro-response .img
+{
+	border: none;
+	max-width: 100%;
+}
+
 .micro-response .xref
 {
 	font-weight: bold;

@@ -365,6 +365,12 @@ div.MCBreadcrumbsBox_0
 	margin-bottom: 10px;
 }
 
+.img
+{
+	border: none;
+	max-width: 100%;
+}
+
 .xref
 {
 	font-weight: bold;
