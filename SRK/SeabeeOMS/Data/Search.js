@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/FigureGallery.htm'],s:['0','find','sand'],p:[['0',2],['along',16],['canada',18],['description',48],['for',48],['khs',54],['observation',53],['protocol',54],['shown',20],['the',46],['within',18]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/FigureGallery.htm'],s:['0','filter','same'],p:[['0',2],['along',16],['canada',5],['description',7],['for',41],['kendell',2],['objectives',36],['properly',30],['should',18],['the',38],['with',18]]});
