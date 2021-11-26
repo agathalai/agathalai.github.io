@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/FigureGallery.htm'],s:['0','figur','s1'],p:[['0',2],['along',16],['canada',2],['described',30],['for',32],['josie',49],['objective',3],['professional',7],['shacks',55],['the',30],['will',9]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/FigureGallery.htm'],s:['0','figur','s'],p:[['0',2],['along',15],['can',40],['describe',32],['for',24],['jason',49],['notified',4],['procedures',54],['sg4',30],['the',30],['wiens',49]]});
