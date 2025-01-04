@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/FigureGallery.htm'],s:['0','figur','s'],p:[['0',2],['along',15],['can',40],['describe',32],['for',24],['jason',49],['notified',4],['procedures',54],['sg4',30],['the',30],['wiens',49]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/FigureGallery.htm'],s:['0','effici','pressur'],p:[['0',2],['above',5],['authority',5],['consists',37],['duration',33],['functional',4],['items',47],['needed',19],['plan',34],['responsible',56],['structures',16],['tl',12],['within',16]]});

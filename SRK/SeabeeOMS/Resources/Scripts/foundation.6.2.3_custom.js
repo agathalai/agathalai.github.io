@@ -150,8 +150,13 @@
          * @returns {String} - unique id
          */
         GetYoDigits: function (length, namespace) {
+            const randomBuffer = new Uint32Array(1);
+            var crypto = window.crypto || window.msCrypto;
+            crypto.getRandomValues(randomBuffer);
+            let randomNumber = randomBuffer[0] / (0xffffffff + 1);
+
             length = length || 6;
-            return Math.round(Math.pow(36, length + 1) - Math.random() * Math.pow(36, length)).toString(36).slice(1) + (namespace ? '-' + namespace : '');
+            return Math.round(Math.pow(36, length + 1) - randomNumber * Math.pow(36, length)).toString(36).slice(1) + (namespace ? '-' + namespace : '');
         },
         /**
          * Initialize plugins on any elements within `elem` (and `elem` itself) that aren't already initialized.
@@ -836,29 +841,25 @@
         Feather: function (menu) {
             var type = arguments.length <= 1 || arguments[1] === undefined ? 'zf' : arguments[1];
 
-            menu.attr('role', 'menubar');
+            //menu.attr('role', 'navigation');
 
-            var items = menu.find('li').attr({ 'role': 'menuitem' }),
+            var items = menu.find('li').not(".tree-node-preloaded"),
                 subMenuClass = 'is-' + type + '-submenu',
                 subItemClass = subMenuClass + '-item',
                 hasSubClass = 'is-' + type + '-submenu-parent';
-
-            menu.find('a:first').attr('tabindex', 0);
 
             items.each(function () {
                 var $item = $(this),
                     $sub = $item.children('ul');
 
                 if ($sub.length) {
-                    $item.addClass(hasSubClass).attr({
+                    $item.children().children('a:first').addClass(hasSubClass).attr({
                         'aria-haspopup': true,
-                        'aria-expanded': false,
-                        'aria-label': $item.children('a:first').text()
                     });
 
                     $sub.addClass('submenu ' + subMenuClass).attr({
                         'data-submenu': '',
-                        'aria-hidden': true,
+                        'aria-hidden': false,
                         'role': 'menu'
                     });
                 }
@@ -1199,7 +1200,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             value: function _init() {
                 this.$submenuAnchors = this.$element.find('li.is-drilldown-submenu-parent').children('a');
                 this.$submenus = this.$submenuAnchors.parent('li').children('[data-submenu]');
-                this.$menuItems = this.$element.find('li').not('.js-drilldown-back').attr('role', 'menuitem').find('a');
+                this.$menuItems = this.$element.find('li').not('.js-drilldown-back').find('a');
 
                 this._prepareMenu();
 
@@ -1436,7 +1437,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }, {
             key: '_show',
             value: function _show($elem) {
-                $elem.children('[data-submenu]').addClass('is-active');
+                $elem.children('[data-submenu]').addClass('is-active').attr("aria-hidden", false).css('display', 'block');
+                $elem.children('a').attr('aria-expanded', true);
                 /**
                  * Fires when the submenu has opened.
                  * @event Drilldown#open
@@ -1456,7 +1458,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             value: function _hide($elem) {
                 var _this = this;
                 $elem.addClass('is-closing').one(Foundation.transitionend($elem), function () {
-                    $elem.removeClass('is-active is-closing');
+                    $elem.removeClass('is-active is-closing').attr('aria-hidden', true).css('display', 'none');
+                    $elem.parent().children('a').attr('aria-expanded', false);
                     $elem.blur();
                 });
                 /**
@@ -1611,12 +1614,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             key: '_init',
             value: function _init() {
                 this.$element.find('[data-submenu]').not('.is-active').slideUp(0); //.find('a').css('padding-left', '1rem');
-                this.$element.attr({
-                    'role': 'tablist',
-                    'aria-multiselectable': this.options.multiOpen
-                });
+                //this.$element.attr({
+                //'role': 'tablist',
+                //'aria-multiselectable': this.options.multiOpen
+                //});
 
-                this.$menuLinks = this.$element.find('.is-accordion-submenu-parent');
+                // Task #165273 - exclude .tree-node-preloaded so that the menu can be initialized when everything is properly loaded
+                this.$menuLinks = this.$element.find('.is-accordion-submenu-parent').not(".tree-node-preloaded");
                 this.$menuLinks.each(function () {
                     var linkId = this.id || Foundation.GetYoDigits(6, 'acc-menu-link'),
                         $elem = $(this),
@@ -1625,7 +1629,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                         isActive = $sub.hasClass('is-active');
                     $elem.attr({
                         'aria-controls': subId,
-                        'aria-expanded': isActive,
                         'role': 'tab',
                         'id': linkId
                     });
@@ -1786,8 +1789,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 if (!this.options.multiOpen) {
                     this.up(this.$element.find('.is-active').not($target.parentsUntil(this.$element).add($target)));
                 }
-
-                $target.addClass('is-active').attr({ 'aria-hidden': false }).parent('.is-accordion-submenu-parent').attr({ 'aria-expanded': true });
+                
+                $target.addClass('is-active').attr({ 'aria-hidden': false });
 
                 //Foundation.Move(this.options.slideSpeed, $target, function() {
                 $target.slideDown(_this.options.slideSpeed, function () {
@@ -1820,9 +1823,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 });
                 //});
 
-                var $menus = $target.find('[data-submenu]').slideUp(0).addBack().attr('aria-hidden', true);
+                $target.find('[data-submenu]').slideUp(0).addBack().attr('aria-hidden', true);
+                //$("[aria-controls='" + $menus.attr("id") + "']").attr({ "aria-expanded": false });;
 
-                $menus.parent('.is-accordion-submenu-parent').attr('aria-expanded', false);
             }
 
             /**
@@ -1944,7 +1947,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                 this.$targets.each(function () {
                     var $tar = $(this),
-                        pt = Math.round($tar.offset().top - _this.options.threshold);
+                        pt = Math.round($tar.position().top - _this.options.threshold);
                     $tar.targetPoint = pt;
                     _this.points.push(pt);
                 });
@@ -1965,7 +1968,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                         duration: _this.options.animationDuration,
                         easing: _this.options.animationEasing
                     };
-                $(window).one('load', function () {
+                $(function () {
+                    if (!_this.options) // if destroyed
+                        return;
+
                     if (_this.options.deepLinking) {
                         if (location.hash) {
                             _this.scrollToLoc(location.hash);
@@ -1973,10 +1979,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     }
                     _this.calcPoints();
                     _this._updateActive();
-                });
 
-                $(this.scrollContainer).off(scrollListener).on(scrollListener, function (e) {
-                    _this._updateActive();
+                    $(_this.scrollContainer).off(scrollListener).on(scrollListener, function (e) {
+                        _this._updateActive();
+                    });
                 });
 
                 this.$element.on({
@@ -2002,11 +2008,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }, {
             key: 'scrollToLoc',
             value: function scrollToLoc(loc) {
+                var self = this;
                 var top = (this.scrollContainer == window) ? $(loc).offset().top : $(loc)[0].offsetTop;
                 var scrollPos = Math.round(top - this.options.threshold / 2 - this.options.barOffset);
                 var $container = this.scrollContainer == window ? $('html, body') : $(this.scrollContainer);
 
-                $container.stop(true).animate({ scrollTop: scrollPos }, this.options.animationDuration, this.options.animationEasing);
+                $container.stop(true).animate({
+                    scrollTop: scrollPos
+                }, this.options.animationDuration, this.options.animationEasing, function () {
+                    self._updateActive();
+                });
             }
 
             /**
@@ -2201,7 +2212,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 this.$element.attr('aria-hidden', 'true');
 
                 // Find triggers that affect this element and add aria-expanded to them
-                this.$triggers = $(document).find('[data-open="' + id + '"], [data-close="' + id + '"], [data-toggle="' + id + '"]').attr('aria-expanded', 'false').attr('aria-controls', id);
+                //Bug #183306 - I think we don't want to change aria-expanded here; we want the parent link button to have the aria-expand attr for 508 compliance 
+
+                this.$triggers = $(document).find('[data-open="' + id + '"], [data-close="' + id + '"], [data-toggle="' + id + '"]').attr('aria-controls', id); 
 
                 // Add a close trigger over the body if necessary
                 if (this.options.closeOnClick) {
@@ -2325,6 +2338,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 }
                 var _this = this,
                     $body = $(document.body);
+                this.$element.css('display', 'block');
 
                 if (this.options.forceTop) {
                     $('body').scrollTop(0);
@@ -2355,6 +2369,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 this.$triggers.attr('aria-expanded', 'true');
                 this.$element.attr('aria-hidden', 'false').trigger('opened.zf.offcanvas');
 
+                var $focusElement = this.$element.find('a.selected');
+                if ($focusElement.length == 0) {
+                    $focusElement = this.$element.find('a').first();
+                }
+                $focusElement.focus();
+
                 if (trigger) {
                     this.$lastTrigger = trigger;
                 }
@@ -2365,7 +2385,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                             _this.$exiter.addClass('is-visible');
                         }
 
-                        _this.$element.find('a, button').eq(0).focus();
+                        var $focusEl = _this.$element.find('a.selected');
+                        if (!($focusEl.length > 0 && $focusEl.is(":visible"))) {
+                            $focusEl = _this.$element.find('a, button').eq(0);
+                        }
+                        $focusEl.focus();
                     });
                 }
 
@@ -2435,6 +2459,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 }
 
                 var _this = this;
+
+                this.$element.one(Foundation.transitionend(this.$element), function () {
+                    $(this).css('display', 'none');
+                });
 
                 //  Foundation.Move(this.options.transitionTime, this.$element, function() {
                 $('[data-off-canvas-wrapper]').removeClass('is-off-canvas-open is-open-' + _this.options.position);
@@ -2920,7 +2948,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 }
                 this.containerHeight = newContainerHeight;
                 this.$container.css({
-                    height: newContainerHeight
+                    'min-height': newContainerHeight
                 });
                 this.elemHeight = newContainerHeight;
 

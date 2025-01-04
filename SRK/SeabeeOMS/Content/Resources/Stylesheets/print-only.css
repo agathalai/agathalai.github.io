@@ -1,0 +1,243 @@
+/*<meta />*/
+
+body
+{
+	font-family: Arial;
+}
+
+.orange
+{
+	color: #e6692a;
+}
+
+.NoGloss
+{
+	mc-disable-glossary-terms: true;
+}
+
+p.CoverTitle
+{
+	color: #000000;
+	margin-top: 8pt;
+	margin-bottom: 15pt;
+	font-family: Arial;
+	font-size: 22pt;
+}
+
+p.CoverProject
+{
+	color: #000000;
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+p.CoverClient
+{
+	color: #000000;
+	margin-top: 3pt;
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+p.CoverCompany
+{
+	color: #000000;
+	font-family: Arial;
+}
+
+p.InsideCoverTextHead
+{
+	color: #000000;
+	margin-top: 0pt;
+	font-size: 9pt;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+p.InsideCoverText9pt
+{
+	color: #000000;
+	margin-top: 0pt;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+p.InsideCoverTitle
+{
+	color: #000000;
+	margin-bottom: 12pt;
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+p.Header
+{
+	color: #000000;
+	font-family: Arial;
+	font-size: 8pt;
+}
+
+p.Footer
+{
+	color: #000000;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-size: 8pt;
+}
+
+p.PDFtitle
+{
+	color: #000000;
+	page-break-after: avoid;
+	page-break-before: always;
+	margin-bottom: 3pt;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18pt;
+	mc-heading-level: 0;
+}
+
+p.ref
+{
+	text-indent: -30px;
+	margin-left: 30px;
+	mc-disable-glossary-terms: true;
+}
+
+p.note
+{
+
+	font-size: 8pt;
+}
+
+p.table_footer
+{
+	mc-auto-number-format: '{b}{color #e6692a}Note: {/color}{/b}';
+	font-size: 8pt;
+}
+
+h1.no-num
+{
+	color: #000000;
+	page-break-after: avoid;
+	page-break-before: always;
+	margin-bottom: 3pt;
+	mc-heading-level: 1;
+	font-weight: bold;
+	font-size: 18pt;
+	font-family: Arial;
+	mc-auto-number-format: ' ';
+}
+
+h1
+{
+	font-family: Arial;
+	font-size: 18pt;
+	color: #000000;
+	margin-bottom: 3pt;
+	page-break-after: avoid;
+	page-break-before: always;
+	mc-hyphenate: never;
+	mc-auto-number-format: 'CH: {chapnum} ';
+}
+
+h2
+{
+	font-size: 14 pt;
+	mc-auto-number-format: 'CH: {chapnum}.{n+} ';
+}
+
+h3
+{
+	font-size: 12 pt;
+	mc-auto-number-format: 'CH: {chapnum}.{n}.{n+} ';
+}
+
+ul.SQorange
+{
+	list-style: none;
+	/* Remove default bullets */
+}
+
+ul.SQorange li::before
+{
+	content: "";
+	/* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+
+ul.SQorange > li::marker
+{
+	color: #e6692a;
+	font-weight: bold;
+	font-style: normal;
+	content: '■';
+}
+
+ul.SQorange-sub
+{
+	list-style: none;
+	/* Remove default bullets */
+}
+
+ul.SQorange-sub li::before
+{
+	content: "";
+}
+
+ul.SQorange-sub > li::marker
+{
+	color: #e6692a;
+	font-weight: bold;
+	font-style: normal;
+	content: '-';
+}
+
+h1.appendix
+{
+	margin-top: 150pt;
+	border-top-color: #f37021;
+	border-top-width: 3pt;
+	border-top-style: solid;
+	page-break-after: always;
+	mc-auto-number-format: 'GA:Appendix {A+} - ';
+	margin-bottom: 3pt;
+	margin: 150pt 3pt;
+	margin-left: 0;
+	margin-right: 0;
+	mc-hyphenate: never;
+}
+
+h2.no-num
+{
+	mc-auto-number-format: ' ';
+	mc-toc-depth: 0;
+}
+
+h4
+{
+	mc-heading-level: 0;
+}
+
+h5
+{
+	mc-heading-level: 0;
+}
+
+p.TOC1
+{
+	margin-bottom: 6pt;
+	margin-top: 12pt;
+}
+
+p.TOC2
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+p.TOC3
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+

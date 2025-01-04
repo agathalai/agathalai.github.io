@@ -4,7 +4,7 @@
 
 mcTableStyle
 {
-	name: Alternate-Row-Color;
+	name: Blue-Row;
 	border-collapse: collapse;
 	border-left-style: solid;
 	border-left-width: 0px;
@@ -24,6 +24,8 @@ mcTableStyle
 	cell-padding-right: 5px;
 	cell-padding-top: 5px;
 	cell-padding-bottom: 5px;
+	orphans: 3;
+	widows: 3;
 }
 
 mcTableColumnStyle
@@ -108,7 +110,7 @@ mcTableFootStyle
 
 /* Cell Styles: */
  
-.TableStyle-Alternate-Row-Color
+.TableStyle-Blue-Row
 {
 	border-collapse: collapse;
 	border-left-style: solid;
@@ -123,20 +125,22 @@ mcTableFootStyle
 	border-bottom-style: solid;
 	border-bottom-color: #000000;
 	border-bottom-width: 0px;
+	widows: 3;
+	orphans: 3;
 	border-spacing: 0px 21px;
 }
 
-.TableStyle-Alternate-Row-Color-Column-Column1
+.TableStyle-Blue-Row-Column-Column1
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-Head-Header1
+.TableStyle-Blue-Row-Head-Header1
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-HeadI-Column1-Header1
+.TableStyle-Blue-Row-HeadI-Column1-Header1
 {
 	color: #ffffff;
 	background-color: #375b75;
@@ -146,12 +150,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-HeadI-Column1-Header1 p
+.TableStyle-Blue-Row-HeadI-Column1-Header1 p
 {
 	color: #ffffff;
 }
 
-.TableStyle-Alternate-Row-Color-HeadE-Column1-Header1
+.TableStyle-Blue-Row-HeadE-Column1-Header1
 {
 	border-right-width: 2px;
 	border-right-color: #ffffff;
@@ -167,48 +171,12 @@ mcTableFootStyle
 	border-bottom-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-HeadE-Column1-Header1 p
+.TableStyle-Blue-Row-HeadE-Column1-Header1 p
 {
 	color: #ffffff;
 }
 
-.TableStyle-Alternate-Row-Color-HeadF-Column1-Header1
-{
-	color: #ffffff;
-	background-color: #375b75;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-bottom-width: 1px;
-	border-bottom-color: #ffffff;
-	border-bottom-style: solid;
-}
-
-.TableStyle-Alternate-Row-Color-HeadF-Column1-Header1 p
-{
-	color: #ffffff;
-}
-
-.TableStyle-Alternate-Row-Color-HeadH-Column1-Header1
-{
-	border-right-width: 2px;
-	border-right-color: #ffffff;
-	border-right-style: solid;
-	color: #ffffff;
-	background-color: #375b75;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.TableStyle-Alternate-Row-Color-HeadH-Column1-Header1 p
-{
-	color: #ffffff;
-}
-
-.TableStyle-Alternate-Row-Color-HeadD-Column1-Header1
+.TableStyle-Blue-Row-HeadF-Column1-Header1
 {
 	color: #ffffff;
 	background-color: #375b75;
@@ -221,27 +189,12 @@ mcTableFootStyle
 	border-bottom-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-HeadD-Column1-Header1 p
+.TableStyle-Blue-Row-HeadF-Column1-Header1 p
 {
 	color: #ffffff;
 }
 
-.TableStyle-Alternate-Row-Color-HeadC-Column1-Header1
-{
-	color: #ffffff;
-	background-color: #375b75;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.TableStyle-Alternate-Row-Color-HeadC-Column1-Header1 p
-{
-	color: #ffffff;
-}
-
-.TableStyle-Alternate-Row-Color-HeadB-Column1-Header1
+.TableStyle-Blue-Row-HeadH-Column1-Header1
 {
 	border-right-width: 2px;
 	border-right-color: #ffffff;
@@ -254,12 +207,30 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-HeadB-Column1-Header1 p
+.TableStyle-Blue-Row-HeadH-Column1-Header1 p
 {
 	color: #ffffff;
 }
 
-.TableStyle-Alternate-Row-Color-HeadA-Column1-Header1
+.TableStyle-Blue-Row-HeadD-Column1-Header1
+{
+	color: #ffffff;
+	background-color: #375b75;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom-width: 1px;
+	border-bottom-color: #ffffff;
+	border-bottom-style: solid;
+}
+
+.TableStyle-Blue-Row-HeadD-Column1-Header1 p
+{
+	color: #ffffff;
+}
+
+.TableStyle-Blue-Row-HeadC-Column1-Header1
 {
 	color: #ffffff;
 	background-color: #375b75;
@@ -269,12 +240,30 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-HeadA-Column1-Header1 p
+.TableStyle-Blue-Row-HeadC-Column1-Header1 p
 {
 	color: #ffffff;
 }
 
-.TableStyle-Alternate-Row-Color-HeadG-Column1-Header1
+.TableStyle-Blue-Row-HeadB-Column1-Header1
+{
+	border-right-width: 2px;
+	border-right-color: #ffffff;
+	border-right-style: solid;
+	color: #ffffff;
+	background-color: #375b75;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-Blue-Row-HeadB-Column1-Header1 p
+{
+	color: #ffffff;
+}
+
+.TableStyle-Blue-Row-HeadA-Column1-Header1
 {
 	color: #ffffff;
 	background-color: #375b75;
@@ -284,17 +273,32 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-HeadG-Column1-Header1 p
+.TableStyle-Blue-Row-HeadA-Column1-Header1 p
 {
 	color: #ffffff;
 }
 
-.TableStyle-Alternate-Row-Color-Foot-Footer1
+.TableStyle-Blue-Row-HeadG-Column1-Header1
+{
+	color: #ffffff;
+	background-color: #375b75;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.TableStyle-Blue-Row-HeadG-Column1-Header1 p
+{
+	color: #ffffff;
+}
+
+.TableStyle-Blue-Row-Foot-Footer1
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootI-Column1-Footer1
+.TableStyle-Blue-Row-FootI-Column1-Footer1
 {
 	vertical-align: top;
 	padding-left: 10px;
@@ -303,12 +307,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-FootI-Column1-Footer1 p
+.TableStyle-Blue-Row-FootI-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootE-Column1-Footer1
+.TableStyle-Blue-Row-FootE-Column1-Footer1
 {
 	border-right-width: 2px;
 	border-right-color: #ffffff;
@@ -323,12 +327,12 @@ mcTableFootStyle
 	border-top-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-FootE-Column1-Footer1 p
+.TableStyle-Blue-Row-FootE-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootF-Column1-Footer1
+.TableStyle-Blue-Row-FootF-Column1-Footer1
 {
 	vertical-align: top;
 	padding-left: 10px;
@@ -340,12 +344,12 @@ mcTableFootStyle
 	border-top-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-FootF-Column1-Footer1 p
+.TableStyle-Blue-Row-FootF-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootH-Column1-Footer1
+.TableStyle-Blue-Row-FootH-Column1-Footer1
 {
 	border-right-width: 2px;
 	border-right-color: #ffffff;
@@ -357,12 +361,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-FootH-Column1-Footer1 p
+.TableStyle-Blue-Row-FootH-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootD-Column1-Footer1
+.TableStyle-Blue-Row-FootD-Column1-Footer1
 {
 	vertical-align: top;
 	padding-left: 10px;
@@ -374,12 +378,12 @@ mcTableFootStyle
 	border-top-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-FootD-Column1-Footer1 p
+.TableStyle-Blue-Row-FootD-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootC-Column1-Footer1
+.TableStyle-Blue-Row-FootC-Column1-Footer1
 {
 	vertical-align: top;
 	padding-left: 10px;
@@ -388,12 +392,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-FootC-Column1-Footer1 p
+.TableStyle-Blue-Row-FootC-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootB-Column1-Footer1
+.TableStyle-Blue-Row-FootB-Column1-Footer1
 {
 	border-right-width: 2px;
 	border-right-color: #ffffff;
@@ -405,12 +409,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-FootB-Column1-Footer1 p
+.TableStyle-Blue-Row-FootB-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootA-Column1-Footer1
+.TableStyle-Blue-Row-FootA-Column1-Footer1
 {
 	vertical-align: top;
 	padding-left: 10px;
@@ -419,12 +423,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-FootA-Column1-Footer1 p
+.TableStyle-Blue-Row-FootA-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-FootG-Column1-Footer1
+.TableStyle-Blue-Row-FootG-Column1-Footer1
 {
 	vertical-align: top;
 	padding-left: 10px;
@@ -433,17 +437,17 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-FootG-Column1-Footer1 p
+.TableStyle-Blue-Row-FootG-Column1-Footer1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-Body-Body1
+.TableStyle-Blue-Row-Body-Body1
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyI-Column1-Body1
+.TableStyle-Blue-Row-BodyI-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -453,12 +457,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyI-Column1-Body1 p
+.TableStyle-Blue-Row-BodyI-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyE-Column1-Body1
+.TableStyle-Blue-Row-BodyE-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -474,12 +478,12 @@ mcTableFootStyle
 	border-right-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyE-Column1-Body1 p
+.TableStyle-Blue-Row-BodyE-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyF-Column1-Body1
+.TableStyle-Blue-Row-BodyF-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -492,12 +496,12 @@ mcTableFootStyle
 	border-bottom-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyF-Column1-Body1 p
+.TableStyle-Blue-Row-BodyF-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyH-Column1-Body1
+.TableStyle-Blue-Row-BodyH-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -510,12 +514,12 @@ mcTableFootStyle
 	border-right-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyH-Column1-Body1 p
+.TableStyle-Blue-Row-BodyH-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyD-Column1-Body1
+.TableStyle-Blue-Row-BodyD-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -528,12 +532,12 @@ mcTableFootStyle
 	border-bottom-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyD-Column1-Body1 p
+.TableStyle-Blue-Row-BodyD-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyC-Column1-Body1
+.TableStyle-Blue-Row-BodyC-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -543,12 +547,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyC-Column1-Body1 p
+.TableStyle-Blue-Row-BodyC-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyB-Column1-Body1
+.TableStyle-Blue-Row-BodyB-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -561,12 +565,12 @@ mcTableFootStyle
 	border-right-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyB-Column1-Body1 p
+.TableStyle-Blue-Row-BodyB-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyA-Column1-Body1
+.TableStyle-Blue-Row-BodyA-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -576,12 +580,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyA-Column1-Body1 p
+.TableStyle-Blue-Row-BodyA-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyG-Column1-Body1
+.TableStyle-Blue-Row-BodyG-Column1-Body1
 {
 	vertical-align: top;
 	background-color: #ffffff;
@@ -591,17 +595,17 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyG-Column1-Body1 p
+.TableStyle-Blue-Row-BodyG-Column1-Body1 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-Body-Body2
+.TableStyle-Blue-Row-Body-Body2
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyI-Column1-Body2
+.TableStyle-Blue-Row-BodyI-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -611,12 +615,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyI-Column1-Body2 p
+.TableStyle-Blue-Row-BodyI-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyE-Column1-Body2
+.TableStyle-Blue-Row-BodyE-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -632,12 +636,12 @@ mcTableFootStyle
 	border-right-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyE-Column1-Body2 p
+.TableStyle-Blue-Row-BodyE-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyF-Column1-Body2
+.TableStyle-Blue-Row-BodyF-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -650,12 +654,12 @@ mcTableFootStyle
 	border-bottom-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyF-Column1-Body2 p
+.TableStyle-Blue-Row-BodyF-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyH-Column1-Body2
+.TableStyle-Blue-Row-BodyH-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -668,12 +672,12 @@ mcTableFootStyle
 	border-right-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyH-Column1-Body2 p
+.TableStyle-Blue-Row-BodyH-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyD-Column1-Body2
+.TableStyle-Blue-Row-BodyD-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -686,12 +690,12 @@ mcTableFootStyle
 	border-bottom-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyD-Column1-Body2 p
+.TableStyle-Blue-Row-BodyD-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyC-Column1-Body2
+.TableStyle-Blue-Row-BodyC-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -701,12 +705,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyC-Column1-Body2 p
+.TableStyle-Blue-Row-BodyC-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyB-Column1-Body2
+.TableStyle-Blue-Row-BodyB-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -719,12 +723,12 @@ mcTableFootStyle
 	border-right-style: solid;
 }
 
-.TableStyle-Alternate-Row-Color-BodyB-Column1-Body2 p
+.TableStyle-Blue-Row-BodyB-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyA-Column1-Body2
+.TableStyle-Blue-Row-BodyA-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -734,12 +738,12 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyA-Column1-Body2 p
+.TableStyle-Blue-Row-BodyA-Column1-Body2 p
 {
 	
 }
 
-.TableStyle-Alternate-Row-Color-BodyG-Column1-Body2
+.TableStyle-Blue-Row-BodyG-Column1-Body2
 {
 	vertical-align: top;
 	background-color: #f5f5f5;
@@ -749,7 +753,7 @@ mcTableFootStyle
 	padding-bottom: 10px;
 }
 
-.TableStyle-Alternate-Row-Color-BodyG-Column1-Body2 p
+.TableStyle-Blue-Row-BodyG-Column1-Body2 p
 {
 	
 }

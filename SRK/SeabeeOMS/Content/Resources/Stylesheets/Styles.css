@@ -218,7 +218,6 @@ h2
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: normal;
-	margin: 1.5em 0px 0.75em;
 	mc-disable-glossary-terms: true;
 }
 
@@ -547,6 +546,23 @@ p.MiniTOC3
 	font-style: italic;
 }
 
+p.TOC1
+{
+	margin-bottom: 12px;
+}
+
+p.TOC2
+{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+p.TOC3
+{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
 @media only screen and (max-width: 1279px)
 {
 	div.home-tiles > div
@@ -842,7 +858,20 @@ p.table
 
 p.note
 {
-	font-size: .75em;
 	mc-auto-number-format: '{b}{color #e6692a}Note: {/color}{/b}';
+	font-size: 8pt;
+}
+
+h1.appendix
+{
+	mc-auto-number-format: 'GA: Appendix {A+} - ';
+}
+
+p.table_footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: normal;
+	font-size: 8pt;
 }
 
